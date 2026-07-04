@@ -14,11 +14,11 @@
     <a href="#top" class="logo">수성<span>(주)</span></a>
 
     <nav class="main-nav">
-      <a href="#top" data-i18n="nav.home">홈</a>
-      <a href="#sectors" data-i18n="nav.about">회사소개</a>
+      <a href="index.html" data-i18n="nav.home">홈</a>
+      <a href="greeting.html" data-i18n="nav.greeting">인사말</a>
       <a href="#products" data-i18n="nav.products">제품소개</a>
       <a href="#notice" data-i18n="nav.notice">공지사항</a>
-      <a href="#archive" data-i18n="nav.archive">자료실</a>
+      <a href="archive.html" data-i18n="nav.archive">자료실</a>
       <a href="#contact" data-i18n="nav.contact">오시는 길</a>
     </nav>
 
@@ -36,18 +36,29 @@
 
 <main id="top">
 
-  <!-- Hero -->
+  <!-- ============================================================
+       ▼▼▼ [입력 필요] 홈 첫 화면(히어로) 영역 ▼▼▼
+       기존 홈페이지 첫 페이지에 있던 문구(회사 슬로건, 대표 소개 문장 등)를
+       아래 4개 항목에 입력해 주세요.
+       ※ 4개 언어 모두 반영하려면 아래 파일의 동일한 키(key)도 함께 수정 필요:
+         lang/ko.json → hero.eyebrow / hero.title / hero.subtitle
+         lang/en.json, lang/ja.json, lang/zh.json (해당 언어로 번역 후 입력)
+       ============================================================ -->
   <section class="hero">
     <div class="container">
       <div class="hero-copy">
+        <!-- 상단 라벨(눈에 띄는 짧은 문구, 예: 회사명/캐치프레이즈) -->
         <span class="hero-eyebrow" data-i18n="hero.eyebrow">농업회사법인 수성(주)</span>
+        <!-- 메인 헤드라인(가장 큰 글씨, 기존 홈페이지 대표 슬로건 입력) -->
         <h1 class="hero-title" data-i18n="hero.title">자연에서 시작해 생산성으로 완성하는 바이오황</h1>
+        <!-- 서브 카피(헤드라인 보조 설명 1~2문장) -->
         <p class="hero-subtitle" data-i18n="hero.subtitle">축산·경종·수산 세 갈래의 현장에서, 하나의 원료로 답을 찾습니다.</p>
         <div class="hero-cta">
           <a href="#products" class="btn btn-primary" data-i18n="hero.cta_primary">제품 살펴보기</a>
-          <a href="#archive" class="btn btn-ghost" data-i18n="hero.cta_secondary">자료실 바로가기</a>
+          <a href="archive.html" class="btn btn-ghost" data-i18n="hero.cta_secondary">자료실 바로가기</a>
         </div>
       </div>
+      <!-- ▲▲▲ [입력 필요] 히어로 영역 끝 ▲▲▲ -->
 
       <div class="sector-band" id="sectors">
         <div class="sector-item">
@@ -76,43 +87,44 @@
         </div>
       </div>
 
+      <!-- 제품 카드 8개: 각 카드 클릭 시 개별 상세페이지(product-01-hanwoo.html 등)로 이동 -->
       <div class="product-grid">
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-01-hanwoo.html">
           <span class="idx">01</span>
           <span class="title" data-i18n="products.hanwoo">한우</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-02-pork.html">
           <span class="idx">02</span>
           <span class="title" data-i18n="products.pork">돈육</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-03-broiler.html">
           <span class="idx">03</span>
           <span class="title" data-i18n="products.broiler">육계</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-04-layer.html">
           <span class="idx">04</span>
           <span class="title" data-i18n="products.layer">산란계</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-05-rice.html">
           <span class="idx">05</span>
           <span class="title" data-i18n="products.rice">쌀</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-06-vegetable.html">
           <span class="idx">06</span>
           <span class="title" data-i18n="products.vegetable">채소</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-07-fruit.html">
           <span class="idx">07</span>
           <span class="title" data-i18n="products.fruit">과수</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="#">
+        <a class="product-card" href="product-08-aquaculture.html">
           <span class="idx">08</span>
           <span class="title" data-i18n="products.aquaculture">수산</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
@@ -162,8 +174,8 @@
   <div class="container">
     <div class="footer-info">
       <p><strong data-i18n="footer.company">농업회사법인 수성(주)</strong></p>
-      <p data-i18n="footer.address">강원특별자치도 고성군 간성읍 간성로 30번길 7 KT고성빌딩 3층</p>
-      <p><span data-i18n="footer.tel">대표전화</span> : 033-682-3600<span data-i18n="footer.email">이메일</span> : ceo@bmpgo.com</p>
+      <p data-i18n="footer.address">주소를 입력해 주세요</p>
+      <p><span data-i18n="footer.tel">대표전화</span> : 000-0000-0000 &nbsp;|&nbsp; <span data-i18n="footer.email">이메일</span> : info@bmpgo.com</p>
       <p>&copy; 2026 <span data-i18n="footer.company">농업회사법인 수성(주)</span>. <span data-i18n="footer.copyright">All Rights Reserved.</span></p>
     </div>
     <div class="footer-lang">
