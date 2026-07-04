@@ -1,10 +1,12 @@
 {
   "nav.home": "首页",
-  "nav.about": "公司简介",
+  "nav.greeting": "致辞",
   "nav.products": "产品介绍",
   "nav.notice": "通知公告",
   "nav.archive": "资料室",
   "nav.contact": "联系我们",
+
+  "greeting.title": "致辞",
 
   "hero.eyebrow": "农业会社法人 秀成(株)",
   "hero.title": "源于自然，成于生产力的生物硫",

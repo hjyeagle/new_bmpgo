@@ -1,10 +1,12 @@
 {
   "nav.home": "ホーム",
-  "nav.about": "会社案内",
+  "nav.greeting": "ご挨拶",
   "nav.products": "製品案内",
   "nav.notice": "お知らせ",
   "nav.archive": "資料室",
   "nav.contact": "アクセス",
+
+  "greeting.title": "ご挨拶",
 
   "hero.eyebrow": "農業会社法人スソン(株)",
   "hero.title": "自然から始まり生産性で完成するバイオ硫黄",

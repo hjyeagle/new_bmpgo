@@ -1,10 +1,12 @@
 {
   "nav.home": "홈",
-  "nav.about": "회사소개",
+  "nav.greeting": "인사말",
   "nav.products": "제품소개",
   "nav.notice": "공지사항",
   "nav.archive": "자료실",
   "nav.contact": "오시는 길",
+
+  "greeting.title": "인사말",
 
   "hero.eyebrow": "농업회사법인 수성(주)",
   "hero.title": "자연에서 시작해 생산성으로 완성하는 바이오황",

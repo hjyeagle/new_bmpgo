@@ -1,10 +1,12 @@
 {
   "nav.home": "Home",
-  "nav.about": "About",
+  "nav.greeting": "Greeting",
   "nav.products": "Products",
   "nav.notice": "Notice",
   "nav.archive": "Resources",
   "nav.contact": "Contact",
+
+  "greeting.title": "Greeting",
 
   "hero.eyebrow": "Suseong Agricultural Corporation",
   "hero.title": "Bio-Sulfur, from the field to the results that matter",
