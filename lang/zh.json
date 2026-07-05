@@ -8,11 +8,18 @@
 
   "greeting.title": "致辞",
 
-  "hero.eyebrow": "农业会社法人 秀成(株)",
-  "hero.title": "源于自然，成于生产力的生物硫",
-  "hero.subtitle": "畜牧、耕种、水产三大领域，用同一种原料给出答案。",
+  "hero.headline": "农业会社法人 秀成(株)",
+  "hero.intro": "我们通过即将完成新物质登记的OnEIO(Bio Sulfur)这一特殊原料，致力于从根本上增强韩国农畜水产业的竞争力，并以为消费者提供更健康的食品为使命而成立。",
+  "hero.cta_about": "About us",
   "hero.cta_primary": "查看产品",
   "hero.cta_secondary": "前往资料室",
+
+  "field.agri_title": "农业领域",
+  "field.agri_desc": "秀成(株)肥料可改良土壤、增强作物自身免疫力，从而预防病虫害并大幅提高产量与品质。",
+  "field.livestock_title": "畜牧领域",
+  "field.livestock_desc": "秀成(株)饲料添加剂从根本上增强家畜免疫力、改善肠道环境，从而减少抗生素使用并提高生产性能与畜产品品质。",
+  "field.aqua_title": "水产领域",
+  "field.aqua_desc": "秀成(株)水产用饲料添加剂是替代抗生素的环保方案，可最大限度提高养殖鱼种的抗病能力并提升饲料效率，从而大幅提高生产效率。",
 
   "sector.livestock": "畜牧",
   "sector.livestock_desc": "韩牛 · 猪肉 · 肉鸡 · 蛋鸡",

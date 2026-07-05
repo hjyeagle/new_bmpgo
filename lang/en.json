@@ -8,11 +8,18 @@
 
   "greeting.title": "Greeting",
 
-  "hero.eyebrow": "Suseong Agricultural Corporation",
-  "hero.title": "Bio-Sulfur, from the field to the results that matter",
-  "hero.subtitle": "One material, three frontlines: livestock, crop, and aquaculture.",
+  "hero.headline": "Suseong Agricultural Corporation",
+  "hero.intro": "Founded on OnEIO (Bio Sulfur), a new material pending substance registration, we strengthen the fundamental competitiveness of Korea's agriculture, livestock, and fisheries industries while providing consumers with healthier food.",
+  "hero.cta_about": "About us",
   "hero.cta_primary": "Explore Products",
   "hero.cta_secondary": "Visit Resources",
+
+  "field.agri_title": "Agriculture",
+  "field.agri_desc": "Suseong fertilizer improves soil and strengthens crops' natural immunity, preventing pests and dramatically improving yield and quality.",
+  "field.livestock_title": "Livestock",
+  "field.livestock_desc": "Suseong feed additives fundamentally strengthen livestock immunity and improve gut health, reducing antibiotic use while raising productivity and product quality.",
+  "field.aqua_title": "Aquaculture",
+  "field.aqua_desc": "Suseong's aquaculture feed additive is an eco-friendly alternative to antibiotics that maximizes disease resistance in farmed species and improves feed efficiency.",
 
   "sector.livestock": "Livestock",
   "sector.livestock_desc": "Korean beef · Pork · Broiler · Layer",

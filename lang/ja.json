@@ -8,11 +8,18 @@
 
   "greeting.title": "ご挨拶",
 
-  "hero.eyebrow": "農業会社法人スソン(株)",
-  "hero.title": "自然から始まり生産性で完成するバイオ硫黄",
-  "hero.subtitle": "畜産・耕種・水産、三つの現場に一つの原料で応えます。",
+  "hero.headline": "農業会社法人スソン(株)",
+  "hero.intro": "私たちは新物質登録を控えたオンEIO(Bio Sulfur)という特別な素材を通じて、農畜水産業の根本的な競争力を強化し、消費者にはより健康な食材を提供するという使命感で設立されました。",
+  "hero.cta_about": "About us",
   "hero.cta_primary": "製品を見る",
   "hero.cta_secondary": "資料室へ",
+
+  "field.agri_title": "農業分野",
+  "field.agri_desc": "スソン(株)の肥料は土壌を改良し作物本来の免疫力を強化することで、病害虫を予防し生産量と品質を画期的に向上させます。",
+  "field.livestock_title": "畜産分野",
+  "field.livestock_desc": "スソン(株)の飼料添加剤は家畜の免疫力を根本的に強化し腸内環境を改善することで、抗生剤の使用を減らし生産性および畜産物の品質を高めます。",
+  "field.aqua_title": "水産分野",
+  "field.aqua_desc": "スソン(株)の水産用飼料添加剤は抗生剤に代わる環境に優しいソリューションとして、養殖魚種の疾病抵抗性を最大化し飼料効率を高め生産性を画期的に増大させます。",
 
   "sector.livestock": "畜産",
   "sector.livestock_desc": "韓牛・豚肉・ブロイラー・採卵鶏",

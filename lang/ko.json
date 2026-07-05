@@ -8,11 +8,18 @@
 
   "greeting.title": "인사말",
 
-  "hero.eyebrow": "농업회사법인 수성(주)",
-  "hero.title": "자연에서 시작해 생산성으로 완성하는 온EIO",
-  "hero.subtitle": "축산·경종·수산 세 갈래의 현장에서, 하나의 원료로 답을 찾습니다.",
+  "hero.headline": "농업회사법인 수성(주)",
+  "hero.intro": "저희는 신물질 등록을 앞둔 온EIO(Bio Sulfur)라는 특별한 소재를 통해 우리 농축수산업의 근본적인 경쟁력을 강화하고, 소비자에게는 더 건강한 먹거리를 제공한다는 사명감으로 설립되었습니다.",
+  "hero.cta_about": "About us",
   "hero.cta_primary": "제품 살펴보기",
   "hero.cta_secondary": "자료실 바로가기",
+
+  "field.agri_title": "농업분야",
+  "field.agri_desc": "수성(주) 비료는 토양을 개량하고 작물 본연의 면역력을 강화하여, 병충해를 예방하고 생산량과 품질을 획기적으로 향상시킵니다.",
+  "field.livestock_title": "축산분야",
+  "field.livestock_desc": "수성(주) 사료첨가제는 가축의 면역력을 근본적으로 강화하고 장내 환경을 개선하여, 항생제 사용을 줄이고 생산성 및 축산물의 품질을 높입니다.",
+  "field.aqua_title": "수산분야",
+  "field.aqua_desc": "수성(주) 수산용 사료첨가제는 항생제를 대체하는 친환경 솔루션으로, 양식 어종의 질병 저항성을 극대화하고 사료 효율을 높여 생산성을 획기적으로 증대시킵니다.",
 
   "sector.livestock": "축산",
   "sector.livestock_desc": "한우 · 돈육 · 육계 · 산란계",
@@ -40,11 +47,11 @@
   "notice.title": "공지사항",
   "notice.more": "전체보기",
   "notice.item1": "2026년 하반기 품질인증 갱신 완료 안내",
-  "notice.item2": "수출용 온EIO 신제품 라인업 출시",
+  "notice.item2": "수출용 바이오황 신제품 라인업 출시",
   "notice.item3": "홈페이지 개편 및 다국어 서비스 오픈",
 
   "footer.company": "농업회사법인 수성(주)",
-  "footer.address": "강원특별자치도 고성군 간성읍 간성로 30번길 7 KT고성빌딩 3층",
+  "footer.address": "주소를 입력해 주세요",
   "footer.tel": "대표전화",
   "footer.email": "이메일",
   "footer.copyright": "All Rights Reserved."
