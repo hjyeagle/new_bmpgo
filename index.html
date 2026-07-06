@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>농업회사법인 수성(주) | Suseong Agricultural Corporation</title>
-<meta name="description" content="온EIO 기반 축산·경종·수산용 제품을 생산하는 농업회사법인 수성(주)입니다.">
+<meta name="description" content="바이오황 기반 축산·경종·수산용 제품을 생산하는 농업회사법인 수성(주)입니다.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,417 +37,57 @@
 <main id="top">
 
   <!-- ============================================================
-       ▼▼▼ [입력 필요] 홈 첫 화면 영역 ▼▼▼
-       기존 bmpgo.com 메인화면 구성(헤드라인 + 소개문 + 분야별 설명 3단)을
-       그대로 재현했습니다. 아래 텍스트는 기존 홈페이지 내용을 그대로
-       옮긴 것이므로, 문구 수정이 필요하면 이 위치를 직접 편집하시거나
-       lang/ko.json의 동일한 키 값을 수정해 주세요.
+       ▼▼▼ [입력 필요] 홈 첫 화면(히어로) 영역 ▼▼▼
+       기존 홈페이지 첫 페이지에 있던 문구(회사 슬로건, 대표 소개 문장 등)를
+       아래 4개 항목에 입력해 주세요.
+       ※ 4개 언어 모두 반영하려면 아래 파일의 동일한 키(key)도 함께 수정 필요:
+         lang/ko.json → hero.eyebrow / hero.title / hero.subtitle
+         lang/en.json, lang/ja.json, lang/zh.json (해당 언어로 번역 후 입력)
        ============================================================ -->
-  <section class="hero-intro">
-    <div class="container hero-intro-top">
-      <h1 class="hero-headline" data-i18n="hero.headline">농업회사법인 수성(주)</h1>
-      <div class="hero-intro-copy">
-        <p data-i18n="hero.intro">저희는 신물질 등록을 앞둔 온EIO라는 특별한 소재를 통해 우리 농축수산업의 근본적인 경쟁력을 강화하고, 소비자에게는 더 건강한 먹거리를 제공한다는 사명감으로 설립되었습니다.</p>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <!-- 상단 라벨(눈에 띄는 짧은 문구, 예: 회사명/캐치프레이즈) -->
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">농업회사법인 수성(주)</span>
+        <!-- 메인 헤드라인(가장 큰 글씨, 기존 홈페이지 대표 슬로건 입력) -->
+        <h1 class="hero-title" data-i18n="hero.title">자연에서 시작해 생산성으로 완성하는 바이오황</h1>
+        <!-- 서브 카피(헤드라인 보조 설명 1~2문장) -->
+        <p class="hero-subtitle" data-i18n="hero.subtitle">축산·경종·수산 세 갈래의 현장에서, 하나의 원료로 답을 찾습니다.</p>
         <div class="hero-cta">
-          <a href="greeting.html" class="btn btn-ghost" data-i18n="hero.cta_about">인사말</a>
           <a href="#products" class="btn btn-primary" data-i18n="hero.cta_primary">제품 살펴보기</a>
           <a href="archive.html" class="btn btn-ghost" data-i18n="hero.cta_secondary">자료실 바로가기</a>
         </div>
       </div>
-    </div>
+      <!-- ▲▲▲ [입력 필요] 히어로 영역 끝 ▲▲▲ -->
 
-    <!-- ============================================================
-     ▼▼▼ [교체 영역] 시작 ▼▼▼
-     기존 index.html의 아래 블록 전체를
-       <div class="container hero-fields"> ... </div>
-     이 코드로 통째로 바꿔치기 해 주세요.
-     (바로 위 </div> 한 줄, 바로 아래 </section> 한 줄은 그대로 둡니다.)
-     ============================================================ -->
-    <div class="container" style="max-width: 860px; padding: 56px 24px 64px;">
-      <h2 class="section-title" style="margin-bottom: 28px;">[현 농축산업의 위기 극복과 미래를 위한 새로운 패러다임]</h2>
-
-      <div style="color: var(--ink-soft); line-height: 1.9; font-size: 0.98rem;">
-
-        <h3 style="color: var(--ink); font-size: 1.05rem; margin: 0 0 10px;">1. 위기에 처한 대한민국 농축산업의 현실</h3>
-        <p style="margin: 0 0 28px;">
-          현재 대한민국 농축산업은 지속 가능성을 심각하게 위협받는 위기 상황에 직면해 있습니다.
-          관행적으로 사용해 온 화학 비료와 항생제는 토양의 산성화를 촉진하고 생태계를 파괴하는
-          주원인이 되고 있습니다. 이러한 토양 황폐화는 연작 피해와 농업 생산성 저하를 불러오며,
-          가축과 농산물에 잔류하는 유해 성분 문제를 야기합니다. 결과적으로 이는 지하수 오염과
-          생태계 불균형을 초래하고, '화학 물질 남용 → 환경 오염 → 농축산물 안전성 저하 → 국민 건강 위협'으로
-          이어지는 악순환의 고리를 형성하고 있습니다.
-        </p>
-
-        <h3 style="color: var(--ink); font-size: 1.05rem; margin: 0 0 10px;">2. 새로운 패러다임으로의 전환: 지속 가능한 농축산업</h3>
-        <p style="margin: 0 0 28px;">
-          이러한 위기를 타개하기 위해 친환경적이고 지속 가능한 생산 방식 도입이 절실한 시점입니다.
-          새로운 패러다임은 단순히 생산량을 늘리는 것을 넘어, 자연과의 조화를 통한 '친환경 농업 시스템'을
-          구축하는 데 초점을 맞춥니다. 이를 통해 안전하고 믿을 수 있는 고품질 농축산물을 공급함으로써
-          국민 건강을 보호하고, 농가의 생산성을 향상시켜 소득 증대를 도모해야 합니다. 또한, 혁신적인 농업 기술을
-          확보하여 글로벌 시장에서도 인정받는 경쟁력을 갖추는 것이 미래 농축산업의 핵심 목표입니다.
-        </p>
-
-        <h3 style="color: var(--ink); font-size: 1.05rem; margin: 0 0 10px;">3. 미래 농축산업의 핵심 솔루션: '온EIO'</h3>
-        <p style="margin: 0 0 28px;">
-          이러한 혁신을 이끌 차세대 솔루션으로 <strong>'온EIO'</strong>이 주목받고 있습니다.
-          <strong>'온EIO'</strong>은 자연에서 얻은 유황을 독자적인 공법으로 법제화한 물질로, 이미 관련 기술
-          특허와 제반 시험성적서를 통해 그 효과를 과학적으로 입증받았습니다. 이 소재는 농업과 축산 현장에서
-          토지 비옥화와 가축 건강 증진을 동시에 실현하는 혁신적인 변화를 이끌고 있습니다.
-        </p>
-
-        <h3 style="color: var(--ink); font-size: 1.05rem; margin: 0 0 10px;">4. '온EIO'의 실질적 적용 효과</h3>
-        <ul style="padding-left: 20px; margin: 0 0 28px;">
-          <li style="margin-bottom: 14px;">
-            <strong>농업 분야(친환경 비료)</strong>: 토양에 적용할 경우, 화학 비료 사용을 줄이면서도 지력을
-            회복시키는 토양 비옥화 효과가 탁월합니다. 또한 작물의 영양분 흡수를 촉진하고 병충해에 대한
-            저항력을 증대시켜 작물의 품질을 획기적으로 향상시킵니다. 더불어 잔류 농약 감소와 수질 개선에도
-            기여하여 환경 정화의 가치를 실현합니다.
-          </li>
-          <li>
-            <strong>축산 분야(사료 혁신)</strong>: 가축 사료에 적용 시 면역력을 강화하여 질병 발생률을 낮추고,
-            항생제 의존도를 크게 낮출 수 있습니다. 이는 친환경 축산 기반을 마련함과 동시에 육질, 난질, 유질 등
-            축산물 자체를 프리미엄급으로 개선하여 부가가치를 높입니다.
-          </li>
-        </ul>
-
-        <h3 style="color: var(--ink); font-size: 1.05rem; margin: 0 0 10px;">5. 결론: 실질적인 변화와 미래 비전</h3>
-        <p style="margin: 0;">
-          결론적으로 <strong>'온EIO'</strong> 솔루션은 화학 비료와 항생제 사용을 줄임으로써 생산 비용을
-          절감하고, 토양 환경 개선 및 가축 건강 증진을 통해 생산성을 극대화합니다. 이는 농가의 소득 증대로
-          이어질 뿐만 아니라, 유해 성분 없는 안전한 먹거리를 생산함으로써 국민 건강 증진에 이바지하는
-          근본적인 대안이 될 것입니다.
-        </p>
-
+      <div class="sector-band" id="sectors">
+        <div class="sector-item">
+          <span class="name" data-i18n="sector.livestock">축산</span>
+          <span class="desc" data-i18n="sector.livestock_desc">한우 · 돈육 · 육계 · 산란계</span>
+        </div>
+        <div class="sector-item">
+          <span class="name" data-i18n="sector.crop">경종</span>
+          <span class="desc" data-i18n="sector.crop_desc">벼 · 채소 · 과수</span>
+        </div>
+        <div class="sector-item">
+          <span class="name" data-i18n="sector.aqua">수산</span>
+          <span class="desc" data-i18n="sector.aqua_desc">양식 어류 · 패류</span>
+        </div>
       </div>
     </div>
-<!-- ▲▲▲ [교체 영역] 끝 ▲▲▲ -->
-
   </section>
-  <!-- ▲▲▲ [입력 필요] 홈 첫 화면 영역 끝 ▲▲▲ -->
 
   <!-- Product grid -->
   <section class="section" id="products">
     <div class="container">
-      <!-- ============================================================
-     ▼▼▼ [교체 영역] 시작 ▼▼▼
-     기존에 삽입하신 <div class="container oneio-info"> ~ </div>
-     블록 전체(및 그 위의 <style> 블록)를 아래 코드로 통째로 교체해 주세요.
-     ============================================================ -->
-
-<style>
-  .oneio-info { max-width: 960px; margin: 0 auto 64px; }
-  .oneio-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
-  .oneio-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
-  .oneio-info h3.oi-sub-plain { font-size: 1.05rem; color: var(--ink); margin: 40px 0 16px; }
-
-  .oneio-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
-  .oneio-info th, .oneio-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
-  .oneio-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
-  .oneio-info td.oi-label { background: var(--bg); font-weight: 700; width: 22%; white-space: nowrap; }
-  .oneio-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
-
-  /* 아코디언 */
-  .oi-accordion {
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    margin-bottom: 10px;
-    background: var(--surface);
-    overflow: hidden;
-  }
-  .oi-accordion summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 16px 20px;
-    font-weight: 700;
-    font-size: 0.98rem;
-    color: var(--ink);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .oi-accordion summary::-webkit-details-marker { display: none; }
-  .oi-accordion summary::after {
-    content: '+';
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: var(--gold);
-    margin-left: 12px;
-    flex-shrink: 0;
-  }
-  .oi-accordion[open] summary::after { content: '–'; }
-  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
-  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
-  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
-</style>
-
-<div class="container oneio-info">
-
-  <h2 class="oi-title">왜, 그냥 유황이 아닌 '온EIO(Bio Sulfur)'이어야 하는가?</h2>
-  <p class="oi-lead">
-    유황은 예로부터 그 효능이 널리 알려져 왔지만, 동시에 '독성'이라는 위험성을 안고 있었습니다.
-    농업법인회사 수성(주)은 이 문제를 해결하기 위해 전통 방식과 현대 기술을 접목한
-    '법제(法製)' 공정에 집중했습니다.
-  </p>
-  <p class="oi-lead">
-    '법제'란, 독성을 제거하고 유효 성분의 흡수율을 높여 안전하고 강력한 효능을
-    발휘하도록 하는 특별한 가공 과정입니다.
-  </p>
-
-  <h3 class="oi-sub-plain">농업법인회사 수성(주)이 공급하는 온EIO(Bio Sulfur)의 핵심 장점</h3>
-
-  <!-- 1 -->
-  <details class="oi-accordion" open>
-    <summary>1. 수성(주) 생산 '온EIO' 사료 vs 식이유황(MSM) 비교</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th>구분</th><th>'온EIO' (수성(주) 특허 기술)</th><th>식이유황 (MSM)</th><th>비고</th></tr>
-        <tr><td class="oi-label">유황 순도</td><td>99.9% (고순도)</td><td>약 34% (나머지는 수소, 탄소 등)</td><td>'온EIO'이 약 3배 더 강력함</td></tr>
-        <tr><td class="oi-label">열 저항성</td><td>강함 (가공 용이)</td><td>약함 (130℃ 이상 파괴)</td><td>사료 펠렛 가공 시 고온 견딤</td></tr>
-        <tr><td class="oi-label">분자량</td><td>나노 입자 (흡수율 극대화)</td><td>분자량이 큼</td><td>법제 유황이 체내 흡수에 유리</td></tr>
-        <tr><td class="oi-label">주요 용도</td><td>전 축종 사료첨가제, 비료</td><td>주로 인체용 건강기능식품</td><td>양어 사료 등 고온 가공 가능</td></tr>
-        <tr><td class="oi-label">경제성</td><td>우수 (대량 생산 가능)</td><td>낮음 (고가)</td><td>농가 소득 증대에 적합</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 2 -->
-  <details class="oi-accordion">
-    <summary>2. 축산 사료 적용 효능(1): 생산성 지표 (경제성)</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th style="width:26%;">항목</th><th>세부내용</th></tr>
-        <tr><td class="oi-label">1. 사료효율 증가<br>▲10~25% UP (비용절감)</td><td></td></tr>
-        <tr><td class="oi-label">정의</td><td>가축이 섭취한 사료(100) 대비 체내 흡수 및 에너지화되는 비율</td></tr>
-        <tr><td class="oi-label">실험결과</td><td>축종을 불문하고 대조군 대비 10~25% 효율 증가</td></tr>
-        <tr><td class="oi-label">기대효과</td><td>같은 양을 먹어도 더 많이 성장하므로, 농가의 최대 지출 항목인 사료비 절감 효과 발생</td></tr>
-        <tr><td class="oi-label">2. 증체율 향상<br>▲10% UP (회전율 증대)</td><td></td></tr>
-        <tr><td class="oi-label">정의</td><td>일일 체중 증가량 및 출하까지 걸리는 시간 단축 지표</td></tr>
-        <tr><td class="oi-label">실험결과</td><td>평균 10%대의 증체율 향상 확인</td></tr>
-        <tr><td class="oi-label">기대효과</td><td>출하 일수 단축을 통해 사육 회전율을 높이고, 농가 운영비(인건비, 시설비) 감소</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 3 -->
-  <details class="oi-accordion">
-    <summary>3. 축산 사료 적용 효능(2): 질병 방어 및 육질 (차별성)</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th style="width:26%;">항목</th><th>세부내용</th></tr>
-        <tr><td class="oi-label">3. 폐사율 감소 및 생존율 증가</td><td></td></tr>
-        <tr><td class="oi-label">실험결과</td><td>평균 5~10%의 생존율 증가 및 폐사율 감소 확인</td></tr>
-        <tr><td class="oi-label">적용사례</td><td>아산시 브랜드 농가의 경우, 법적 필수 백신(구제역) 외 추가 항생제/백신 투여 없이 안정적 사육 중</td></tr>
-        <tr><td class="oi-label">의의</td><td>바이러스 및 세균성 질병에 대한 자체 방어력 증대</td></tr>
-        <tr><td class="oi-label">4. 면역력 및 항바이러스 효과<br>(천연 항생제)</td><td></td></tr>
-        <tr><td class="oi-label">비교실험</td><td>부경대 실험 결과, 대표 항생제인 옥시테트라사이클린(OCT) 대비 면역·항바이러스 지표가 동등하거나 우수함</td></tr>
-        <tr><td class="oi-label">기능</td><td>체내 글루타치온(GSH) 농도 유지 및 해독 작용을 통해 '천연 항생제' 역할 수행</td></tr>
-        <tr><td class="oi-label">5. 육질 개선 및 상품성 강화</td><td></td></tr>
-        <tr><td class="oi-label">불포화지방산 증가</td><td>체내 유입된 유황이 시스틴/메티오닌 등으로 변환되며 불포화지방 함량을 높임 (고급육 이미지)</td></tr>
-        <tr><td class="oi-label">수분 손실률 감소</td><td>도축 후 육즙 빠짐 현상이 줄어들어 중량 보존 및 감칠맛 유지</td></tr>
-        <tr><td class="oi-label">관능평가</td><td>육질이 단단하고 쫄깃해지며(탄력증가), 식감 테스트에서 확실한 차이 입증</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 4 -->
-  <details class="oi-accordion">
-    <summary>4. 토양오염 해결과 작물 생산성 증대</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th style="width:26%;">항목</th><th>세부내용</th></tr>
-        <tr><td class="oi-label">1. 유황 솔루션 도입의 기대효과 (Summary)</td><td></td></tr>
-        <tr><td class="oi-label">문제점</td><td>화학 비료 남용으로 인한 토양 산성화 및 저급 유황 비료 사용 시 중금속 집적 문제</td></tr>
-        <tr><td class="oi-label">해결책</td><td>'온EIO' 비료 사용 시 토양 산도를 조절하고, 중금속이 제거된 안전한 비료 공급 가능</td></tr>
-        <tr><td class="oi-label">2. 병해충 방제 및 연작 장해 해결</td><td></td></tr>
-        <tr><td class="oi-label">살균·살충 효과</td><td>고유의 살충력으로 토양 내 병원균 억제</td></tr>
-        <tr><td class="oi-label">성공사례</td><td>12년 연속 고추 연작 농가에서 유황 비료 적용으로 연작 장해(단저병 등) 극복 사례 보고 (일반적으로 고추는 연작이 매우 어려움)</td></tr>
-        <tr><td class="oi-label">3. 작물 증산(수확량) 및 품질 향상</td><td></td></tr>
-        <tr><td class="oi-label">생장촉진</td><td>식물의 생육을 돕고 뿌리 활착을 강화하여 수확량(증산) 증대, 농약성분 최소화 농약불검출</td></tr>
-        <tr><td class="oi-label">기능성 농작물</td><td>유황 성분을 함유한 고부가가치 농산물(예: 유황 마늘, 유황 쌀) 생산 가능</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 5 -->
-  <details class="oi-accordion">
-    <summary>5. '온EIO' 솔루션 도입의 기대효과 (종합 요약)</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th style="width:26%;">항목</th><th>상세내용</th></tr>
-        <tr><td class="oi-label">1. 안전성(Safety)</td><td>Purina Mills 성분분석 보고서 및 농림부 유기농 목록 고시된 '무해화된 온EIO' 사용</td></tr>
-        <tr><td class="oi-label">2. 경제성(Economy)</td><td>사료효율(10~25%↑) 및 증체율(10%↑) 개선으로 농가 생산 원가 절감</td></tr>
-        <tr><td class="oi-label">3. 차별성(Quality)</td><td>항생제 대체 및 Drip Loss 감소로 '친환경 프리미엄 축산물' 브랜드화 가능</td></tr>
-        <tr><td class="oi-label">4. 확장성(Scalability)</td><td>축산업(사료)뿐만 아니라 농업(비료/토양개선)까지 아우르는 종합 친환경 솔루션 제공</td></tr>
-      </table>
-      <p class="oi-note">
-        수성(주) '온EIO'는 단순한 첨가제가 아니라, 농업·축산·특수작물·수산물의 '생산성'과 '품질'을
-        동시에 높이는 검증된 전략 소재입니다.
-      </p>
-    </div>
-  </details>
-
-  <!-- 6 -->
-  <details class="oi-accordion">
-    <summary>5대 영양소와 무기질로서의 황(S)</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><td class="oi-label">5대 영양소 관점의 위치</td><td>탄수화물·지질·단백질·비타민과 함께 무기질(Mineral) 범주에 속함. 체내 미네랄 중 칼슘, 인 다음으로 풍부한 다량 무기질</td></tr>
-        <tr><td class="oi-label">일일 권장량 및 필요량</td><td>황 자체의 RDA(권장섭취량)는 미제정. 기관별 황 함유 아미노산(메티오닌+시스테인) 필요량 추정: 13~19 mg/kg/일 (성인 기준)</td></tr>
-        <tr><td class="oi-label">주요 식이 공급원</td><td>육류, 달걀, 유제품, 콩류(단백질 급원) 및 양배추과 채소(브로콜리), 파속 식물(마늘, 양파) 등 알리신이 풍부한 식품</td></tr>
-        <tr><td class="oi-label">화학적 존재 형태</td><td>무기황(황산염 SO₄²⁻, 아황산염) vs 유기황(메티오닌, 시스테인, MSM 등)</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 7 -->
-  <details class="oi-accordion">
-    <summary>인간의 황 섭취: 자연적 경로와 보충제의 실체</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><td class="oi-label">주요 섭취 경로 (Primary Path)</td><td>식이 단백질 내의 황 함유 아미노산(SAA)이 핵심 공급원입니다. 특히 메티오닌(Methionine)과 시스테인(Cysteine)이 체내 단백질 합성 및 황 공급을 주도합니다.</td></tr>
-        <tr><td class="oi-label">추가 섭취 필요성</td><td>일반적으로 육류, 계란 등 균형 잡힌 식사로 충분합니다. 단, 관절 질환자, 만성 염증, 채식주의자, 노년층 등 특정 상황에서 보충이 고려됩니다.</td></tr>
-        <tr><td class="oi-label">추가 섭취 형태</td><td>주로 MSM(식이유황) 보충제, 복합 관절 영양제, 기능성 식품 형태로 섭취합니다.</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 8 -->
-  <details class="oi-accordion">
-    <summary>MSM(메틸설포닐메탄)이란?</summary>
-    <div class="oi-accordion-body">
-      <p class="oi-lead" style="margin-top:0;">
-        유기황 화합물의 일종으로 관절 통증 완화 및 항염 효과로 알려져 있습니다.
-        예시: MSM 1,500mg 정제, 분말 스틱 등
-      </p>
-      <table>
-        <tr><td class="oi-label">단백질 대체 불가</td><td>필수 아미노산을 대신할 수 없습니다.</td></tr>
-        <tr><td class="oi-label">장기 데이터 부족</td><td>장기 고용량 섭취에 대한 임상 근거가 제한적이며 약물 상호작용 주의가 필요합니다.</td></tr>
-      </table>
-      <p class="oi-note">
-        <strong>MSM 제조의 실체 (The Reality)</strong><br>
-        MSM은 자연에서 극소량 발견되지만, 시중 제품은 100% 화학적 합성과 정제 과정을 거쳐
-        대량 생산됩니다. 식물 추출물처럼 마케팅되기도 하나, 실제로는 공업용 원료를 기반으로
-        합성된 화학 분자입니다.
-      </p>
-    </div>
-  </details>
-
-  <!-- 9 -->
-  <details class="oi-accordion">
-    <summary>유황의 법제화 정의 및 독성 제거의 목적</summary>
-    <div class="oi-accordion-body">
-      <p class="oi-lead" style="margin-top:0;">
-        <strong>법제화(전처리)의 개념</strong> — 원료의 정제, 세정, 가열, 흡착, 재결정 등의
-        물리·화학적 공정을 통해 불순물을 제거하고 반응성을 조절하여 표준화된 규격으로 만드는 과정
-      </p>
-      <table>
-        <tr><td class="oi-label">유해 성분 저감</td><td>독성 가스인 황화수소(H₂S), 비소(As), 셀레늄(Se), 납(Pb) 등 원광석 유래 중금속 및 불순물 제거</td></tr>
-        <tr><td class="oi-label">물성 최적화 & 제어</td><td>용해도 증대, 입도(Particle Size) 조절, 과도한 화학적 반응성 억제를 통한 제형 안정성 확보</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 10 -->
-  <details class="oi-accordion">
-    <summary>MSM 직접 섭취 vs 온EIO 간접 섭취</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th>구분</th><th>MSM 직접 섭취</th><th>온EIO 간접 섭취</th></tr>
-        <tr><td class="oi-label">주요 목적</td><td>특정 질환(관절) 집중 관리</td><td>전신 건강 증진 & 식단 개선</td></tr>
-        <tr><td class="oi-label">성분 형태</td><td>단일 화합물 (Chemical)</td><td>유기 복합체 (Bio-Complex)</td></tr>
-        <tr><td class="oi-label">정부 인증</td><td>식약처 건강기능식품 승인</td><td>농림부 비료/사료 관리법 준수</td></tr>
-        <tr><td class="oi-label">편의성</td><td>높음 (캡슐/타블렛)</td><td>보통 (조리 및 식단 구성 필요)</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 11 -->
-  <details class="oi-accordion">
-    <summary>온EIO 적용 대상 및 실증 효과 (확장) — 농작물 적용 (12종)</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th>작물</th><th>효과</th><th>비고</th></tr>
-        <tr><td class="oi-label">인삼</td><td>115% UP</td><td>6년근 30% 이상 증대, 저장성 및 크기 증대</td></tr>
-        <tr><td class="oi-label">토마토</td><td>10~15% UP</td><td>과중 1kg → 2.5kg, 당도 및 비후 향상</td></tr>
-        <tr><td class="oi-label">딸기</td><td>10~15% UP</td><td>생산량 2배 증대, 2~3일 조기 발아</td></tr>
-        <tr><td class="oi-label">고추</td><td>99% UP</td><td>선충 피해 예방, 연작피해 없음, 경매 수익 증대</td></tr>
-        <tr><td class="oi-label">쌀 (유황미)</td><td>10~15% UP</td><td>ha당 생산량 증대, 기능성(당도 효과) 성분</td></tr>
-        <tr><td class="oi-label">배추</td><td>99% UP</td><td>뿌리혹병 완벽 예방, 생산량 1.5배</td></tr>
-        <tr><td class="oi-label">무</td><td>품질 UP</td><td>뿌리혹병 예방, 토양 환경 개선</td></tr>
-        <tr><td class="oi-label">시금치</td><td>+10일</td><td>유통기한 연장, 병해충 99% 예방</td></tr>
-        <tr><td class="oi-label">브로콜리</td><td>소득 UP</td><td>kg당 800원 추가수익, 냉해 방지 효과</td></tr>
-        <tr><td class="oi-label">대마</td><td>10~15% UP</td><td>기능성분 함량 증대, 고품질 삼 생산</td></tr>
-        <tr><td class="oi-label">차잎</td><td>15% UP</td><td>잎 두께/수 증가, 카테킨 성분 증대</td></tr>
-        <tr><td class="oi-label">공통 효과</td><td colspan="2">무농약 재배 실현, 저장성 향상</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 12 -->
-  <details class="oi-accordion">
-    <summary>축산 및 양봉</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th>구분</th><th>효과</th></tr>
-        <tr><td class="oi-label">소 (Cattle)</td><td>육질 등급 향상, 소화율 개선, 불포화지방 60% 이상</td></tr>
-        <tr><td class="oi-label">돼지 (Swine)</td><td>악취(암모니아) 저감, 폐사율 감소, 불포화지방 증가</td></tr>
-        <tr><td class="oi-label">닭 (Poultry)</td><td>산란계: 산란율 증대, 비린내 제거 / 육계: 육질 개선, 성장 촉진</td></tr>
-        <tr><td class="oi-label">벌 (Honeybee)</td><td>꿀 생산량 증대, 질병(낭충봉아부패병) 예방 치료 / 월동 생존율 향상, 활력 증진</td></tr>
-      </table>
-    </div>
-  </details>
-
-  <!-- 13 -->
-  <details class="oi-accordion">
-    <summary>유황(S)의 3대 핵심 효과 및 적용 효과</summary>
-    <div class="oi-accordion-body">
-      <table>
-        <tr><th>농업 및 비료</th><th>축산 및 사료</th><th>환경 정화</th></tr>
-        <tr>
-          <td>토지 비옥화 및 지력 회복</td>
-          <td>가축 면역력(IgA/IgM) 강화</td>
-          <td>축산 분뇨 악취 획기적 저감</td>
-        </tr>
-        <tr>
-          <td>화학비료 사용 저감, 토양 산성화 방지</td>
-          <td>구제역, 설사병 등 질병 저항력 극대화</td>
-          <td>암모니아 농도 감소로 민원 해결</td>
-        </tr>
-        <tr>
-          <td>작물 병해충 저항성 증대</td>
-          <td>항생제 대체 효과</td>
-          <td>잔류 농약 분해 및 수질 개선</td>
-        </tr>
-        <tr>
-          <td>벼 키다리병, 고추 탄저병 등 예방효과</td>
-          <td>천연 항균 작용으로 약물 의존도 감소</td>
-          <td>친환경 농업 기반 마련 및 생태계 보호</td>
-        </tr>
-        <tr>
-          <td>생산성 획기적 증대</td>
-          <td>프리미엄 육질 개선</td>
-          <td>생태계 복원 (꿀벌 살리기)</td>
-        </tr>
-        <tr>
-          <td>뿌리 발육 촉진 및 출하 시기 단축</td>
-          <td>집내 색거, 불포화지방산 증가, 맛 향상</td>
-          <td>낭충봉아부패병 치료 및 폐사율 감소</td>
-        </tr>
-      </table>
-    </div>
-  </details>
-
-</div>
-<!-- ▲▲▲ [교체 영역] 끝 ▲▲▲ -->
-      
       <div class="section-head">
         <div>
           <h2 class="section-title" data-i18n="products.title">제품 카테고리</h2>
-          <p class="section-subtitle" data-i18n="products.subtitle">적용 대상에 맞춘 8개 라인업</p>
+          <p class="section-subtitle" data-i18n="products.subtitle">적용 대상에 맞춘 6개 라인업</p>
         </div>
       </div>
-     
-      <!-- 제품 카드 8개: 각 카드 클릭 시 개별 상세페이지(product-01-hanwoo.html 등)로 이동 -->
+
+      <!-- 제품 카드 6개: 각 카드 클릭 시 개별 상세페이지(product-01-hanwoo.html 등)로 이동 -->
       <div class="product-grid">
         <a class="product-card" href="product-01-hanwoo.html">
           <span class="idx">01</span>
@@ -469,23 +109,13 @@
           <span class="title" data-i18n="products.layer">산란계</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="product-05-rice.html">
+        <a class="product-card" href="product-05-agriculture.html">
           <span class="idx">05</span>
-          <span class="title" data-i18n="products.rice">쌀</span>
+          <span class="title" data-i18n="products.agriculture">농산물(벼·채소·과수)</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="product-06-vegetable.html">
+        <a class="product-card" href="product-06-aquaculture.html">
           <span class="idx">06</span>
-          <span class="title" data-i18n="products.vegetable">채소</span>
-          <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
-        </a>
-        <a class="product-card" href="product-07-fruit.html">
-          <span class="idx">07</span>
-          <span class="title" data-i18n="products.fruit">과수</span>
-          <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
-        </a>
-        <a class="product-card" href="product-08-aquaculture.html">
-          <span class="idx">08</span>
           <span class="title" data-i18n="products.aquaculture">수산</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
@@ -534,8 +164,8 @@
   <div class="container">
     <div class="footer-info">
       <p><strong data-i18n="footer.company">농업회사법인 수성(주)</strong></p>
-      <p data-i18n="footer.address">강원특별자치도 고성군 간성읍 간성로 30번길 7 KT고성빌딩 3층</p>
-      <p><span data-i18n="footer.tel">대표전화</span> : 033-682-3600 &nbsp;|&nbsp; <span data-i18n="footer.email">이메일</span> : ceo@bmpgo.com</p>
+      <p data-i18n="footer.address">주소를 입력해 주세요</p>
+      <p><span data-i18n="footer.tel">대표전화</span> : 000-0000-0000 &nbsp;|&nbsp; <span data-i18n="footer.email">이메일</span> : info@bmpgo.com</p>
       <p>&copy; 2026 <span data-i18n="footer.company">농업회사법인 수성(주)</span>. <span data-i18n="footer.copyright">All Rights Reserved.</span></p>
     </div>
     <div class="footer-lang">
