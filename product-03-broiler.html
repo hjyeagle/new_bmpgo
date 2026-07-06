@@ -3,332 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>육계(브로일러) - 온EIO(Bio Sulfur) | 농업회사법인 수성(주)</title>
+<title>육계 | 제품소개 | 농업회사법인 수성(주)</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .oi-info { max-width: 960px; margin: 0 auto; }
+  .oi-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+  .oi-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+  .oi-info h4.oi-sub-plain { font-size: 1rem; color: var(--ink); margin: 24px 0 10px; }
+
+  .oi-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+  .oi-info th, .oi-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .oi-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .oi-info td.oi-label { background: var(--bg); font-weight: 700; width: 24%; white-space: nowrap; }
+  .oi-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
+
+  .oi-accordion {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .oi-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .oi-accordion summary::-webkit-details-marker { display: none; }
+  .oi-accordion summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+  .oi-accordion[open] summary::after { content: '–'; }
+  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
+  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
+</style>
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">농업회사법인 수성(주)</a>
+  <div class="container">
+    <a href="index.html" class="logo">수성<span>(주)</span></a>
     <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">홈</a></li>
-        <li><a href="greeting.html">인사말</a></li>
-        <li><a href="index.html#products">제품소개</a></li>
-        <li><a href="index.html#notice">공지사항</a></li>
-        <li><a href="archive.html">자료실</a></li>
-        <li><a href="index.html#location">오시는 길</a></li>
-      </ul>
+      <a href="index.html" data-i18n="nav.home">홈</a>
+      <a href="greeting.html" data-i18n="nav.greeting">인사말</a>
+      <a href="index.html#products" class="active" data-i18n="nav.products">제품소개</a>
+      <a href="index.html#notice" data-i18n="nav.notice">공지사항</a>
+      <a href="archive.html" data-i18n="nav.archive">자료실</a>
+      <a href="index.html#contact" data-i18n="nav.contact">오시는 길</a>
     </nav>
-    <div class="lang-buttons">
+    <div class="header-right">
+      <div class="lang-switch">
+        <button data-lang="ko">KO</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ja">JA</button>
+        <button data-lang="zh">ZH</button>
+      </div>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="border-top: none; padding-top: 48px;">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <h1 class="section-title">육계</h1>
+        </div>
+        <a href="index.html#products" class="link-more" data-i18n="notice.more">목록으로</a>
+      </div>
+
+      <div class="oi-info" style="margin-top: 8px;">
+
+        <h2 class="oi-title">국제적 실증에 기초한 글로벌 프리미엄 육계</h2>
+        <p class="oi-lead">
+          (주)수성 온EIO(Bio Sulfur) 기술을 통한 무항생제 육계 산업화와 글로벌 시장 진출 전략
+        </p>
+        <p class="oi-lead">
+          대한민국 육계 산업은 이제 생산성 중심의 대량 사육을 넘어 맛·건강·안전성·동물복지·환경까지
+          고려하는 가치 소비 단계로 진입하고 있습니다. 농업회사법인 수성(주)은 독보적인
+          온EIO(Bio-Sulfur) 기술을 통해 무항생제·고품질 육계 사양 모델을 제시하고, 나아가
+          JBS S.A.(브라질)·Tyson Foods(미국)·Poulet de Bresse(프랑스) 등 글로벌 프리미엄 브랜드와
+          경쟁할 수 있는 'K-Sulfur Premium Meat' 비전을 제시합니다.
+        </p>
+
+        <!-- 1 -->
+        <details class="oi-accordion" open>
+          <summary>1. 온EIO(Bio Sulfur)의 핵심 기술 및 안전성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
+              <tr><td class="oi-label">특허 기술</td><td>온EIO 사료 및 비료 제조 기술 (특허 제 10-1968905호)</td><td>온EIO 법제기술, 독성 제거 및 약리효과 증대</td></tr>
+              <tr><td class="oi-label">안전성 입증</td><td>미국 공인 인증기관의 성분 안전성 테스트 결과 보유</td><td>마케팅 핵심 포인트: 글로벌 스탠다드 안전성 확보</td></tr>
+              <tr><td class="oi-label">주요 기능</td><td>① 독성 제거 및 미네랄 강화 &nbsp;② 불포화지방산 함량 증대 &nbsp;③ 동식물 성장 촉진 및 면역력 강화</td><td>항생제·농약 저감: 친환경 무항생제 브랜드</td></tr>
+            </table>
+            <p class="oi-note">
+              온EIO란, 자연에서 얻은 광물성 유황의 독성을 독자적인 고열 처리 및 특수 미생물 발효
+              공법으로 완벽히 제거(Detoxification)하고, 생체 이용률이 높은 나노 입자 형태로
+              변환시킨 첨단 바이오 물질입니다. 유황은 본래 강력한 해독 작용과 면역력 증강, 단백질
+              합성 효과가 있으나 독성(비소, 납 등) 때문에 사용이 제한되었습니다. 당사의 '법제 기술'은
+              이 독성을 100% 제거하여 가축에게 안전하게 급여할 수 있는 '천연 항생제' 대체재를
+              완성했습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 2 -->
+        <details class="oi-accordion">
+          <summary>2. 수성(주) 온EIO 사료 vs 식이유황(MSM) 비교</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>온EIO(수성(주) 특허기술)</th><th>식이유황(MSM)</th><th>비고</th></tr>
+              <tr><td class="oi-label">유황 순도</td><td>99.9% (초고순도)</td><td>약 34% (나머지는 탄소, 수소, 산소 등)</td><td>효능 차이: 온EIO가 동일 용량 대비 3배 이상 강력한 유황의 약리 효과를 발휘함</td></tr>
+              <tr><td class="oi-label">열 저항성</td><td>강함 (가공 용이)</td><td>약함 (130℃ 이상에서 성분 파괴)</td><td>사료 가공 적성: 배합사료 펠렛 제조 시 고온·고압 공정을 견딜 수 있어 대량 생산에 적합</td></tr>
+              <tr><td class="oi-label">분자량</td><td>나노 입자화 (흡수율 극대화)</td><td>분자량이 큼</td><td>체내 흡수율: 나노 입자 형태의 법제 유황은 세포막 투과가 용이하여 체내 흡수 및 이용률이 월등함</td></tr>
+              <tr><td class="oi-label">주요 용도</td><td>전 축종 사료첨가제, 비료</td><td>주로 인체용 건강기능식품(관절 영양제 등)</td><td>범용성: 육계, 산란계, 한우, 양돈 등 전 축종 및 농작물에도 적용 가능</td></tr>
+              <tr><td class="oi-label">경제성</td><td>우수 (대량 생산 가능)</td><td>낮음 (고가)</td><td>농가 수익성: 합리적인 가격으로 공급 가능하여 사료비 부담 없이 농가 소득 증대에 기여</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 3 -->
+        <details class="oi-accordion">
+          <summary>3. 온EIO 급여를 통한 육계 생체 적용 메커니즘과 효능</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              온EIO는 육계의 대사 과정을 근본적으로 개선하며 사육 전 단계에 걸쳐 긍정적인 영향을
+              미칩니다. 사료 내 황 농도가 0.15~0.2% 수준일 때 단백질 합성량이 최대치에 도달하여
+              증체량 향상으로 이어지며, 장내 유익균을 활성화하고 밀착연접(Tight Junction) 단백질
+              표현을 강화하여 장벽 보호 기능과 소화율을 동시에 높입니다.
+            </p>
+            <table>
+              <tr><th style="width:20%;">구분</th><th style="width:26%;">주요 효과</th><th>세부 내용 및 메커니즘</th></tr>
+              <tr><td class="oi-label" rowspan="4">생리적 효과</td><td>면역기능 강화</td><td>글루타치온(Glutathione) 생성 촉진으로 항산화 작용 및 면역력 증강</td></tr>
+              <tr><td>소화율·장 건강 개선</td><td>장내 유익균 증가 및 밀착연접 단백질 표현형 강화로 장 상피 장벽 보호 기능 향상</td></tr>
+              <tr><td>육질 개선</td><td>불포화지방산(올레인산) 비율 확대 및 근육 단백질 증가로 풍미·육질 동반 개선</td></tr>
+              <tr><td>깃털·성장 촉진</td><td>메티오닌·시스테인 합성 촉진으로 근육 단백질 증가 및 건강한 깃털 성장 견인</td></tr>
+              <tr><td class="oi-label" rowspan="2">생산성 향상</td><td>증체량 개선</td><td>사료 내 황 농도 0.15~0.2%에서 미생물 단백질 합성 최대화, 증체량 및 도체중 증가</td></tr>
+              <tr><td>사료효율 개선</td><td>사료요구율(FCR) 감소 및 영양소 이용효율 증가로 사료비 절감</td></tr>
+              <tr><td class="oi-label" rowspan="2">경제적 효과</td><td>생산비 절감</td><td>사료비 감소, 항생제·약품비 감소, 출하일수 단축에 따른 운영비 절감</td></tr>
+              <tr><td>수익성 향상</td><td>무항생제 인증 및 프리미엄 브랜드 런칭을 통한 판매단가 상승, 농가소득 증대</td></tr>
+            </table>
+            <p class="oi-note">
+              ※ 원본 자료에는 반추동물(소·양 등)의 반추위 내 메탄가스 저감 기전이 육계 파트와 함께
+              서술되어 있었으나, 육계는 반추위가 없어 해당 기전이 적용되지 않으므로 본 페이지에서는
+              제외하고 가금류에 실제로 검증된 단백질 합성·항산화·장 건강 기전만 반영하였습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 4 -->
+        <details class="oi-accordion">
+          <summary>4. 축산(육계) 사료 적용 효능(1): 생산성 지표</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              육계 농장의 수익성은 결국 '얼마나 적은 사료로, 얼마나 빨리, 건강하게 키워내는가'에
+              달려 있으며, 온EIO는 이 핵심 지표들을 동시에 개선합니다.
+            </p>
+            <table>
+              <tr><th style="width:22%;">구분</th><th>기대 효과(Target)</th><th>상세 내용 및 실증 근거</th><th>농가 기대 이익</th></tr>
+              <tr><td class="oi-label">1. 사료효율 개선</td><td>사료요구율 ▼ (1.481→1.442)</td><td>단국대학교 실험(29일령 기준): CON 1.481 대비 온EIO 0.02% 첨가구(S3) 1.442로 개선(P=0.0138). 기전: 유황 성분이 장내 유익균 총을 안정화시키고 소화 효소 활성을 도움</td><td>비용 절감: 같은 양의 사료로 더 많이 성장하므로 사료비 절감</td></tr>
+              <tr><td class="oi-label">2. 증체율 향상</td><td>종료체중 ▲ (1,379g→1,416g)</td><td>단국대학교 실험(29일령): CON 1,379g 대비 온EIO 0.02% 첨가구 1,416g으로 선형 증가(P&lt;0.0001). CJ 인도네시아 실험(30일령): 항생제 처리구 1,627g 대비 온EIO(BMP 0.05%) 1,638g</td><td>회전율 증대: 출하일수 단축으로 연간 사육 회전율 상승, 고정비 절감</td></tr>
+              <tr><td class="oi-label">3. 폐사율 감소</td><td>폐사율 ▼ (5.71%→3.81%)</td><td>CJ 인도네시아 실험: 항생제 처리구 폐사율 5.71% 대비 온EIO 처리구 3.81%로 1.9%p 개선(AGP 대체효과 확인)</td><td>안정적 출하: 육성율 향상으로 출하 두수 보장, 무항생제 브랜드 신뢰도 확보</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="oi-accordion">
+          <summary>5. 질병 방어 및 무항생제 사육 실증</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:22%;">구분</th><th>기대 효과(Target)</th><th>상세 내용 및 메커니즘</th><th>브랜드 기대가치</th></tr>
+              <tr><td class="oi-label">면역력 강화</td><td>항산화·항염증 기능</td><td>온EIO 유래 황 함유 아미노산이 글루타치온(Glutathione) 전구체로 작용, 세포 내 산화 스트레스 감소 및 면역력 강화. 국제 학술지(Animals, 2022)는 유황 보충이 혈액 항산화력과 장 융모 구조를 개선함을 확인</td><td>질병 리스크 관리: 콕시디아 백신 챌린지 등 질병 스트레스 상황에서도 면역 지표 우위 확보</td></tr>
+              <tr><td class="oi-label">무항생제 사육 실현</td><td>자체 방어력 증대</td><td>경기지역 자체 실증: 사육기간 중 일체의 항생제·약품 투여 없이, 온EIO 급이 실험군이 25일령 1.8kg(대조군 1.0kg), 46일령 4.3kg(대조군 2.7kg)으로 대조군 대비 월등한 체중 증가를 보임</td><td>친환경 이미지: 항생제 의존도를 낮춰 '진정한 무항생제 브랜드'로서의 입지 강화</td></tr>
+              <tr><td class="oi-label">육질 개선 및 상품성 강화</td><td>맛과 품질의 차별화</td><td>불포화지방산 증가: 온EIO 급이 육계는 불포화지방산 68.9%(올레인산 42.3%)로 올리브유 수준의 지방 구조 확보. 관능적 가치: 메일라드 반응 전구체인 메티오닌·글루탐산·글리신 함량 동반 상승으로 풍미 강화</td><td>프리미엄 포지셔닝: 고급 레스토랑 공급 및 프리미엄 유통 채널 진입 근거 확보</td></tr>
+            </table>
+            <p class="oi-note">
+              특히 '무항생제 사육'과 '면역력 증강'은 본 제안의 가장 강력한 무기이며, 온EIO 급여
+              육계는 항생제 사용을 줄이면서도 생산성 지표(체중·폐사율)에서 우위를 확보해, 가치
+              소비를 지향하는 소비자층까지 흡수할 수 있는 잠재력이 있습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="oi-accordion">
+          <summary>6. 실증 데이터: 단국대학교 육계 사양·육질 실험 결과</summary>
+          <div class="oi-accordion-body">
+            <h4 class="oi-sub-plain">사료 내 온EIO 첨가가 생산성에 미치는 영향 (29일령 기준)</h4>
+            <table>
+              <tr><th>구분</th><th>CON(기본사료)</th><th>S1(0.005%)</th><th>S2(0.01%)</th><th>S3(0.02%)</th><th>비고</th></tr>
+              <tr><td class="oi-label">종료 체중(g)</td><td>1,379</td><td>1,392</td><td>1,405</td><td>1,416</td><td>선형 증가(P&lt;0.0001)</td></tr>
+              <tr><td class="oi-label">전체 증체량(g)</td><td>1,334</td><td>1,348</td><td>1,360</td><td>1,371</td><td>선형 증가(P&lt;0.0001)</td></tr>
+              <tr><td class="oi-label">전체 사료요구율</td><td>1.481</td><td>1.454</td><td>1.449</td><td>1.442</td><td>개선(P=0.0138)</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">사료 내 온EIO 첨가가 육질특성에 미치는 영향</h4>
+            <table>
+              <tr><th>구분</th><th>CON</th><th>S1(0.005%)</th><th>S2(0.01%)</th><th>S3(0.02%)</th><th>비고</th></tr>
+              <tr><td class="oi-label">가슴육 적색도(a*)</td><td>11.39</td><td>11.51</td><td>11.62</td><td>11.74</td><td>유의적 증가(P=0.0010)</td></tr>
+              <tr><td class="oi-label">저장감량 7일(%)</td><td>10.78</td><td>10.71</td><td>10.52</td><td>10.34</td><td>감소(P=0.0018), 보수성 개선</td></tr>
+            </table>
+            <p class="oi-note">
+              ※ 처리구: CON 기본사료 / S1·S2·S3 온EIO 0.005~0.02% 첨가구. 동일 행 내 위 첨자가 다르면
+              통계적 유의차 있음(P&lt;0.05). 상세 통계표 및 시험성적서 원본은
+              <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.
+            </p>
+
+            <h4 class="oi-sub-plain">CJ 인도네시아 사료 실험 결과 (보종군치 시험농장, 30일령 출하)</h4>
+            <table>
+              <tr><th>구분</th><th>체중(g)</th><th>사료요구율(FCR)</th><th>폐사율(%)</th><th>생산성 지수(PI)</th></tr>
+              <tr><td class="oi-label">항생제 처리구</td><td>1,627</td><td>1.44</td><td>5.71</td><td>343</td></tr>
+              <tr><td class="oi-label">온EIO(BMP 0.05%)</td><td>1,638</td><td>1.41</td><td>3.81</td><td>360</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="oi-accordion">
+          <summary>7. 육질 차별화: 풍미와 미식적 가치 (한국식품연구원 KFRI)</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              프리미엄 육계 시장에서 소비자가 지불하는 가치는 결국 '맛'에서 결정됩니다. 한국식품연구원(KFRI)
+              분석 결과, 온EIO 사료를 급이한 육계는 단순한 단백질 공급원을 넘어 올리브유에 비견되는
+              건강한 지방 구조를 보유함이 입증되었습니다. 황 함유 아미노산은 가열 조리 시 메일라드
+              반응(Maillard Reaction)을 통해 수백 가지의 향기 성분을 생성하며, 온EIO 사료를 섭취한
+              육계는 근육 내 메티오닌 함량이 높아져 조리 시 풍미가 훨씬 진해집니다.
+            </p>
+            <table>
+              <tr><th>분석 항목</th><th>세부 성분 및 함량</th><th>핵심 특징 및 가치</th></tr>
+              <tr><td class="oi-label">지방산 조성</td><td>불포화지방산 68.9%(Oleic acid 42.3%)</td><td>올리브유 수준의 건강한 지방 구조</td></tr>
+              <tr><td class="oi-label">아미노산</td><td>글루탐산(2,429.6mg), 리신 등</td><td>감칠맛 성분 및 필수 아미노산 매우 풍부</td></tr>
+              <tr><td class="oi-label">오메가 지방산</td><td>리놀렌산(오메가-3) 존재</td><td>고단백 프리미엄 육질 구조 확립</td></tr>
+            </table>
+            <p class="oi-note">
+              단맛을 내는 글리신(Glycine)과 감칠맛의 핵심인 글루탐산(Glutamic acid)의 함량도 동반
+              상승하는 것으로 나타나, 세계 최정상급 풍미를 가진 'K-프리미엄' 육계임을 뒷받침합니다.
+              시험성적서 원본은 <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="oi-accordion">
+          <summary>8. 국제 학술지(SCI급) 논문 근거</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-note" style="margin-top:0;">
+              ※ 현재 공개된 국제 논문은 대부분 유기 황(MSM) 기반 연구이며, 당사의 광물성 온EIO는
+              미생물 반응 및 무기광물 전환 메커니즘을 기반으로 하므로 단순 비교가 아닌 별도의 효과
+              검증 체계로 해석되어야 합니다.
+            </p>
+            <table>
+              <tr><th>구분</th><th>핵심 원리</th><th>주요 논문</th><th>실증 연결</th></tr>
+              <tr><td class="oi-label">황 아미노산(SAA)과 성장 성능·면역력</td><td>황 아미노산은 육계의 단백질 합성과 면역 반응 조절에 필수적인 영양소</td><td>Adhikari et al.(2022), Frontiers in Veterinary Science</td><td>체중 증가율 상승, 사료요구율 개선, 가슴살 수율 증가 → 출하일수 단축·도체중 증가 근거</td></tr>
+              <tr><td class="oi-label">항산화 시스템 및 질병 저항성</td><td>유황 아미노산은 글루타치온 전구체로 작용, 세포 산화 스트레스 보호</td><td>Kim et al.(2022), Animals(Basel)</td><td>혈액 항산화력 및 장 융모 구조 개선 → 폐사율 감소, 무항생제 사육 환경 뒷받침</td></tr>
+              <tr><td class="oi-label">지방산 조성 및 풍미 강화</td><td>올레인산 증가는 지방 융점을 낮추고, 황 함유 아미노산은 메일라드 반응으로 향미 성분 생성</td><td>Journal of Food Science, 닭고기 부산물 가수분해물 연구</td><td>불포화지방산 68.9%·고글루탐산 함량 → 프리미엄 풍미 근거</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 9 -->
+        <details class="oi-accordion">
+          <summary>9. 글로벌 프리미엄 브랜드 구축 전략</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              현재 글로벌 육계시장은 JBS S.A.(브라질), Tyson Foods(미국), Poulet de Bresse(프랑스),
+              Label Rouge(프랑스) 등 프리미엄 브랜드가 다수 존재하나, 압도적 우위를 점하는 글로벌
+              브랜드는 아직 부재합니다. 온EIO 육계는 나노 미네랄 기술을 통한 기능성(항산화, 면역)과
+              무항생제·ESG 가치를 결합하여 이 공백을 메우는 'K-Sulfur Premium Meat'를 제안합니다.
+            </p>
+            <table>
+              <tr><th>국가</th><th>브랜드</th><th>핵심 특징</th><th>시사점</th></tr>
+              <tr><td class="oi-label">브라질</td><td>JBS S.A.</td><td>세계 최대 규모 생산·유통망</td><td>규모의 경제 기반 가격 경쟁력</td></tr>
+              <tr><td class="oi-label">미국</td><td>Tyson Foods</td><td>대형 브랜드력, 다양한 가공식품 라인업</td><td>가공·유통 연계 마케팅 참고 모델</td></tr>
+              <tr><td class="oi-label">프랑스</td><td>Poulet de Bresse / Label Rouge</td><td>지역 인증(AOC), 방목·저밀도 사육, 고가 포지셔닝</td><td>인증제 기반 프리미엄 브랜딩 참고 모델</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">단계별 시장 구축 전략</h4>
+            <table>
+              <tr><th>단계</th><th>핵심 목표</th><th>주요 전략</th></tr>
+              <tr><td class="oi-label">1단계: 기술 표준화</td><td>온EIO 사료 표준사양 확립</td><td>국가 인증시스템 도입</td></tr>
+              <tr><td class="oi-label">2단계: 글로벌화</td><td>육계 프리미엄 시장 진입</td><td>미쉐린 등 고급 레스토랑 공급 및 주요국 수출</td></tr>
+              <tr><td class="oi-label">3단계: 브랜드 완성</td><td>세계 최고가 브랜드 달성</td><td>글로벌 육계시장에서 독보적인 K-프리미엄 브랜드 확립</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">표준화된 프리미엄 모델의 전국적 확산</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              농·축협과 지방자치단체는 온EIO 급이 모델을 표준 사양 관리 지침으로 채택하여 지역
+              브랜드의 가치를 상향 평준화할 필요가 있습니다. '온EIO 육계인증제'를 도입하여 농가에는
+              고품질 생산에 따른 인센티브를 제공하고, 소비자에게는 검증된 품질을 보증하는 시스템
+              구축이 시급합니다. 이는 지역 소멸 위기에 처한 농촌 경제에 새로운 활력을 불어넣고,
+              육계를 대한민국 축산의 새로운 표준으로 육성하는 지름길이 될 것입니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 10 : 인증·시험성적서 (통합) -->
+        <details class="oi-accordion">
+          <summary>10. 인증·시험성적서</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:32%;">시험·인증 자료</th><th>주요 내용</th></tr>
+              <tr><td class="oi-label">특허증</td><td>온EIO 사료 및 비료 제조 기술 (특허 제10-1968905호)</td></tr>
+              <tr><td class="oi-label">단국대학교 육계 실험 결과</td><td>29일령 기준 생산성(체중·사료요구율) 및 육질특성(가슴육 색도·저장감량) 통계표</td></tr>
+              <tr><td class="oi-label">CJ 인도네시아 사료 실험 결과</td><td>항생제 처리구 대비 온EIO 처리구 체중·FCR·폐사율·생산성지수(PI) 비교</td></tr>
+              <tr><td class="oi-label">한국식품연구원(KFRI) 시험성적서</td><td>지방산 조성, 아미노산 함량 등 육질·영양 성분 분석 결과</td></tr>
+              <tr><td class="oi-label">자체 사육 실증 현장자료</td><td>경기지역 무항생제 실험군·대조군 일령별 체중 비교 사진</td></tr>
+            </table>
+            <p class="oi-lead" style="margin-top: 18px; margin-bottom: 8px;">
+              위 시험성적서 원본 스캔본 및 사육 현장 이미지는 아래 자료실에서 확인하실 수 있습니다.
+              (제품 상세페이지 로딩 속도 확보를 위해 고해상도 이미지는 본문에 직접 삽입하지 않고
+              자료실로 일원화하였습니다.)
+            </p>
+            <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지·성적서 확인</a>
+          </div>
+        </details>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; max-width: 960px; margin-left: auto; margin-right: auto;">
+        <a href="product-02-pork.html" style="color: var(--ink-soft);">← 돈육</a>
+        <a href="product-04-layer.html" style="color: var(--ink-soft);">산란계 →</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-info">
+      <p><strong data-i18n="footer.company">농업회사법인 수성(주)</strong></p>
+      <p data-i18n="footer.address">주소를 입력해 주세요</p>
+      <p><span data-i18n="footer.tel">대표전화</span> : 000-0000-0000 &nbsp;|&nbsp; <span data-i18n="footer.email">이메일</span> : info@bmpgo.com</p>
+      <p>&copy; 2026 <span data-i18n="footer.company">농업회사법인 수성(주)</span>. <span data-i18n="footer.copyright">All Rights Reserved.</span></p>
+    </div>
+    <div class="footer-lang">
       <button data-lang="ko">KO</button>
       <button data-lang="en">EN</button>
       <button data-lang="ja">JA</button>
       <button data-lang="zh">ZH</button>
     </div>
   </div>
-</header>
-
-<main class="product-detail">
-
-  <section class="product-hero">
-    <p class="breadcrumb"><a href="index.html">홈</a> &gt; 제품소개 &gt; 육계(브로일러)</p>
-    <h1>글로벌 프리미엄 육계 산업화 전략</h1>
-    <p class="subtitle">온EIO(Bio Sulfur) 기술 기반 · 항생제 없는 프리미엄 닭고기 솔루션</p>
-  </section>
-
-  <section class="product-accordion-group">
-
-    <!-- 01. 인사말 및 산업 현황 -->
-    <details class="accordion-item" open>
-      <summary>01. 인사말 및 육계 산업 현황</summary>
-      <div class="accordion-body">
-        <p>농업회사법인 수성(주)는 신물질 등록을 앞둔 특별한 소재 온EIO(Bio Sulfur)를 통해 우리 농축수산업의
-        근본적인 경쟁력을 강화하고, 소비자에게는 더 건강한 먹거리를 제공한다는 사명감으로 설립되었습니다.
-        현재 대한민국 농축산업은 관행적인 화학 비료 및 약품 사용에 따른 토양·생태계 훼손과 질병 저항성
-        약화라는 위기에 직면해 있으며, 귀사와 함께 자연과의 조화를 통한 '친환경 축산 시스템'을 구축하여
-        글로벌 시장에서 인정받는 경쟁력을 갖추고자 합니다.</p>
-
-        <h3>화학물질·항생제 남용이 부른 육계 산업의 위기</h3>
-        <ul>
-          <li><strong>생태계 파괴의 악순환</strong>: 화학 비료·사료 가격 변동에 따른 공급 불안정, 토양 산성화,
-          구제역·PED 등 각종 전염병으로 인한 생산성 저하 및 항생제 남용 심화</li>
-          <li><strong>소비자 신뢰 하락</strong>: 화학물질 남용 → 환경 오염 → 축산물 안전성 저하 → 국민 건강
-          위협으로 이어지는 고리 형성. 소비자는 '무항생제', '동물복지', '기능성' 중심의 가치 소비로 이동 중</li>
-        </ul>
-
-        <h3>글로벌 프리미엄 육계 산업화 전략의 필요성</h3>
-        <p>글로벌 육계 산업은 생산성 중심의 대량 사육 방식이 한계에 부딪히며 전환점을 맞이하고 있습니다.
-        JBS S.A.(브라질), Tyson Foods(미국), Poulet de Bresse(프랑스), Label Rouge(프랑스) 등 프리미엄
-        브랜드가 다수 존재하나, 압도적 우위를 점하는 글로벌 브랜드는 아직 부재한 상황입니다. 기후 변화에
-        따른 탄소중립 요구와 ESG 경영이 축산업의 필수 지표가 되면서, 사료 효율 향상과 무항생제 사육은
-        육계 프리미엄 브랜드화의 핵심 요소가 되었습니다.</p>
-        <p>수성(주)는 최신 실증 데이터와 국제 학술지 연구 성과를 바탕으로, 온EIO 사료를 급이한 육계가 어떻게
-        국제적 실증 가치를 확보하고 글로벌 프리미엄 시장을 구축할 것인지에 대한 대한민국 축산의 새로운
-        표준 'K-프리미엄' 로드맵을 제시합니다.</p>
-      </div>
-    </details>
-
-    <!-- 02. 온EIO란 -->
-    <details class="accordion-item">
-      <summary>02. 미래 농·축산업의 새로운 핵심 솔루션, 온EIO(Bio Sulfur)</summary>
-      <div class="accordion-body">
-        <table>
-          <tr><th>구분</th><th>내용</th></tr>
-          <tr>
-            <td>온EIO란?</td>
-            <td>자연에서 얻은 광물성 유황의 독성을 독자적인 고열 처리 및 특수 미생물 발효 공법으로 완벽히
-            제거(Detoxification)하고, 생체 이용률이 높은 나노 입자 형태로 변환시킨 첨단 바이오 물질</td>
-          </tr>
-          <tr>
-            <td>왜 온EIO인가?</td>
-            <td>유황은 본래 강력한 해독 작용·면역력 증강·단백질 합성 효과가 있으나 독성(비소, 납 등) 때문에
-            사용이 제한되어 왔습니다. 당사의 '법제 기술'은 이 독성을 100% 제거하여 가축에게 안전하게 급여할
-            수 있는 '천연 항생제' 대체재를 완성했습니다.</td>
-          </tr>
-        </table>
-
-        <h3>미생물 기반 바이오 산화 공정의 혁신성</h3>
-        <p>수성(주)에서 생산하는 온EIO는 화석 연료나 광산에서 추출한 일반 유황과 달리, 황 산화 박테리아인
-        Thiobacillus 균주를 활용한 생물학적 공정을 통해 생산됩니다. 이 과정에서 미생물은 수소황화물(H₂S)을
-        산화시켜 원소 황(S⁰) 형태로 세포 외부에 배출하며, 이때 생성되는 황 입자는 나노 단위의 미세한 크기를
-        가지고 표면에 단백질·다당류로 구성된 친수성 막을 형성합니다.</p>
-        <p>일반 원소 황이나 MSM은 소수성(Hydrophobic)이 강해 물에 잘 섞이지 않고 뭉치는 경향이 있으나, 온EIO는
-        고도의 친수성(Hydrophilic)을 나타내어 체내 액상 환경에서 완벽하게 분산됩니다. 이는 황 성분의 표면적을
-        극대화하여 생물학적 이용률(Bioavailability)을 MSM 대비 비약적으로 높여줍니다.</p>
-      </div>
-    </details>
-
-    <!-- 03. 기술적 본질 및 MSM 대비 우위성 -->
-    <details class="accordion-item">
-      <summary>03. 온EIO의 기술적 본질과 일반 MSM 대비 우위성</summary>
-      <div class="accordion-body">
-        <p>유황은 가축 체내에서 필수 아미노산인 메티오닌(Methionine)과 시스테인(Cysteine)을 합성하는 데
-        필요한 핵심 원소입니다. 그러나 기존 무기 유황은 독성과 소수성으로 인해 가축 급이에 한계가 있었고,
-        식이유황(MSM)은 비용 효율성 및 미생물 이용률 측면에서 개선의 여지가 있었습니다.</p>
-
-        <h3>수치적 우위 분석: 온EIO vs 일반 MSM</h3>
-        <table>
-          <tr><th>비교 항목</th><th>단위</th><th>일반 식이유황(MSM)</th><th>수성(주) 온EIO</th><th>우위성 결과</th></tr>
-          <tr><td>수분 분산성(Dispersion)</td><td>%</td><td>12.5</td><td>98.4</td><td>약 7.8배 높음</td></tr>
-          <tr><td>입자 평균 크기</td><td>μm</td><td>150 - 300</td><td>0.05 - 0.2</td><td>나노급 미세 입자</td></tr>
-          <tr><td>미생물 접촉 면적</td><td>m²/g</td><td>0.8</td><td>45.2</td><td>약 56배 증가</td></tr>
-          <tr><td>메티오닌 합성 효율</td><td>%</td><td>100(기준)</td><td>128.5</td><td>28.5% 향상</td></tr>
-          <tr><td>지질 산화 억제율(TBARS)</td><td>%</td><td>15.2</td><td>34.7</td><td>2배 이상의 항산화력</td></tr>
-        </table>
-        <p>이러한 수치적 우위는 온EIO가 단순한 영양 보충제를 넘어, 대사 시스템을 근본적으로 최적화할 수 있는
-        고효율 기능성 소재임을 입증합니다. MSM이 주로 유기황 공급원 역할에 국한된다면, 온EIO는 미생물과의
-        직접적인 상호작용을 통해 단백질 합성과 항산화 대사를 동시에 견인하는 역할을 수행합니다.</p>
-      </div>
-    </details>
-
-    <!-- 04. 핵심 기술 및 안전성 -->
-    <details class="accordion-item">
-      <summary>04. 온EIO의 핵심 기술 및 안전성</summary>
-      <div class="accordion-body">
-        <table>
-          <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
-          <tr><td>특허 기술</td><td>온EIO 사료 및 비료 제조 기술(특허 제10-1968905호)</td><td>법제 유황 기술</td></tr>
-          <tr><td>안전성 입증</td><td>미국 공인 인증기관의 성분 안전성 테스트 결과 보유</td><td>-</td></tr>
-          <tr><td>마케팅 핵심 포인트</td><td>① 독성 제거 및 미네랄 강화 ② 불포화지방산 함량 증대 ③ 성장 촉진
-          및 면역력 강화 ④ 항생제·농약 저감</td><td>-</td></tr>
-        </table>
-
-        <h3>수성(주) 온EIO 사료 vs 식이유황(MSM) 비교</h3>
-        <table>
-          <tr><th>구분</th><th>온EIO 특허기술</th><th>식이유황(MSM)</th><th>비고</th></tr>
-          <tr><td>유황순도</td><td>99.9%(고순도)</td><td>약 34%(나머지는 수소·탄소 등)</td><td>온EIO가 3배 이상 훨씬 강력</td></tr>
-          <tr><td>열 저항성</td><td>강함(가공 용이)</td><td>약함(130℃ 이상 파괴)</td><td>사료 펠렛가공 시 고온 견딤</td></tr>
-          <tr><td>분자량</td><td>나노 입자(흡수율 극대화)</td><td>분자량이 큼</td><td>온EIO가 체내 흡수에 유리</td></tr>
-          <tr><td>주요 용도</td><td>전 축종 사료첨가제, 비료</td><td>주로 인체용 건강기능식품</td><td>육계 사료 등 고온가공 가능</td></tr>
-          <tr><td>경제성</td><td>우수(대량 생산 가능)</td><td>낮음(고가)</td><td>농가 소득 증대에 적합</td></tr>
-        </table>
-      </div>
-    </details>
-
-    <!-- 05. 육질 및 영양성분 실증 -->
-    <details class="accordion-item">
-      <summary>05. 육질 및 영양 성분의 과학적 실증 (한국식품연구원)</summary>
-      <div class="accordion-body">
-        <p>한국식품연구원(KFRI)의 분석 결과, 온EIO 사료를 급이한 육계는 단순한 단백질 공급원을 넘어 올리브유에
-        비견되는 건강한 지방 구조를 보유함이 입증되었습니다.</p>
-        <table>
-          <tr><th>분석 항목</th><th>세부 성분 및 함량</th><th>핵심 특징 및 가치</th></tr>
-          <tr><td>지방산 조성</td><td>불포화지방산 68.9%(Oleic acid 42.3%)</td><td>올리브유 수준의 건강한 지방 구조</td></tr>
-          <tr><td>아미노산</td><td>글루탐산(2,429.6mg), 리신 등</td><td>감칠맛 성분 및 필수 아미노산 매우 풍부</td></tr>
-          <tr><td>오메가 지방산</td><td>리놀렌산(오메가-3) 존재</td><td>고단백 프리미엄 육질 구조 확립</td></tr>
-        </table>
-        <p class="note">※ 상세 시험성적서 원본은 <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.</p>
-      </div>
-    </details>
-
-    <!-- 06. 사육 실증 데이터 -->
-    <details class="accordion-item">
-      <summary>06. 육계 사육 실증 데이터 (단국대학교·CJ 인도네시아 외)</summary>
-      <div class="accordion-body">
-        <h3>단국대학교 육계 실험 결과 — 생산성 지표(29일령 기준)</h3>
-        <table>
-          <tr><th>구분</th><th>CON(기본사료)</th><th>S1(0.005%)</th><th>S2(0.01%)</th><th>S3(0.02%)</th><th>비고</th></tr>
-          <tr><td>종료 체중(29일령, g)</td><td>1,379</td><td>1,392</td><td>1,405</td><td>1,416</td><td>선형 증가(P&lt;0.0001)</td></tr>
-          <tr><td>전체 사료요구율</td><td>1.481</td><td>1.454</td><td>1.449</td><td>1.442</td><td>개선(P=0.0138)</td></tr>
-          <tr><td>전체 증체량(g)</td><td>1,334</td><td>1,348</td><td>1,360</td><td>1,371</td><td>선형 증가(P&lt;0.0001)</td></tr>
-        </table>
-        <p class="note">※ 처리구: CON 기본사료 / S1·S2·S3 온EIO 0.005~0.02% 첨가구. 동일 행 내 위 첨자가 다르면 통계적 유의차 있음(P&lt;0.05).</p>
-
-        <h3>CJ 인도네시아 사료 실험 결과 (보종군치 시험농장, 30일령 출하)</h3>
-        <table>
-          <tr><th>구분</th><th>체중(g)</th><th>사료요구율(FCR)</th><th>폐사율(%)</th><th>생산성 지수(PI)</th></tr>
-          <tr><td>항생제 처리구</td><td>1,627</td><td>1.44</td><td>5.71</td><td>343</td></tr>
-          <tr><td>온EIO(BMP 0.05%)</td><td>1,638</td><td>1.41</td><td>3.81</td><td>360</td></tr>
-        </table>
-        <p>온EIO 사료는 항생제 처리구 대비 사료요구율 우위, 폐사율 1.9%p 개선 효과를 보였으며 이는 AGP(항생제
-        대체 성장촉진) 효과가 있음을 시사합니다.</p>
-
-        <h3>자체 사육 실증(경기지역, 무항생제 실험군 vs 대조군)</h3>
-        <table>
-          <tr><th>일령</th><th>실험군(온EIO 급이)</th><th>대조군</th></tr>
-          <tr><td>25일령</td><td>1.8kg</td><td>1.0kg</td></tr>
-          <tr><td>32일령</td><td>2.4kg</td><td>1.3kg</td></tr>
-          <tr><td>46일령</td><td>4.3kg</td><td>2.7kg</td></tr>
-        </table>
-        <p class="note">실험군은 사육기간 중 일체의 항생제 및 약품을 투여하지 않고, 면역력이 강하고 건강한
-        무항생제 닭으로 사육되었습니다. 사육 현장 상세 이미지는 <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.</p>
-      </div>
-    </details>
-
-    <!-- 07. 기술적 메커니즘 -->
-    <details class="accordion-item">
-      <summary>07. 온EIO 프리미엄 육계의 기술적 메커니즘</summary>
-      <div class="accordion-body">
-        <p>온EIO의 효과는 실험실 수치에 그치지 않고 다수의 국제 학술 논문을 통해 과학적 타당성이 검증되었습니다.
-        영양학적 관점에서 온EIO는 단순한 사료 첨가제를 넘어 가금류의 생리 대사를 최적화하는 촉매제 역할을
-        수행하며, 핵심 대사 경로를 통해 육계의 육질과 생산성을 개선합니다.</p>
-
-        <h3>단백질 합성 촉진 및 육질 개선</h3>
-        <p>유황은 가금류 체내에서 필수 아미노산인 메티오닌(Methionine)과 시스테인(Cysteine) 합성에 필수적인
-        원소이며, 이는 근육 단백질 증가와 건강한 깃털 성장을 직접적으로 견인합니다. 국제 저널인 Veterinary
-        World 및 Journal of Animal Science에 발표된 연구는 사료 내 황 농도가 0.15%~0.2% 수준일 때 미생물
-        단백질 합성량이 최대치에 도달하며, 이는 곧 가축의 증체량 향상으로 이어진다는 점을 강조합니다.</p>
-
-        <h3>항산화 시스템 강화</h3>
-        <p>온EIO 유래 황 함유 아미노산은 강력한 항산화 물질인 글루타치온(Glutathione)의 전구체로 작용하여
-        세포 내 산화 스트레스를 감소시키고 면역력을 강화합니다.</p>
-
-        <h3>항염증 및 장 상피 장벽 보호 기능</h3>
-        <p>과거 무기 황의 과도한 급이는 장 상피 세포의 염증을 유발할 수 있다는 우려가 있었습니다. 그러나
-        온EIO는 미생물에 의해 조절된 방출(Controlled release) 기전을 가지므로 급격한 농도 상승을 억제합니다.
-        오히려 온EIO 급이는 장내 미생물의 다양성을 증진시키고, 밀착연접(Tight Junction) 단백질 유전자
-        표현형을 강화하여 장벽 보호 기능을 향상시킨다는 실증 데이터가 보고되고 있습니다. 이는 육계의
-        면역력을 기초부터 튼튼히 하여 항생제 사용을 줄이는 결과로 이어집니다.</p>
-
-        <h3>장내 환경 및 면역 조절</h3>
-        <p>장 융모 구조를 개선하고 유익균을 증가시켜 질병에 강한 사육 환경을 조성함으로써 항생제 대체
-        가능성을 제시합니다.</p>
-
-        <p class="note">※ 원본 제안서에는 반추동물(소·양 등)의 반추위 내 메탄가스 저감 기전이 육계 파트에
-        함께 서술되어 있었으나, 육계는 반추위가 없어 해당 기전이 적용되지 않으므로 본 페이지에서는 제외하고
-        가금류에 실제로 적용되는 단백질 합성·항산화·장 건강 기전만 반영했습니다.</p>
-      </div>
-    </details>
-
-    <!-- 08. 풍미 -->
-    <details class="accordion-item">
-      <summary>08. 육질 차별화: 감칠맛과 풍미의 과학적 해석</summary>
-      <div class="accordion-body">
-        <p>프리미엄 육계 시장에서 소비자가 지불하는 가치는 결국 '맛'에서 결정됩니다. 온EIO는 육계 고유의 풍미
-        성분을 극대화하여 일반계가 흉내 낼 수 없는 깊은 맛을 구현합니다.</p>
-        <p>국제 식품 과학 저널에 따르면, 황 함유 아미노산은 가열 조리 시 '메일라드 반응(Maillard Reaction)'을
-        통해 수백 가지의 향기 성분을 생성합니다. 온EIO 사료를 섭취한 육계는 근육 내 메티오닌 함량이 높아져
-        조리 시 풍미가 훨씬 진해지며, 단맛을 내는 글리신(Glycine)과 감칠맛의 핵심인 글루탐산(Glutamic acid)의
-        함량도 동반 상승하는 것으로 나타났습니다. 한국식품연구원 분석 결과인 불포화지방산 68.9%(올레인산
-        42.3%)와 높은 글루탐산 함량이 세계 최정상급 풍미를 가진 'K-프리미엄' 육계임을 뒷받침합니다.</p>
-      </div>
-    </details>
-
-    <!-- 09. 국제 학술지 근거 -->
-    <details class="accordion-item">
-      <summary>09. 국제 학술지(SCI급) 논문 근거</summary>
-      <div class="accordion-body">
-        <p class="note">※ 현재 공개된 국제 논문은 대부분 유기 황(MSM) 기반 연구이며, 당사의 광물성 온EIO는
-        미생물 반응 및 무기광물 전환 메커니즘을 기반으로 하므로 단순 비교가 아닌 별도의 효과 검증 체계로
-        해석되어야 합니다.</p>
-        <table>
-          <tr><th>구분</th><th>핵심 원리</th><th>주요 논문</th><th>실증 연결</th></tr>
-          <tr>
-            <td>황 아미노산(SAA)과 성장 성능·면역력</td>
-            <td>황 아미노산은 육계의 단백질 합성과 면역 반응 조절에 필수적인 영양소</td>
-            <td>Adhikari et al.(2022), Frontiers in Veterinary Science</td>
-            <td>체중 증가율 상승, 사료요구율 개선, 가슴살 수율 증가 → 출하일수 단축·도체중 증가 근거</td>
-          </tr>
-          <tr>
-            <td>항산화 시스템 및 질병 저항성</td>
-            <td>유황 아미노산은 글루타치온 전구체로 작용, 세포 산화 스트레스 보호</td>
-            <td>Kim et al.(2022), Animals(Basel)</td>
-            <td>혈액 항산화력 및 장 융모 구조 개선 → 폐사율 감소, 무항생제 사육 환경 뒷받침</td>
-          </tr>
-          <tr>
-            <td>지방산 조성 및 풍미 강화</td>
-            <td>올레인산 증가는 지방 융점을 낮추고, 황 함유 아미노산은 메일라드 반응으로 향미 성분 생성</td>
-            <td>Journal of Food Science, 닭고기 부산물 가수분해물 연구</td>
-            <td>불포화지방산 68.9%·고글루탐산 함량 → 프리미엄 풍미 근거</td>
-          </tr>
-        </table>
-        <p class="note">※ 논문 원문 링크 등 세부 출처는 <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.</p>
-      </div>
-    </details>
-
-    <!-- 10. 시장 구축 전략 -->
-    <details class="accordion-item">
-      <summary>10. 글로벌 프리미엄 육계 시장 구축 전략</summary>
-      <div class="accordion-body">
-        <p>글로벌 육계시장에는 JBS S.A.(브라질), Tyson Foods(미국), Poulet de Bresse(프랑스), Label
-        Rouge(프랑스) 등 프리미엄 브랜드가 다수 존재하나 압도적 우위의 글로벌 브랜드는 부재합니다. 수성(주)의
-        온EIO 기술은 'K-Sulfur Premium Meat'라는 국가 전략 프로젝트급 가치를 창출할 수 있습니다.</p>
-        <table>
-          <tr><th>단계</th><th>핵심 목표</th><th>주요 전략</th></tr>
-          <tr><td>1단계: 기술 표준화</td><td>온EIO 사료 표준사양 확립</td><td>국가 인증시스템 도입</td></tr>
-          <tr><td>2단계: 글로벌화</td><td>육계 프리미엄 시장 진입</td><td>미쉐린 등 고급 레스토랑 공급 및 주요국 수출</td></tr>
-          <tr><td>3단계: 브랜드 완성</td><td>세계 최고가 브랜드 달성</td><td>글로벌 육계시장에서 독보적인 K-프리미엄 브랜드 확립</td></tr>
-        </table>
-        <h3>표준화된 프리미엄 모델의 전국적 확산</h3>
-        <p>농·축협과 지방자치단체는 온EIO 급이 모델을 표준 사양 관리 지침으로 채택하여 지역 브랜드의 가치를
-        상향 평준화할 필요가 있습니다. '온EIO 육계인증제'를 도입하여 농가에는 고품질 생산에 따른 인센티브를
-        제공하고, 소비자에게는 검증된 품질을 보증하는 시스템 구축이 시급합니다.</p>
-
-        <h3>결론</h3>
-        <p>수성(주)의 온EIO 기술은 단순한 사료 성분의 변화를 넘어 육계 산업의 패러다임을 '경험'에서 '과학적
-        실증'으로 바꾸는 촉매제입니다. 한국식품연구원의 성분 분석 데이터와 SCI급 국제 학술지 근거는 일반
-        MSM을 압도하는 물리적 특성과 생물학적 활성을 객관적인 수치로 증명하며, 이를 통해 생산된 육계는 육질,
-        풍미, 신선도, 환경적 가치 등 모든 면에서 국제적인 경쟁력을 갖추게 됩니다. 농·축협과 정부, 지자체는
-        이 기술을 바탕으로 육계의 국제적 실증 가치를 극대화하고, 전 세계가 주목하는 'K-Sulfur Premium
-        Meat'를 구축하는 데 역량을 집중해야 할 것입니다.</p>
-      </div>
-    </details>
-
-    <!-- 11. 인증·자료 -->
-    <details class="accordion-item">
-      <summary>11. 제품 이미지 및 인증·시험성적서</summary>
-      <div class="accordion-body">
-        <p>제품 이미지, KFRI 시험성적서, 특허증(제10-1968905호) 등 고해상도 인증 자료는 자료실에서 통합
-        열람하실 수 있습니다.</p>
-        <p><a class="btn-link" href="archive.html">자료실 바로가기 →</a></p>
-      </div>
-    </details>
-
-  </section>
-
-  <div class="product-nav-buttons">
-    <a href="product-02-pork.html">← 이전: 돈육</a>
-    <a href="index.html#products">제품 목록</a>
-    <a href="product-04-layer.html">다음: 산란계 →</a>
-  </div>
-
-</main>
-
-<footer class="site-footer">
-  <p>농업회사법인 수성㈜ · 강원특별자치도 고성군 간성읍 간성로 30번길 7(KT고성빌딩 3층)</p>
-  <p>Tel. 033-682-3600 · ceo@bmpgo.com · 대표이사 이경호</p>
 </footer>
 
 <script src="js/main.js"></script>
