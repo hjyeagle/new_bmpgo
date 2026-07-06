@@ -3,8 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>수산 | 제품소개 | 농업회사법인 수성(주)</title>
+<title>수산(양식 어류·패류) | 제품소개 | 농업회사법인 수성(주)</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .oi-info { max-width: 960px; margin: 0 auto; }
+  .oi-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+  .oi-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+  .oi-info h4.oi-sub-plain { font-size: 1rem; color: var(--ink); margin: 24px 0 10px; }
+
+  .oi-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+  .oi-info th, .oi-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .oi-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .oi-info td.oi-label { background: var(--bg); font-weight: 700; width: 24%; white-space: nowrap; }
+  .oi-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
+
+  .oi-accordion {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .oi-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .oi-accordion summary::-webkit-details-marker { display: none; }
+  .oi-accordion summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+  .oi-accordion[open] summary::after { content: '–'; }
+  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
+  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
+</style>
 </head>
 <body>
 
@@ -31,61 +75,241 @@
   </div>
 </header>
 
+  
 <main>
   <section class="section" style="border-top: none; padding-top: 48px;">
     <div class="container">
 
       <div class="section-head">
         <div>
-          <span class="hero-eyebrow" data-i18n="products.aquaculture">수산</span>
-          <h1 class="section-title" style="margin-top: 14px;">수산</h1>
+          <h1 class="section-title">수산(양식 어류·패류)</h1>
         </div>
         <a href="index.html#products" class="link-more" data-i18n="notice.more">목록으로</a>
       </div>
 
-      <!-- ============================================================
-           ▼▼▼ [입력 필요] 수산 제품 상세 내용 ▼▼▼
-           기존 홈페이지의 "제품소개 > 수산" 페이지 내용을 참고하여
-           아래 항목을 채워 주세요. 필요 없는 항목(줄)은 삭제하셔도 됩니다.
-           ============================================================ -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 8px;">
+      <div class="oi-info" style="margin-top: 8px;">
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 특징</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 수산용 바이오황 제품의 특징 설명을 입력해 주세요.]
-          </p>
+        <h2 class="oi-title">항생제 없는 지속가능한 양식업을 위한 온EIO(Bio Sulfur) 솔루션</h2>
+        <p class="oi-lead">
+          (주)수성 온EIO(Bio Sulfur) 사료첨가제를 통한 넙치(광어)·전복·해삼 등 전 어종 적용 기술 및
+          수협중앙회 연계 프리미엄 수산 사업 제안
+        </p>
+        <p class="oi-lead">
+          국내 양식업은 고밀도 양식에 따른 어류 스트레스·질병 창궐, 항생제 오남용으로 인한 내성·잔류
+          문제, 사료·분진 배출에 따른 해양 오염, 소비자 신뢰 하락이라는 구조적 악순환에 직면해
+          있습니다. 농업회사법인 수성(주)은 독자적인 온EIO(법제유황) 기술을 통해 항생제를 대체하는
+          질병 예방력과 증체율·사료효율 개선을 동시에 실현하는 솔루션을 제시합니다.
+        </p>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">주요 성분</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 성분 정보를 입력해 주세요. 예: 유효성분명, 함량 등]
-          </p>
+        <!-- 1 -->
+        <details class="oi-accordion" open>
+          <summary>1. 온EIO(Bio Sulfur) 수산용 제품의 핵심 기술 및 안전성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
+              <tr><td class="oi-label">특허 기술</td><td>온EIO 현탁액의 제조방법(특허 제10-1959402호), 온EIO 사료 및 비료 제조 기술(특허 제10-1968905호)</td><td>미생물 공법 기반 초미세 입자(나노급) 제조</td></tr>
+              <tr><td class="oi-label">안전성 입증</td><td>넙치 치어 대상 에드워드균 공격 실험 결과, 항생제(OTC) 투여군·무첨가 대조군은 10일차 전멸(0%)했으나 법제유황 투여군은 50% 생존</td><td>부경대학교 산학협력단 실험 자료</td></tr>
+              <tr><td class="oi-label">제품 형태</td><td>전국 양식 어가 보급용 법제유황 사료첨가제 'Mighty Green Plus F'</td><td>배합사료 혼합 또는 첨가 급이 방식</td></tr>
+              <tr><td class="oi-label">주요 기능</td><td>① 항생제 대체 질병 예방 &nbsp;② 증체율·사료효율 개선 &nbsp;③ 필수 지방산(DHA·ARA) 함량 증대 &nbsp;④ 저염분 등 환경 스트레스 저항성 강화</td><td>항생제 남용에 따른 내성·잔류 문제 근본적 해소</td></tr>
+            </table>
+            <p class="oi-note">
+              온EIO는 미생물 공법을 통해 제조된 초미세 입자(나노~마이크로급) 형태의 고기능성
+              수산 사료첨가제입니다. 기존 광물성 유황과 달리 독자 공법으로 독성을 제거하여
+              안전하게 양식 어류·패류에 적용할 수 있습니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">적용 방법</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 급여량/시비량, 사용 주기 등 적용 방법을 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 2 -->
+        <details class="oi-accordion">
+          <summary>2. '항생제'를 능가하는 압도적 질병 예방 효과</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              넙치 치어를 대상으로 에드워드균(Edwardsiella)을 인위적으로 감염시키는 공격 실험(Challenge
+              Test)을 진행한 결과, 가장 널리 쓰이는 항생제(OTC)보다 우수한 생존율이 확인되었습니다.
+              성장뿐 아니라 면역·항바이러스 효과에서도 탁월함이 입증되었습니다.
+            </p>
+            <table>
+              <tr><th>구분</th><th>5일차 생존율</th><th>7일차 생존율</th><th>10일차 생존율</th></tr>
+              <tr><td class="oi-label">대조군(무첨가)</td><td>100%</td><td>90%</td><td>0%(전멸)</td></tr>
+              <tr><td class="oi-label">항생제(O.C.T) 투여</td><td>100%</td><td>50%</td><td>0%(전멸, 8일차)</td></tr>
+              <tr><td class="oi-label">법제유황 투여(0.1%, Immuno-F)</td><td>100%</td><td>95%</td><td>50%</td></tr>
+            </table>
+            <p class="oi-note">출처: 부경대학교 산학협력단 실험 자료(지도교수 배승철). 넙치 치어 대상 에드워드균 공격 실험.</p>
+          </div>
+        </details>
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 이미지</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8; margin-bottom: 16px;">
-            [여기에 제품 사진을 첨부하시려면 이미지 파일을 자료실에 올리고,
-            아래 자료실 링크로 연결하는 것을 권장합니다. (홈페이지 이미지 용량 최소화 목적)]
-          </p>
-          <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지 확인</a>
+        <!-- 3 -->
+        <details class="oi-accordion">
+          <summary>3. 넙치(광어) 성어 – 획기적인 생산성 증대</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              넙치 성어(초기무게 약 500g)를 대상으로 8주간 진행한 사양 실험에서, 배합사료 대비
+              증체율·사료효율·생존율이 모두 유의미하게 개선되었습니다.
+            </p>
+            <table>
+              <tr><th>구분</th><th>대조구(D-1)</th><th>유황첨가구(D-2)</th><th>개선폭</th></tr>
+              <tr><td class="oi-label">초기무게(g/fish)</td><td>495 ± 6.82</td><td>505 ± 5.18</td><td>-</td></tr>
+              <tr><td class="oi-label">최종무게(g/fish)</td><td>638 ± 75.9</td><td>704 ± 31.0</td><td>-</td></tr>
+              <tr><td class="oi-label">증체율(WG, %)</td><td>28.2 ± 13.6</td><td>39.3 ± 7.6</td><td>+11.1%p</td></tr>
+              <tr><td class="oi-label">사료효율(FE, %)</td><td>46.4 ± 15.1</td><td>71.9 ± 11.8</td><td>+25.5%p</td></tr>
+              <tr><td class="oi-label">생존율(Survival, %)</td><td>64.3 ± 10.1</td><td>80.4 ± 7.58</td><td>+16.1%p</td></tr>
+            </table>
+            <p class="oi-note">
+              출처: 국립수산과학원 사료센터. 증체율 개선은 출하 시점을 앞당길 수 있는 지표로 경제성
+              분석에 직접적 영향을 미치며, 생존율(폐사율 감소)은 단순 폐사 감소를 넘어 유황의
+              바이러스 퇴치·면역력 증강 효과를 함께 시사합니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">인증·시험성적서</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [관련 인증서/시험성적서가 있으면 자료실 업로드 후 안내 문구를 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 4 -->
+        <details class="oi-accordion">
+          <summary>4. 넙치(광어) 치어 – 부경대학교 사양 실험 및 지방산 분석</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>Control</th><th>S0.05%</th><th>S0.1%</th><th>S0.5%</th><th>OTC0.4%</th></tr>
+              <tr><td class="oi-label">초기무게(g)</td><td>12.6±0.05</td><td>12.6±0.06</td><td>12.7±0.02</td><td>12.7±0.02</td><td>12.6±0.01</td></tr>
+              <tr><td class="oi-label">최종무게(g)</td><td>22.1±0.30</td><td>22.1±0.36</td><td>23.8±0.13</td><td>23.8±0.60</td><td>25.4±0.95</td></tr>
+              <tr><td class="oi-label">증체율(WG, %)</td><td>75.6</td><td>75.5</td><td>87.1</td><td>87.3</td><td>101.3</td></tr>
+              <tr><td class="oi-label">사료효율(FE, %)</td><td>74.6</td><td>78.4</td><td>84.2</td><td>82.7</td><td>92.8</td></tr>
+              <tr><td class="oi-label">생존율(Survival, %)</td><td>62.5</td><td>70.0</td><td>67.5</td><td>65.0</td><td>85.0</td></tr>
+            </table>
+            <p class="oi-note">
+              유황 첨가구 기준 대조군 대비 증체율 11.5%, 사료효율 9.6%, 생존율 5%, 단백질효율 0.21%
+              증가가 확인되었습니다(출처: 부경대학교 산학협력단, 지도교수 배승철).
+            </p>
+            <h4 class="oi-sub-plain">필수 지방산(DHA·ARA) 함량 변화</h4>
+            <p>
+              IMMUNO-F(온EIO) 투여군에서 해산어의 필수 지방산인 DHA와 아라키돈산(ARA) 함량이
+              대조군 대비 높게 나타나, 어육 품질(영양가) 향상 효과가 확인되었습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="oi-accordion">
+          <summary>5. 전복 – 치패(종묘) 육성 단계 폐사율 획기적 감소</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>일반 농가</th><th>온EIO 적용(자체 실험)</th><th>개선 효과</th></tr>
+              <tr><td class="oi-label">치패 출하율</td><td>약 65%</td><td>85% 이상</td><td>육성 단계 폐사율 40%→15% 미만으로 감소</td></tr>
+              <tr><td class="oi-label">성장속도</td><td>기준</td><td>10% 이상 빠름</td><td>출하 시기 단축</td></tr>
+              <tr><td class="oi-label">질병 예방</td><td>-</td><td>벽오름병 등 전복병 예방·치료 효과</td><td>육지 수족관 육성 단계 안정성 확보</td></tr>
+            </table>
+            <p class="oi-note">
+              전복 치패는 20mm까지 육지 수족관에서 키우는데, 이 시기 유황 적용 시 수족관 내
+              단기 폐사율은 다소 높아질 수 있으나, 바다로 이송하기 전까지의 전체 치패 출하율은
+              일반 농가 대비 획기적으로 개선됩니다(자체 실험 자료).
+            </p>
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="oi-accordion">
+          <summary>6. 해삼(청해삼) – 성장률 및 저염도 스트레스 저항성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>대조구</th><th>실험구(NP250)</th><th>실험구(NP500)</th></tr>
+              <tr><td class="oi-label">체중 증가율(g/개체)</td><td>2.21</td><td>2.53</td><td>2.56</td></tr>
+              <tr><td class="oi-label">일간성장률(SGR, %/day)</td><td>1.64</td><td>1.79</td><td>1.81</td></tr>
+              <tr><td class="oi-label">생존율(%)</td><td>99.3</td><td>100.0</td><td>100.0</td></tr>
+            </table>
+            <p class="oi-note">출처: 한국해양대학교 조성환 교수. 나노제독유황(NP) 첨가 배합사료, 치삼 단계(초기무게 평균 1.5g) 8주 실험.</p>
+            <h4 class="oi-sub-plain">저염도 노출 스트레스 저항성</h4>
+            <p>
+              염도를 34‰에서 10‰로 급격히 낮춘 해수에 12시간 노출시켜 누적 사망률을 측정한 결과,
+              나노 유황 첨가구는 시판 배합사료 대비 약 20%, 시판 중국산 사료 대비 약 30% 낮은
+              누적 사망률을 기록했습니다. 이는 저염분·공기노출 등 양식 현장의 환경 스트레스에 대한
+              생존율(내성)이 대폭 향상됨을 의미합니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="oi-accordion">
+          <summary>7. 전 어종으로의 확대 적용 가능성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:20%;">어종</th><th>실험 조건</th><th>주요 효과</th></tr>
+              <tr><td class="oi-label">넙치(광어)</td><td>국립수산과학원·부경대학교 실증</td><td>증체율·사료효율·생존율 개선, DHA·ARA 함량 증가로 어육 품질 향상</td></tr>
+              <tr><td class="oi-label">전복</td><td>자체 실험(치패 육성)</td><td>육성 단계 폐사율 40%→15% 미만, 출하율 85% 이상, 성장속도 10% 이상 향상</td></tr>
+              <tr><td class="oi-label">청해삼</td><td>한국해양대학교 실증</td><td>증체율·성장률 개선, 저염분·공기노출 스트레스 저항성(생존율) 대폭 향상</td></tr>
+            </table>
+            <p class="oi-note">
+              어류(넙치)·패류(전복)·극피동물(해삼)에 걸쳐 일관되게 나타나는 효과는 온EIO가 특정
+              어종에 국한되지 않는 전방위적 양식용 사료첨가제로서의 확장성을 갖추고 있음을
+              보여줍니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="oi-accordion">
+          <summary>8. 수협중앙회 연계 프리미엄 수산 사업 모델</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              수협 중심의 '사업 총괄 시스템' 구축을 통해 생산·공급·인증에서 유통·마케팅·R&D까지
+              전 단계를 아우르는 프리미엄 수산 밸류체인을 제안합니다.
+            </p>
+            <table>
+              <tr><th style="width:24%;">영역</th><th>추진 내용</th></tr>
+              <tr><td class="oi-label">생산·공급·인증</td><td>전국 양식 어가에 법제유황 사료첨가제(Mighty Green Plus F) 안정적 보급, '수협 인증' 프리미엄 브랜드(예: 수협 유황광어) 런칭을 통한 항생제 없는 친환경 수산물 공급망 구축</td></tr>
+              <tr><td class="oi-label">유통·마케팅·R&D</td><td>수협 바다마트 등 강력한 전국 유통망을 통한 프리미엄 시장 선점 및 차별화된 스토리텔링, 지속적인 공동 R&D로 신규 어종 적용 확대 및 기술 고도화</td></tr>
+            </table>
+            <p class="oi-note">
+              'MOU 체결'을 통해 수협중앙회와 함께 지속 가능한 미래 수산업을 만들어가는 협력 모델을
+              제안합니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 9 -->
+        <details class="oi-accordion">
+          <summary>9. 국가 수산업 발전 기여 및 환경·안전성 가치</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:24%;">가치 영역</th><th>기여 내용</th></tr>
+              <tr><td class="oi-label">친환경 수산업 육성</td><td>법제유황 보급으로 지속 가능한 양식 생태계 구축</td></tr>
+              <tr><td class="oi-label">어가 소득 증대</td><td>고품질 프리미엄 수산물 생산을 통한 어촌 경제 활성화 기여</td></tr>
+              <tr><td class="oi-label">국민 건강 증진</td><td>항생제 없는 안전한 먹거리 제공으로 삶의 질 향상</td></tr>
+              <tr><td class="oi-label">해양 환경 보호</td><td>사료효율 개선 및 배출물 감소로 해양 오염 근본적 저감</td></tr>
+            </table>
+            <p class="oi-note">
+              시험성적서·실증 자료 원본 등은 <a href="archive.html">자료실</a>에서 확인하실 수 있습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 10 -->
+        <details class="oi-accordion">
+          <summary>10. 경제성 분석 및 결론</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:22%;">구분</th><th>내용</th></tr>
+              <tr><td class="oi-label">어가 ROI</td><td>증체율 11~25%p, 사료효율 최대 25.5%p 개선에 따른 사료비 절감 및 출하 조기화로 비용 대비 높은 순이익 증대 기대</td></tr>
+              <tr><td class="oi-label">프리미엄 포지셔닝</td><td>'수협 인증' 항생제 무첨가 브랜드화를 통해 일반 양식 수산물 대비 프리미엄 가격 책정 가능</td></tr>
+              <tr><td class="oi-label">리스크 저감</td><td>항생제 대비 대등하거나 우월한 질병 예방 효과(공격 실험 기준)로 대량 폐사 리스크 및 항생제 잔류 리스크 동시 저감</td></tr>
+            </table>
+            <h4 class="oi-sub-plain">결론</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              <strong>결론적으로 온EIO는 고밀도 양식·항생제 남용·해양 오염이라는 국내 수산업의
+              구조적 악순환을 끊는 핵심 솔루션입니다.</strong> 근거는 다음과 같습니다. 첫째, 넙치 치어
+              공격 실험에서 항생제(OTC) 투여군이 8일차 전멸한 반면 법제유황 투여군은 10일차에도
+              50% 생존해, 항생제를 대체할 수 있는 질병 예방력이 확인되었습니다. 둘째, 넙치 성어
+              기준 증체율 +11.1%p, 사료효율 +25.5%p, 생존율 +16.1%p 개선이 국립수산과학원
+              실증으로 입증되었으며, 전복·해삼 등 이종 어종에서도 일관된 효과가 재현되었습니다.
+              셋째, 수협중앙회와의 생산·유통 연계를 통해 '수협 인증' 프리미엄 브랜드 런칭과 전국
+              유통망 확보가 동시에 가능합니다. 수협중앙회와의 MOU 체결을 통한 시범 보급, 신규
+              어종 공동 R&D, 프리미엄 브랜드 육성을 조속히 추진할 것을 제안합니다.
+            </p>
+          </div>
+        </details>
 
       </div>
-      <!-- ▲▲▲ [입력 필요] 수산 제품 상세 내용 끝 ▲▲▲ -->
 
-      <div style="display: flex; justify-content: space-between; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem;">
-        <a href="product-07-fruit.html" style="color: var(--ink-soft);">← 과수</a>
+      <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; max-width: 960px; margin-left: auto; margin-right: auto;">
+        <a href="product-05-agriculture.html" style="color: var(--ink-soft);">← 농산물</a>
         <a href="product-01-hanwoo.html" style="color: var(--ink-soft);">한우 →</a>
       </div>
 
