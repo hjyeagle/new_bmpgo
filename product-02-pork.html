@@ -5,6 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>돈육 | 제품소개 | 농업회사법인 수성(주)</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .oi-info { max-width: 960px; margin: 0 auto; }
+  .oi-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+  .oi-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+  .oi-info h4.oi-sub-plain { font-size: 1rem; color: var(--ink); margin: 24px 0 10px; }
+
+  .oi-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+  .oi-info th, .oi-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .oi-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .oi-info td.oi-label { background: var(--bg); font-weight: 700; width: 24%; white-space: nowrap; }
+  .oi-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
+
+  .oi-accordion {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .oi-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .oi-accordion summary::-webkit-details-marker { display: none; }
+  .oi-accordion summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+  .oi-accordion[open] summary::after { content: '–'; }
+  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
+  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
+</style>
 </head>
 <body>
 
@@ -37,54 +81,271 @@
 
       <div class="section-head">
         <div>
-          <span class="hero-eyebrow" data-i18n="products.pork">돈육</span>
-          <h1 class="section-title" style="margin-top: 14px;">돈육</h1>
+          <h1 class="section-title">돈육</h1>
         </div>
         <a href="index.html#products" class="link-more" data-i18n="notice.more">목록으로</a>
       </div>
 
-      <!-- ============================================================
-           ▼▼▼ [입력 필요] 돈육 제품 상세 내용 ▼▼▼
-           기존 홈페이지의 "제품소개 > 돈육" 페이지 내용을 참고하여
-           아래 항목을 채워 주세요. 필요 없는 항목(줄)은 삭제하셔도 됩니다.
-           ============================================================ -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 8px;">
+      <div class="oi-info" style="margin-top: 8px;">
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 특징</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 돈육용 바이오황 제품의 특징 설명을 입력해 주세요.]
-          </p>
+        <h2 class="oi-title">국제적 실증에 기초한 프리미엄급 한돈</h2>
+        <p class="oi-lead">
+          (주)수성 온EIO(Bio Sulfur) 기술을 통한 축산 혁신과 글로벌 시장 진출 전략
+        </p>
+        <p class="oi-lead">
+          대한민국 양돈 산업은 이제 양적 성장을 넘어 맛·건강·안전성·동물복지·환경까지 고려하는
+          가치 소비 단계로 진입하고 있습니다. 농업회사법인 수성(주)은 독보적인 온EIO(Bio-Sulfur)
+          기술을 통해 '허브한돈'과 '포크밸리' 등 국내 대표 양돈 브랜드와의 초격차 프리미엄 전략을
+          제시하고, 나아가 글로벌 시장에서 이베리코(Iberico)나 가고시마 흑돼지와 경쟁할 수 있는
+          비전을 제시합니다.
+        </p>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">주요 성분</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 성분 정보를 입력해 주세요. 예: 유효성분명, 함량 등]
-          </p>
+        <!-- 1 -->
+        <details class="oi-accordion" open>
+          <summary>1. 온EIO(Bio Sulfur)의 핵심 기술 및 안전성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
+              <tr><td class="oi-label">특허 기술</td><td>온EIO 사료 및 비료 제조 기술 (특허 제 10-1968905호)</td><td>온EIO 법제기술, 독성 제거 및 약리효과 증대</td></tr>
+              <tr><td class="oi-label">안전성 입증</td><td>미국 공인 인증기관의 성분 안전성 테스트 결과 보유</td><td>마케팅 핵심 포인트: 글로벌 스탠다드 안전성 확보</td></tr>
+              <tr><td class="oi-label">주요 기능</td><td>① 독성 제거 및 미네랄 강화 &nbsp;② 불포화지방산 함량 증대 &nbsp;③ 동식물 성장 촉진 및 면역력 강화</td><td>항생제·농약 저감: 친환경 무항생제 브랜드</td></tr>
+            </table>
+            <p class="oi-note">
+              온EIO란, 자연에서 얻은 광물성 유황의 독성을 독자적인 고열 처리 및 특수 미생물 발효
+              공법으로 완벽히 제거(Detoxification)하고, 생체 이용률이 높은 나노 입자 형태로
+              변환시킨 첨단 바이오 물질입니다. 유황은 본래 강력한 해독 작용과 면역력 증강, 단백질
+              합성 효과가 있으나 독성(비소, 납 등) 때문에 사용이 제한되었습니다. 당사의 '법제 기술'은
+              이 독성을 100% 제거하여 가축에게 안전하게 급여할 수 있는 '천연 항생제' 대체재를
+              완성했습니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">적용 방법</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 급여량/시비량, 사용 주기 등 적용 방법을 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 2 -->
+        <details class="oi-accordion">
+          <summary>2. 수성(주) 온EIO 사료 vs 식이유황(MSM) 비교</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>온EIO(수성(주) 특허기술)</th><th>식이유황(MSM)</th><th>비고</th></tr>
+              <tr><td class="oi-label">유황 순도</td><td>99.9% (초고순도)</td><td>약 34% (나머지는 탄소, 수소, 산소 등)</td><td>효능 차이: 온EIO가 동일 용량 대비 수십 배 더 강력한 유황의 약리 효과를 발휘함</td></tr>
+              <tr><td class="oi-label">열 저항성</td><td>강함 (가공 용이)</td><td>약함 (130℃ 이상에서 성분 파괴)</td><td>사료 가공 적성: 배합사료 펠렛 제조 시 고온·고압 공정을 견딜 수 있어 대량 생산에 적합</td></tr>
+              <tr><td class="oi-label">분자량</td><td>나노 입자화 (흡수율 극대화)</td><td>분자량이 큼</td><td>체내 흡수율: 나노 입자 형태의 법제 유황은 세포막 투과가 용이하여 체내 흡수 및 이용률이 월등함</td></tr>
+              <tr><td class="oi-label">주요 용도</td><td>전 축종 사료첨가제, 비료</td><td>주로 인체용 건강기능식품(관절 영양제 등)</td><td>범용성: 한우, 양돈, 양계 등 전 축종 및 농작물에도 적용 가능</td></tr>
+              <tr><td class="oi-label">경제성</td><td>우수 (대량 생산 가능)</td><td>낮음 (고가)</td><td>농가 수익성: 합리적인 가격으로 공급 가능하여 사료비 부담 없이 농가 소득 증대에 기여</td></tr>
+            </table>
+          </div>
+        </details>
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 이미지</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8; margin-bottom: 16px;">
-            [여기에 제품 사진을 첨부하시려면 이미지 파일을 자료실에 올리고,
-            아래 자료실 링크로 연결하는 것을 권장합니다. (홈페이지 이미지 용량 최소화 목적)]
-          </p>
-          <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지 확인</a>
+        <!-- 3 -->
+        <details class="oi-accordion">
+          <summary>3. 온EIO 급여를 통한 양돈 생체 적용 메커니즘과 효능</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              온EIO는 양돈의 대사 과정을 근본적으로 개선하며 성장 전 단계에 걸쳐 긍정적인 영향을
+              미칩니다. 아미노산 대사 촉진을 통한 단백질 합성 증가는 물론, 에너지 대사 효율 개선으로
+              활력을 증진시킵니다. 특히 장내 유익균을 활성화하고 유해균을 억제함으로써 소화율을
+              높이고, 미소화 단백질의 배출을 감소시켜 분뇨 악취의 원인인 암모니아를 원천적으로
+              저감하는 이중 효과를 발휘합니다.
+            </p>
+            <table>
+              <tr><th style="width:20%;">구분</th><th style="width:26%;">주요 효과</th><th>세부 내용 및 메커니즘</th></tr>
+              <tr><td class="oi-label" rowspan="4">생리적 효과</td><td>면역기능 강화</td><td>글루타치온 생성 촉진으로 항산화 및 면역글로불린(IgG, IgA) 생성 촉진</td></tr>
+              <tr><td>소화율 개선</td><td>장내 유익균 활성화 및 단백질 분해 능력 향상으로 분뇨 악취 원천 저감</td></tr>
+              <tr><td>육질 개선(마블링 향상)</td><td>근내지방도 증가 및 불포화지방산 비율 확대로 풍미 증진</td></tr>
+              <tr><td>풍미 및 조직감</td><td>웅취(Boar Taint) 제거, 보수력 향상으로 조리 시 육즙 손실 최소화</td></tr>
+              <tr><td class="oi-label" rowspan="2">생산성 향상</td><td>증체량 개선</td><td>일당증체량(ADG) 증가로 출하일령 5~10일 단축 가능</td></tr>
+              <tr><td>사료효율 개선</td><td>사료요구율 감소 및 영양소 이용효율 증가로 농가 사료비 절감</td></tr>
+              <tr><td class="oi-label" rowspan="2">경제적 효과</td><td>생산비 절감</td><td>사료비 감소, 질병 관리비용(약품비) 감소, 출하기간 단축에 따른 운영비 절감</td></tr>
+              <tr><td>수익성 향상</td><td>1+ 등급 출현율 개선, 프리미엄 브랜드 런칭을 통한 판매단가 상승, 농가소득 증대</td></tr>
+            </table>
+            <p class="oi-note">
+              '소화율 개선'은 영양소 흡수를 높여 성장을 촉진할 뿐만 아니라, 배설물로 배출되는 질소
+              화합물을 줄여 악취를 저감하는 이중 효과를 발휘하며, 이는 축산농가들이 겪고 있는 환경
+              민원 문제를 해결할 수 있는 열쇠가 될 수 있습니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">인증·시험성적서</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [관련 인증서/시험성적서가 있으면 자료실 업로드 후 안내 문구를 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 4 -->
+        <details class="oi-accordion">
+          <summary>4. 축산(한돈) 사료 적용 효능(1): 생산성 지표</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              양돈 농장의 수익성은 결국 '얼마나 적은 사료로, 얼마나 빨리, 건강하게 키워내는가'에
+              달려 있으며, 온EIO는 이 핵심 지표들을 동시에 개선합니다.
+            </p>
+            <table>
+              <tr><th style="width:22%;">구분</th><th>기대 효과(Target)</th><th>상세 내용 및 메커니즘</th><th>농가 기대 이익</th></tr>
+              <tr><td class="oi-label">1. 사료효율 증가</td><td>▲10~25% UP</td><td>정의: 돼지가 섭취한 사료(100) 대비 체내 흡수 및 에너지화되는 비율. 기전: 유황 성분이 장내 유익균 총을 안정화시키고 소화 효소의 활성을 도와줌. 실험결과: 대조군 실험에서 일관되게 10% 이상의 효율 증가가 확인됨</td><td>비용 절감: 같은 양의 사료를 급여해도 더 많이 성장하므로 사료비를 획기적으로 절감</td></tr>
+              <tr><td class="oi-label">2. 증체율 향상</td><td>▲10% UP</td><td>정의: 일당증체량(ADG) 증가 및 출하 체중 도달 기간 단축. 기전: 아미노산 대사 촉진으로 골격과 근육 형성이 빨라짐. 실험결과: 평균 10%대의 증체율 향상이 확인됨</td><td>회전율 증대: 출하 일수를 약 7~10일 단축시켜 연간 돈사 회전율을 높이고, 노동비·분뇨처리비·광열비 등 고정비 감소</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="oi-accordion">
+          <summary>5. 질병 방어 및 육질 차별화</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:22%;">구분</th><th>기대 효과(Target)</th><th>상세 내용 및 메커니즘</th><th>브랜드 기대가치</th></tr>
+              <tr><td class="oi-label">3. 폐사율 감소 및 생존율 증가</td><td>생존율 ▲5~10% UP</td><td>실험결과: 평균 5~10%의 생존율 증가 및 폐사율 감소 확인. 적용사례: 아산시 브랜드 농가의 경우, 법적 필수 백신(구제역) 외 추가 항생제·백신 투여 없이 안정적 사육에 성공. 의의: 바이러스 및 세균성 질병에 대한 자체 방어력이 증대됨</td><td>안정적 공급: 이유 후 육성율을 높여 출하 두수를 보장. 친환경 이미지: 항생제 의존도를 낮춰 '진정한 무항생제 브랜드'로서의 입지를 강화</td></tr>
+              <tr><td class="oi-label">4. 면역력 및 항바이러스 효과</td><td>천연 항생제 기능</td><td>비교실험: 부경대 실험 결과, 대표 항생제인 옥시테트라사이클린(OCT) 대비 면역·항바이러스 지표가 동등하거나 우수한 것으로 나타남. 기능: 체내 글루타치온(GSH) 농도 유지 및 강력한 해독 작용을 통해 '천연 항생제' 역할을 수행</td><td>질병 리스크 관리: 구제역(FMD), PED 등 전염병 발생 시에도 피해를 최소화하고 회복 속도를 높여줌</td></tr>
+              <tr><td class="oi-label">5. 육질 개선 및 상품성 강화</td><td>맛과 품질의 차별화</td><td>불포화지방산 증가: 체내 유입된 유황이 시스틴/메티오닌으로 변환되며 올레인산 등 불포화지방산 함량을 높임. 수분 손실률 감소: 도축 후 드립(Drip) 발생이 줄어들어 중량이 보존되고 감칠맛이 유지됨. 관능평가: 육질이 단단하고 쫄깃해지며(탄력 증가), 잡내가 완전히 사라지는 결과를 보여줌</td><td>프리미엄 포지셔닝: "잡내 없고, 식어도 맛있는 고기"라는 확실한 차별점으로 백화점 및 고급 유통 채널 진입이 가능</td></tr>
+            </table>
+            <p class="oi-note">
+              특히 '잡내 제거'와 '면역력 증강'은 본 제안의 가장 강력한 무기이며, 온EIO 급여 돼지는
+              특유의 누린내가 나지 않아 돼지고기를 기피하는 소비자층까지 흡수할 수 있는 잠재력이
+              있습니다. 또한 구제역 백신 접종으로 인한 이상육 발생이나 스트레스를 온EIO의 면역
+              증강 효과로 완화할 수 있어, 농가에 직접적인 소득 보전 효과를 가져다 줍니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="oi-accordion">
+          <summary>6. 실증 데이터: 구제역 면역 및 이유자돈 시험사육 결과</summary>
+          <div class="oi-accordion-body">
+            <h4 class="oi-sub-plain">돼지 구제역 면역 자료 (녹십자 구제역 테스트)</h4>
+            <table>
+              <tr><th>구분</th><th>대조군 (평균)</th><th>실험군(온EIO, 평균)</th></tr>
+              <tr><td class="oi-label">IgA (Pig)</td><td>733.322 µg/mL</td><td>1,347.072 µg/mL</td></tr>
+              <tr><td class="oi-label">IgM (Pig)</td><td>1,526.356 µg/mL</td><td>1,568.485 µg/mL</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">이유자돈 시험사육 결과 (8구간, 393두)</h4>
+            <table>
+              <tr><th>구분</th><th>전체 체중(kg)</th><th>두수</th><th>평균(kg)</th></tr>
+              <tr><td class="oi-label">시험군 계</td><td>11,765</td><td>379</td><td>31.05</td></tr>
+            </table>
+            <p class="oi-note">
+              시험구 평균 두당 체중: 대조구 대비 1.42kg 증가 · 시험군은 분양두의 96.4% 사육 ·
+              대조군은 분양두의 88.8% 사육 → 시험구 분양두의 사육율이 대조구 대비 7.6%p
+              증가되었으며, 두당 체중도 1.42kg 증가함
+            </p>
+
+            <h4 class="oi-sub-plain">면역·성장 지표 종합 비교</h4>
+            <table>
+              <tr><th>분석 항목</th><th>단위</th><th>대조군(일반 사료)</th><th>실험군(온EIO 급여)</th><th>개선율</th></tr>
+              <tr><td class="oi-label">IgA (점막 면역항체)</td><td>µg/mL</td><td>평균 1,347.1</td><td>평균 1,568.5</td><td>+16.4%</td></tr>
+              <tr><td class="oi-label">IgM (초기 면역항체)</td><td>µg/mL</td><td>평균 1,526.4</td><td>평균 2,000+</td><td>+30.0% 이상</td></tr>
+              <tr><td class="oi-label">이유자돈 육성률</td><td>%</td><td>88.8</td><td>96.4</td><td>+7.6%p</td></tr>
+              <tr><td class="oi-label">두당 체중(이유자돈)</td><td>kg</td><td>29.63</td><td>31.05</td><td>+1.42kg</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">국립축산과학원 관능검사 결과</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              관능검사 결과 향미 부분이 일반돈 보다 온EIO 사료첨가제 급여 돼지의 수치가 더
+              높게 나타나, 맛이 좋아지는 것으로 확인되었습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="oi-accordion">
+          <summary>7. 육질 차별화: 풍미와 미식적 가치</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              프리미엄 돼지고기 시장에서 경쟁력은 결국 소비자가 혀끝으로 느끼는 맛에서 나옵니다.
+              온EIO는 돼지의 지질 대사 경로에 관여하여 불포화지방산인 올레인산(Oleic Acid) 함량을
+              비약적으로 높입니다. 올레인산은 지방의 융점을 낮추어 입안에서 부드럽게 녹는 식감을
+              제공하며, 특유의 고소한 향을 유발하는 핵심 성분입니다. (주)수성의 실증 데이터에
+              따르면 온EIO 돼지는 일반 돼지(38~42%) 대비 올레산 함량이 45~50%까지 증가하여
+              스페인의 이베리코 돼지와 유사한 지방산 구조를 갖추게 됩니다.
+            </p>
+            <table>
+              <tr><th>분석 지표</th><th>일반 돼지</th><th>온EIO 돼지</th><th>시사점</th></tr>
+              <tr><td class="oi-label">올레산(Oleic acid)</td><td>38~42%</td><td>45~50%</td><td>식감 및 풍미의 획기적 향상</td></tr>
+              <tr><td class="oi-label">포화지방산</td><td>약 40%</td><td>35% 이하</td><td>건강한 지방 이미지 및 저융점 구현</td></tr>
+              <tr><td class="oi-label">드립 로스(Drip Loss)</td><td>5~7%</td><td>2~3%</td><td>육즙 보존력 60% 향상, 촉촉한 육질</td></tr>
+              <tr><td class="oi-label">보수력(WHC)</td><td>50~55%</td><td>57~60%</td><td>조리 후 중량 보존 및 감칠맛 유지</td></tr>
+              <tr><td class="oi-label">전단력(Shear Force)</td><td>3.5~4.3kg</td><td>3.2kg</td><td>고기의 연도 개선으로 부드러움 극대화</td></tr>
+              <tr><td class="oi-label">관능평가(향미)</td><td>4.5~5.0</td><td>5.2</td><td>잡내 제거 및 고소한 풍미 우위</td></tr>
+            </table>
+            <p class="oi-note">
+              특히 가열 조리 시 발생하는 누린내를 원천 차단하는 이취 제거 효과는 온EIO 돼지만의
+              강력한 무기입니다. 이는 가정간편식(HMR)이나 햄 제품에서 소비자가 가장 민감하게
+              반응하는 가열 후 재조리 시 발생하는 이취 문제를 해결하여 제품의 재구매율을 높이는
+              핵심 요소가 됩니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="oi-accordion">
+          <summary>8. 실증 테스트 핵심 성과지표(KPI)</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:22%;">평가 영역</th><th>세부 항목</th><th>측정 방법 및 목표</th></tr>
+              <tr><td class="oi-label">환경(Odor)</td><td>암모니아 농도</td><td>ICT 악취 측정 장비 활용, 대조구 대비 30% 이상 저감</td></tr>
+              <tr><td class="oi-label">품질(Quality)</td><td>도체 등급 · 지방산</td><td>1+ 등급 출현율 향상 및 올레인산 유의적 증가</td></tr>
+              <tr><td class="oi-label">생산성(Profit)</td><td>사료요구율 · 폐사율</td><td>사료효율 10~25% 개선 및 육성율 96% 이상 달성</td></tr>
+              <tr><td class="oi-label">관능(Taste)</td><td>이취 유무 · 기호도</td><td>블라인드 테스트 진행, 잡내 '없음' 및 기호도 4.5 이상</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 9 -->
+        <details class="oi-accordion">
+          <summary>9. 글로벌 프리미엄 브랜드 구축 전략</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              현재 글로벌 고품질 돼지고기 시장은 스페인의 이베리코가 독점하고 있으나, 온EIO
+              돼지는 이를 넘어서는 차세대 가치를 제안합니다. 이베리코의 성공 요인이 도토리라는
+              자연 사료와 방목 환경에 있다면, 온EIO 돼지는 나노 미네랄 기술을 통한 기능성(항산화,
+              면역)과 ESG(악취·탄소 저감) 가치를 결합하여 글로벌 시장의 새로운 기준을 제시합니다.
+            </p>
+            <table>
+              <tr><th>국가</th><th>브랜드</th><th>핵심 특징</th><th>시사점</th></tr>
+              <tr><td class="oi-label">스페인</td><td>Jamon Iberico</td><td>도토리 사육, 고지방 풍미, 장기 숙성</td><td>세계 최고가($200~500/kg) 형성</td></tr>
+              <tr><td class="oi-label">일본</td><td>Kagoshima Kurobuta</td><td>흑돼지 품종, 지역 인증 관리 철저</td><td>브랜딩을 통한 고부가가치 창출</td></tr>
+              <tr><td class="oi-label">미국</td><td>Berkshire Pork</td><td>전통 품종, 항생제 없는 사육 방식</td><td>소비자 신뢰 중심의 마케팅 전략</td></tr>
+            </table>
+
+            <h4 class="oi-sub-plain">가공식품 및 유통망 연계 마케팅 전략</h4>
+            <p class="oi-lead">
+              온EIO 급여 돼지는 육가공 사업에도 획기적인 경쟁력이 됩니다. 항산화 효과로 인한
+              천연 보존력은 냉장육 및 가공품의 유통기한(Shelf-life)을 연장시켜 홍콩 등 원거리
+              수출 시 신선도 유지에 결정적인 이점을 제공합니다. 또한 뒷다리살(후지) 등 비선호
+              부위에 유황의 기능성을 더해 아이들에게 안심하고 먹일 수 있는 건강 지향 프리미엄
+              햄 시장을 선점할 수 있습니다. 대형마트 등에 온EIO 전용 팝업 코너를 개설하고, 매장에서
+              직접 고기를 구워도 옷에 냄새가 배지 않는 특징을 소비자가 직접 체험하게 함으로써
+              즉각적인 구매 전환과 브랜드 로열티를 확보할 수 있습니다.
+            </p>
+
+            <h4 class="oi-sub-plain">표준화된 프리미엄 모델의 전국적 확산</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              농·축협과 지방자치단체는 온EIO 급이 모델을 표준 사양 관리 지침으로 채택하여 지역
+              브랜드의 가치를 상향 평준화할 필요가 있습니다. '온EIO 한돈 인증제'를 도입하여
+              농가에는 고품질 생산에 따른 인센티브를 제공하고, 소비자에게는 검증된 품질을 보증하는
+              시스템 구축이 시급합니다. 이는 지역 소멸 위기에 처한 농촌 경제에 새로운 활력을
+              불어넣고, 한돈을 명실상부한 '한국 축산의 반도체'로 육성하는 지름길이 될 것입니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 10 : 인증·시험성적서 (통합) -->
+        <details class="oi-accordion">
+          <summary>10. 인증·시험성적서</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:32%;">시험·인증 자료</th><th>주요 내용</th></tr>
+              <tr><td class="oi-label">녹십자 구제역 면역 테스트</td><td>IgA·IgM 항체 수치 비교 (대조군 대비 실험군 유의적 증가)</td></tr>
+              <tr><td class="oi-label">이유자돈 시험사육 결과</td><td>393두 대상 8구간 시험, 육성률 및 두당 체중 개선 확인</td></tr>
+              <tr><td class="oi-label">국립축산과학원 지방산 성분비교표</td><td>일반돈 vs 온EIO 급여돈 지방산 조성 비교 (아산시농업기술센터)</td></tr>
+              <tr><td class="oi-label">관능검사 결과</td><td>향미 부문 온EIO 급여돈 수치 우위 확인</td></tr>
+            </table>
+            <p class="oi-lead" style="margin-top: 18px; margin-bottom: 8px;">
+              위 시험성적서 원본 스캔본 및 그래프 이미지는 아래 자료실에서 확인하실 수 있습니다.
+              (제품 상세페이지 로딩 속도 확보를 위해 고해상도 이미지는 본문에 직접 삽입하지 않고
+              자료실로 일원화하였습니다.)
+            </p>
+            <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지·성적서 확인</a>
+          </div>
+        </details>
 
       </div>
-      <!-- ▲▲▲ [입력 필요] 돈육 제품 상세 내용 끝 ▲▲▲ -->
 
-      <div style="display: flex; justify-content: space-between; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem;">
+      <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; max-width: 960px; margin-left: auto; margin-right: auto;">
         <a href="product-01-hanwoo.html" style="color: var(--ink-soft);">← 한우</a>
         <a href="product-03-broiler.html" style="color: var(--ink-soft);">육계 →</a>
       </div>
