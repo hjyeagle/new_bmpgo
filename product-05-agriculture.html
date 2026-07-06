@@ -3,8 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>수산 | 제품소개 | 농업회사법인 수성(주)</title>
+<title>농산물(벼·채소·과수) | 제품소개 | 농업회사법인 수성(주)</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .oi-info { max-width: 960px; margin: 0 auto; }
+  .oi-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+  .oi-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+  .oi-info h4.oi-sub-plain { font-size: 1rem; color: var(--ink); margin: 24px 0 10px; }
+
+  .oi-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+  .oi-info th, .oi-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .oi-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .oi-info td.oi-label { background: var(--bg); font-weight: 700; width: 24%; white-space: nowrap; }
+  .oi-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
+
+  .oi-accordion {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .oi-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .oi-accordion summary::-webkit-details-marker { display: none; }
+  .oi-accordion summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+  .oi-accordion[open] summary::after { content: '–'; }
+  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
+  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
+</style>
 </head>
 <body>
 
@@ -37,56 +81,252 @@
 
       <div class="section-head">
         <div>
-          <span class="hero-eyebrow" data-i18n="products.aquaculture">수산</span>
-          <h1 class="section-title" style="margin-top: 14px;">수산</h1>
+          <h1 class="section-title">농산물(벼·채소·과수)</h1>
         </div>
         <a href="index.html#products" class="link-more" data-i18n="notice.more">목록으로</a>
       </div>
 
-      <!-- ============================================================
-           ▼▼▼ [입력 필요] 수산 제품 상세 내용 ▼▼▼
-           기존 홈페이지의 "제품소개 > 수산" 페이지 내용을 참고하여
-           아래 항목을 채워 주세요. 필요 없는 항목(줄)은 삭제하셔도 됩니다.
-           ============================================================ -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 8px;">
+      <div class="oi-info" style="margin-top: 8px;">
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 특징</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 수산용 바이오황 제품의 특징 설명을 입력해 주세요.]
-          </p>
+        <h2 class="oi-title">지속 가능한 고품질 농산물 생산을 위한 온EIO(Bio Sulfur) 비료</h2>
+        <p class="oi-lead">
+          (주)수성 온EIO(Bio Sulfur) 비료를 통한 벼·채소·과수 전 작물 적용 기술 및 농협 연계
+          공동 실증 제안
+        </p>
+        <p class="oi-lead">
+          현대 농업은 화학비료 중심 시비체계로 인한 유황(S) 결핍 문제에 직면해 있습니다.
+          유황은 질소(N)·인산(P)·칼륨(K)에 이어 '제4의 핵심 영양소'로 인정받고 있으며,
+          벼·배추·마늘·양파·딸기·토마토 등 전 작물에서 수량·품질·병해 저항성을 동시에
+          개선하는 핵심 요소입니다. 농업회사법인 수성(주)은 독자적인 온EIO 비료 기술
+          (특허 제10-1959402호, 제10-1968905호)을 통해 토양 환경 개선과 농약 의존도
+          절감, 농가 소득 증대를 동시에 실현하는 솔루션을 제시합니다.
+        </p>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">주요 성분</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 성분 정보를 입력해 주세요. 예: 유효성분명, 함량 등]
-          </p>
+        <!-- 1 -->
+        <details class="oi-accordion" open>
+          <summary>1. 온EIO(Bio Sulfur) 비료의 핵심 기술 및 안전성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
+              <tr><td class="oi-label">특허 기술</td><td>온EIO 현탁액의 제조방법(특허 제10-1959402호), 온EIO 사료 및 비료 제조 기술(특허 제10-1968905호)</td><td>미생물 공법 기반 초미세 입자 제조</td></tr>
+              <tr><td class="oi-label">안전성 입증</td><td>급성어독성 실험 결과 중독 증상 없음(생태계 안전성), 항생제·잔류농약 불검출</td><td>건국대학교, 한국생물안전성연구소 등 분석</td></tr>
+              <tr><td class="oi-label">인증 현황</td><td>유기농업자재 공시(공시번호 3-6-040 등) - 유기농·무농약 재배 즉시 적용 가능</td><td>순천대학교 산학협력단 발급</td></tr>
+              <tr><td class="oi-label">주요 기능</td><td>① 독성 제거 및 미네랄 강화 &nbsp;② 불포화지방산·아미노산 함량 증대 &nbsp;③ 작물 성장 촉진 및 병해 저항성 강화</td><td>농약·화학비료 저감 대체재</td></tr>
+            </table>
+            <p class="oi-note">
+              온EIO 비료는 기존 광물성 유황이나 화학 처리 유황비료와 달리, 미생물 공법을 통해
+              제조된 초미세 입자(1~4㎛) 형태의 고기능성 농자재입니다. 기존 광물 유황은 중금속
+              독소 제거 기술 부재로 토양·생산물 오염 우려가 있으나, 온EIO는 독자 공법으로 이러한
+              독성을 완전히 제거한 안전한 유황원입니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">적용 방법</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 급여량/시비량, 사용 주기 등 적용 방법을 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 2 -->
+        <details class="oi-accordion">
+          <summary>2. 온EIO 비료 vs 일반 무기유황(광물황) 비교</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>수성(주) 온EIO</th><th>일반 무기유황(석유·광물황)</th><th>우월성 결과</th></tr>
+              <tr><td class="oi-label">입자 크기</td><td>1~4㎛(나노 미세 입자)</td><td>400~600㎛</td><td>표면적 극대화로 흡수율 비약적 향상</td></tr>
+              <tr><td class="oi-label">물성</td><td>친수성(물에 잘 분산됨)</td><td>소수성(뭉침 및 침전 발생)</td><td>엽면 시비 및 관주 시 편의성 증대</td></tr>
+              <tr><td class="oi-label">안전성</td><td>독성 제거(법제), 식물독성 없음</td><td>강산성(pH 2~3), 토양 산성화 유발</td><td>토양 pH 조절 및 작물 안전성 확보</td></tr>
+              <tr><td class="oi-label">살균력</td><td>곰팡이 포자 제거에 최적화</td><td>입자가 커 살균 효과 저조</td><td>탄저병·흰가루병 등 병해 저항성 강화</td></tr>
+            </table>
+            <h4 class="oi-sub-plain">수분 분산성 등 수치적 우위 분석</h4>
+            <table>
+              <tr><th>비교 항목</th><th>단위</th><th>일반 식이유황(MSM)</th><th>(주)수성 온EIO</th><th>우위성 결과</th></tr>
+              <tr><td class="oi-label">수분 분산성</td><td>%</td><td>12.5</td><td>98.4</td><td>약 7.8배 높음</td></tr>
+              <tr><td class="oi-label">입자 평균 크기</td><td>μm</td><td>150 - 300</td><td>0.05 - 0.2</td><td>나노급 미세 입자</td></tr>
+              <tr><td class="oi-label">메티오닌 합성 효율</td><td>%</td><td>100(기준)</td><td>128.5</td><td>28.5% 향상</td></tr>
+              <tr><td class="oi-label">지질 산화 억제율(TBARS)</td><td>%</td><td>15.2</td><td>34.7</td><td>2배 이상의 항산화력</td></tr>
+            </table>
+          </div>
+        </details>
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 이미지</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8; margin-bottom: 16px;">
-            [여기에 제품 사진을 첨부하시려면 이미지 파일을 자료실에 올리고,
-            아래 자료실 링크로 연결하는 것을 권장합니다. (홈페이지 이미지 용량 최소화 목적)]
-          </p>
-          <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지 확인</a>
+        <!-- 3 -->
+        <details class="oi-accordion">
+          <summary>3. 유황의 생화학적 메커니즘과 작물 생육 효과</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              유황은 식물체 내 단백질의 구조적 안정성과 대사 조절의 핵심입니다. 특히 시스테인
+              (Cysteine)·메티오닌(Methionine) 합성에 관여하며, 식물체 내 유황의 약 70%는 이러한
+              아미노산 형태로 존재합니다. 유황이 부족하면 질소를 충분히 흡수해도 단백질로
+              전환하지 못해 질산염이 축적되고 성장이 정체됩니다.
+            </p>
+            <table>
+              <tr><th style="width:24%;">유황 관련 화합물</th><th>주요 기능 및 역할</th><th>농업적 중요성</th></tr>
+              <tr><td class="oi-label">시스테인(Cysteine)</td><td>이황화 결합 형성, 단백질 구조 유지</td><td>단백질 안정성 및 기능성 강화</td></tr>
+              <tr><td class="oi-label">메티오닌(Methionine)</td><td>필수 아미노산, 단백질 합성 개시</td><td>작물의 영양 가치(식량 안보) 제고</td></tr>
+              <tr><td class="oi-label">글루타티온(Glutathione)</td><td>항산화 작용, 스트레스 저항성</td><td>기상 이변 및 병해충 내성 강화</td></tr>
+              <tr><td class="oi-label">알리신(Allicin)</td><td>백합과 채소의 향미 및 항균 성분</td><td>마늘·양파 등 고부가가치 작물 품질 향상</td></tr>
+            </table>
+            <p class="oi-note">
+              질소 이용 효율(NUE) 측면에서 최적의 작물 생육을 위한 질소:유황 비율(N:S Ratio)은
+              대략 10:1~15:1로 유지되어야 하며, 이 균형이 깨질 경우 비료 시용 대비 수확량 증대
+              효과가 급격히 저하됩니다. 또한 유황은 글루타티온·피토켈라틴의 전구체로서 가뭄,
+              염해, 중금속 등 환경 스트레스에 대한 저항성을 높입니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">인증·시험성적서</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [관련 인증서/시험성적서가 있으면 자료실 업로드 후 안내 문구를 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 4 -->
+        <details class="oi-accordion">
+          <summary>4. 벼(수도작) 적용 효과 및 실증 데이터</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>검사·테스트 항목</th><th>일자</th><th>검사기관</th><th>결과 및 함의</th></tr>
+              <tr><td class="oi-label">유황쌀 잔류농약/항생제 검사</td><td>2013년</td><td>건국대학교 등</td><td>항생제 불검출, 유황 성분 0.19%(일반쌀 0.12%) 검출. '기능성 유황쌀' 차별화 포인트 확보</td></tr>
+              <tr><td class="oi-label">베트남 벼농사 테스트-1</td><td>2024.12.16</td><td>베트남 국립비료검증원(NCFT)</td><td>대조군 대비 실제 수확량 10% 증가 확인. 세계 2~3위 쌀 수출국 정부기관 공식 인증</td></tr>
+              <tr><td class="oi-label">베트남 테스트베드 지원사업</td><td>2024.10</td><td>한국농업기술진흥원(KOAT)</td><td>도열병 등 곰팡이성 질병 억제 효과 탁월. '농약 저감형 비료'로서 가치 입증</td></tr>
+              <tr><td class="oi-label">전라남도 해남군 대단위재배</td><td>2020~2023</td><td>해남군(330,000㎡)</td><td>ha당 생산량 10~15% 증가, 질병·해충 예방. 3년간 장기 대단위 실증으로 재현 가능성 입증</td></tr>
+            </table>
+            <p class="oi-note">
+              벼는 식미치 향상 및 증산 효과가 핵심입니다. 수확량은 대조군 대비 10~15% 증산이
+              확인되었으며(베트남 국립비료검증원 공식 인증), 단백질(글루텔린) 함량 및 저장성이
+              개선되고, 도열병·흰잎마름병 등 주요 병해 예방과 도복 경감 효과가 함께 나타났습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="oi-accordion">
+          <summary>5. 배추 재배 적용 기술: 단계별 처리 가이드(농협 연계 실증 제안)</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              배추 재배는 '병해 저감·토양환경 개선·수량 및 품질 향상'을 동시에 달성하는 Bio-Sulfur
+              Solution 전략에 따라 농약 병행 → 단계적 감축 실증 → 친환경 전환의 3단계로 추진합니다.
+            </p>
+            <table>
+              <tr><th style="width:22%;">처리 단계</th><th>처리 방법</th><th>기대 효과</th></tr>
+              <tr><td class="oi-label">1. 정식 전 토양 처리</td><td>로터리 작업 후 온EIO 250배 희석액 전면 살포</td><td>토양 내 유익 미생물 환경 개선, 초기 병해 예방 방어막 형성, 뿌리 활력 증진</td></tr>
+              <tr><td class="oi-label">2. 모종 침지</td><td>정식 전 250배 희석액에 30분간 침지 처리</td><td>활착 촉진(Fast Rooting), 초기 생육 안정(Growth Stability)</td></tr>
+              <tr><td class="oi-label">3. 생육기 관리(정기)</td><td>농약 살포 시 온EIO 500배 희석 혼용</td><td>1년차 기존 농약과 병행 안전성 확인, 2년차 데이터 기반 농약 감축 실증</td></tr>
+              <tr><td class="oi-label">4. 병해 발생 시</td><td>200~250배 희석액 집중 살포</td><td>병해 조기 진압 및 확산 억제</td></tr>
+            </table>
+            <p class="oi-note">Tip: 모종 침지 후 정식 시, 관주 처리를 병행하면 활착 촉진 효과가 극대화됩니다.</p>
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="oi-accordion">
+          <summary>6. 배추 실증 기대효과 및 시험재배 추진 계획</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>관행구(대조군)</th><th>온EIO 처리구(실험군)</th><th>개선율</th></tr>
+              <tr><td class="oi-label">10a당 수량</td><td>7.0톤</td><td>8.5톤</td><td>+21%</td></tr>
+              <tr><td class="oi-label">병해 발생률</td><td>15%</td><td>3%</td><td>-80%</td></tr>
+              <tr><td class="oi-label">상품성</td><td>기준</td><td>당도 개선·식감 향상</td><td>약 20% 개선</td></tr>
+            </table>
+            <p class="oi-note">* 위 수치는 기존 유사 실증 사례를 바탕으로 구성된 기대 성과 지표이며, 실제 시험재배를 통해 검증할 예정입니다.</p>
+
+            <h4 class="oi-sub-plain">시험재배 추진 로드맵(4단계)</h4>
+            <table>
+              <tr><th>단계</th><th>내용</th></tr>
+              <tr><td class="oi-label">1. 기반 조성</td><td>시범농가 선정 및 토양 분석·로터리 작업</td></tr>
+              <tr><td class="oi-label">2. 정식 및 실증</td><td>모종 침지 처리 및 관행구 대비 재배(대조군 vs 실험군)</td></tr>
+              <tr><td class="oi-label">3. 데이터 조사</td><td>생육 현황·병해율 등 주기적 데이터 확보(활착률, 엽수, 결구 상태, 병해율, 수량, 브릭스·당도)</td></tr>
+              <tr><td class="oi-label">4. 성과 보고</td><td>수량·품질 분석 및 농가 체감 만족도 조사</td></tr>
+            </table>
+            <p>
+              <strong>농협 연계 제안:</strong> ① 지역 특화 시범사업 추진 ② 농협 연계 공동 실증 참여
+              ③ 데이터 기반 확대 보급 체계 구축 ④ 친환경·저농약 전환을 통한 ESG 농업 선도를
+              제안합니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="oi-accordion">
+          <summary>7. 채소·과수 적용 효과 및 현장 실증 사례</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:20%;">작물</th><th>사용 방법</th><th>주요 효과</th></tr>
+              <tr><td class="oi-label">고추(강원 횡성, 80,000㎡, 2020.4~2021.10)</td><td>250~500배 희석, 관수 시 3회 살포</td><td>생산량 10~15% 증가(2~3일 조기 발아), 고추 크기 증가, 탄저병 등 예방, 서리 후 추위 피해 예방</td></tr>
+              <tr><td class="oi-label">딸기(충남 논산, 2018.9~2021.8)</td><td>250~500배 희석, 월 1회+주 1회 관개 잎자루 살포</td><td>과일 수확량 10~15% 증가, 당도·크기·저장기간 증가, 냉해·질병 피해 감소</td></tr>
+              <tr><td class="oi-label">토마토(강원 횡성, 8,000/132,000㎡, 2022.4~2023.10)</td><td>250~500배 희석, 월 2~3회 엽면 살포</td><td>8,000㎡ 농장 매출 2억 6천만 원, 과일 수확량 최대 10~15% 증가, 당도·보관기간 증가</td></tr>
+              <tr><td class="oi-label">마늘/양파</td><td>토양·엽면 시비</td><td>알리신 함량 증가, 구 비대 촉진, 저장성 20% 향상, 메티오닌 함량 18~40% 증가(연구보고)</td></tr>
+            </table>
+            <h4 class="oi-sub-plain">작물별 유황 시용 시 주요 품질 변화</h4>
+            <table>
+              <tr><th>작물</th><th>주요 변화</th></tr>
+              <tr><td class="oi-label">마늘</td><td>알리신 함량 증가, 구의 경도 강화, 향미 개선 및 저장성 20% 향상</td></tr>
+              <tr><td class="oi-label">양파</td><td>구 비대 촉진, 저장 중 부패율 감소, 수확량 10~15% 증산 및 상품성 제고</td></tr>
+              <tr><td class="oi-label">고추</td><td>캡사이신 농도 조절 및 비타민C 상승, 과피 두께 증가 및 신선도 유지</td></tr>
+              <tr><td class="oi-label">토마토</td><td>라이코펜 함량 및 당도 증가, 착색 균일도 개선 및 유통 수명 연장</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="oi-accordion">
+          <summary>8. 두류·유지작물 및 글로벌 실증 데이터</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              콩·유채 등 두류 및 유지작물은 단백질·지방 함량이 경제적 가치를 결정하며, 유황
+              요구량이 다른 작물보다 월등히 높습니다. 미국 9개 주 40개 필지 실증(2019~2020)에서
+              온EIO형 고활성 유황원 시용 시 콩의 단백질 수율이 약 33% 증가한 것으로 나타났습니다.
+            </p>
+            <table>
+              <tr><th>연구 지역</th><th>대상 작물</th><th>수확량 변화(대비 대조군)</th><th>주요 품질 개선 사항</th></tr>
+              <tr><td class="oi-label">중국(600개소)</td><td>옥수수, 쌀, 채소</td><td>평균 +10%</td><td>단백질 함량 및 비타민 농도 상승</td></tr>
+              <tr><td class="oi-label">인도(13만 시료)</td><td>유지작물, 곡물</td><td>+7% ~ +15%</td><td>오일수율 및 아미노산 조성 개선</td></tr>
+              <tr><td class="oi-label">미국(9개 주)</td><td>대두(Soybean)</td><td>단백질 수율 +15% 이상</td><td>시스테인·메티오닌 농도 유의미한 상승</td></tr>
+              <tr><td class="oi-label">브라질(Paraná)</td><td>밀(Wheat)</td><td>이삭당 알 수 +6.8%</td><td>나노 유황 사용 시 흡수율 극대화</td></tr>
+            </table>
+            <p class="oi-note">출처: 국제 비료 협회(IFA) 및 지역별 농업 연구소 보고서. 중국 전역 600개 이상 실증 시험에서 85% 이상 명확한 증산 효과 확인, 평균 증산율 10%.</p>
+          </div>
+        </details>
+
+        <!-- 9 -->
+        <details class="oi-accordion">
+          <summary>9. 각종 인증 및 환경 안정성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:24%;">평가 항목</th><th>충족 근거</th></tr>
+              <tr><td class="oi-label">기술적 독창성</td><td>독자적 바이오 공법 및 나노화 기술 보유(특허 제10-1959402호)</td></tr>
+              <tr><td class="oi-label">유기농업자재 공시</td><td>유기농·무농약 농산물 재배 즉시 적용 가능(공시번호 3-6-040 등)</td></tr>
+              <tr><td class="oi-label">생태계 안전성</td><td>급성어독성 실험(OECD Test Guideline 203 기준) 결과 중독 증상 없음</td></tr>
+              <tr><td class="oi-label">잔류물질 안전성</td><td>건국대학교 분석 결과 항생제 및 잔류농약 불검출로 식품 안전성 보장</td></tr>
+              <tr><td class="oi-label">환경 친화성</td><td>미생물 제조 공정 및 질소 유실 저감으로 ESG 경영·탄소중립 부합</td></tr>
+            </table>
+            <p class="oi-note">
+              시험성적서·특허증 원본, 급성어독성 실험 결과지 등은 <a href="archive.html">자료실</a>에서
+              확인하실 수 있습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 10 -->
+        <details class="oi-accordion">
+          <summary>10. 경제성 분석 및 결론</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:22%;">구분</th><th>내용</th></tr>
+              <tr><td class="oi-label">농가 ROI</td><td>비용 상승분을 고려해도 수확량 10% 내외 증산 및 등급 향상에 따른 매출 증대는 비용 대비 약 5~10배 이상의 순이익 증대로 귀결</td></tr>
+              <tr><td class="oi-label">프리미엄 포지셔닝</td><td>고기능성 브랜드화를 통해 일반 상토·비료 대비 2배 이상 가격 책정 가능, 마진율 20~40% 예상</td></tr>
+              <tr><td class="oi-label">ESG 가치</td><td>질소 이용 효율(NUE) 개선으로 온실가스 저감 및 토양 오염 방지, 탄소중립 실현 기여</td></tr>
+            </table>
+            <h4 class="oi-sub-plain">결론</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              <strong>결론적으로 온EIO 비료는 토양 피로도 증대와 영양 불균형이라는 현대 농업의
+              구조적 문제를 해결하는 '고소득 농업 플랫폼'의 핵심 엔진입니다.</strong> 근거는 다음과
+              같습니다. 첫째, 벼·배추·고추·딸기·토마토·마늘·양파 등 전 작물에서 수확량 10~21%,
+              병해 발생률 최대 80% 감소라는 일관된 실증 데이터가 확보되어 있습니다. 둘째, 중국·
+              인도·미국·브라질 등 글로벌 실증에서도 동일한 효과가 재현되어 보편적 기술 신뢰성을
+              입증했습니다. 셋째, 유기농업자재 공시와 항생제·잔류농약 불검출 인증을 이미 확보해
+              친환경 인증 절차를 단축할 수 있습니다. 농협의 유통망과 지도 사업을 활용한 시범포
+              운영, 기능성 농산물 브랜드 육성, 정밀 시비 가이드라인 보급을 통해 지속 가능한
+              고수익 영농 모델을 조속히 정착시킬 것을 제안합니다.
+            </p>
+          </div>
+        </details>
 
       </div>
-      <!-- ▲▲▲ [입력 필요] 수산 제품 상세 내용 끝 ▲▲▲ -->
 
-      <div style="display: flex; justify-content: space-between; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem;">
-        <a href="product-07-fruit.html" style="color: var(--ink-soft);">← 과수</a>
-        <a href="product-01-hanwoo.html" style="color: var(--ink-soft);">한우 →</a>
+      <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; max-width: 960px; margin-left: auto; margin-right: auto;">
+        <a href="product-04-layer.html" style="color: var(--ink-soft);">← 산란계</a>
+        <a href="product-06-aquaculture.html" style="color: var(--ink-soft);">수산 →</a>
       </div>
 
     </div>
