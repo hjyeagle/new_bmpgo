@@ -5,6 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>한우 | 제품소개 | 농업회사법인 수성(주)</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .oi-info { max-width: 960px; margin: 0 auto; }
+  .oi-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+  .oi-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+  .oi-info h4.oi-sub-plain { font-size: 1rem; color: var(--ink); margin: 24px 0 10px; }
+
+  .oi-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+  .oi-info th, .oi-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .oi-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .oi-info td.oi-label { background: var(--bg); font-weight: 700; width: 24%; white-space: nowrap; }
+  .oi-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 10px 0 0; }
+
+  .oi-accordion {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .oi-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .oi-accordion summary::-webkit-details-marker { display: none; }
+  .oi-accordion summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+  .oi-accordion[open] summary::after { content: '–'; }
+  .oi-accordion[open] summary { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .oi-accordion .oi-accordion-body { padding: 18px 20px 20px; }
+  .oi-accordion .oi-accordion-body table { margin-bottom: 0; }
+</style>
 </head>
 <body>
 
@@ -43,48 +87,240 @@
         <a href="index.html#products" class="link-more" data-i18n="notice.more">목록으로</a>
       </div>
 
-      <!-- ============================================================
-           ▼▼▼ [입력 필요] 한우 제품 상세 내용 ▼▼▼
-           기존 홈페이지의 "제품소개 > 한우" 페이지 내용을 참고하여
-           아래 항목을 채워 주세요. 필요 없는 항목(줄)은 삭제하셔도 됩니다.
-           ============================================================ -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 8px;">
+      <div class="oi-info" style="margin-top: 8px;">
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 특징</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 한우용 바이오황 제품의 특징 설명을 입력해 주세요.]
-          </p>
+        <h2 class="oi-title">국제적 실증에 기초한 프리미엄급 한우</h2>
+        <p class="oi-lead">
+          (주)수성 온EIO(Bio Sulfur) 기술을 통한 축산 혁신과 글로벌 시장 진출 전략
+        </p>
+        <p class="oi-lead">
+          와규(Wagyu)가 이미 '고급 소고기'의 대명사로 전 세계 시장을 선점한 상황에서, 한우가 경쟁 우위를
+          확보하기 위해서는 기존의 마블링 중심 육성 방식에서 탈피하여 과학적 실증에 기반한 '차별화된
+          기능성'과 '독보적 풍미'를 증명해야 합니다. (주)수성의 '온EIO(Bio-Sulfur)' 기술은 한우의 육질을
+          혁신적으로 개선함과 동시에 축산 환경 문제를 해결할 수 있는 강력한 대안입니다.
+        </p>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">주요 성분</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 성분 정보를 입력해 주세요. 예: 유효성분명, 함량 등]
-          </p>
+        <!-- 1 -->
+        <details class="oi-accordion" open>
+          <summary>1. 온EIO(Bio Sulfur)의 핵심 기술 및 안전성</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>핵심 내용</th><th>비고</th></tr>
+              <tr><td class="oi-label">특허 기술</td><td>온EIO 사료 및 비료 제조 기술 (특허 제 10-1968905호)</td><td>법제 유황 기술</td></tr>
+              <tr><td class="oi-label">안전성 입증</td><td>미국 공인 인증기관의 성분 안전성 테스트 결과 보유</td><td>마케팅 핵심 포인트</td></tr>
+              <tr><td class="oi-label">주요 기능</td><td>① 독성 제거 및 미네랄 강화 &nbsp;② 불포화지방산 함량 증대 &nbsp;③ 동식물 성장 촉진 및 면역력 강화</td><td>항생제·농약 저감</td></tr>
+            </table>
+            <p class="oi-note">
+              온EIO란, 자연에서 얻은 광물성 유황의 독성을 독자적인 고열 처리 및 특수 미생물 발효 공법으로
+              완벽히 제거(Detoxification)하고, 생체 이용률이 높은 나노 입자 형태로 변환시킨 첨단 바이오
+              물질입니다. 유황은 본래 강력한 해독 작용과 면역력 증강, 단백질 합성 효과가 있으나 독성(비소,
+              납 등) 때문에 사용이 제한되었습니다. 당사의 '법제 기술'은 이 독성을 100% 제거하여 가축에게
+              안전하게 급여할 수 있는 '천연 항생제' 대체재를 완성했습니다.
+            </p>
+          </div>
+        </details>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">적용 방법</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [여기에 급여량/시비량, 사용 주기 등 적용 방법을 입력해 주세요.]
-          </p>
-        </div>
+        <!-- 2 -->
+        <details class="oi-accordion">
+          <summary>2. 수성(주) 온EIO 사료 vs 식이유황(MSM) 비교</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>구분</th><th>온EIO 특허기술 수성(주)</th><th>식이유황(MSM)</th><th>비고</th></tr>
+              <tr><td class="oi-label">유황순도</td><td>99.9% (고순도)</td><td>약 34% (나머지는 수소, 탄소 등)</td><td>법제유황이 단순 3배 이상 훨씬 더 강력함</td></tr>
+              <tr><td class="oi-label">열 저항성</td><td>강함 (가공 용이)</td><td>약함 (130℃ 이상 파괴)</td><td>사료 펠렛가공 시 고온 견딤</td></tr>
+              <tr><td class="oi-label">분자량</td><td>나노 입자 (흡수율 극대화)</td><td>분자량이 큼</td><td>법제유황이 체내 흡수에 유리</td></tr>
+              <tr><td class="oi-label">주요 용도</td><td>전 축종 사료첨가제, 비료</td><td>주로 인체용 건강기능식품</td><td>양어 사료 등 고온가공 가능</td></tr>
+              <tr><td class="oi-label">경제성</td><td>우수 (대량 생산 가능)</td><td>낮음 (고가)</td><td>농가소득 증대에 적합</td></tr>
+            </table>
+          </div>
+        </details>
 
-        <div>
-          <h2 style="font-size: 1.15rem; margin-bottom: 12px;">제품 이미지</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8; margin-bottom: 16px;">
-            [여기에 제품 사진을 첨부하시려면 이미지 파일을 자료실에 올리고,
-            아래 자료실 링크로 연결하는 것을 권장합니다. (홈페이지 이미지 용량 최소화 목적)]
-          </p>
-          <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지 확인</a>
+        <!-- 3 -->
+        <details class="oi-accordion">
+          <summary>3. 한우·육우 육질개선·성장촉진·면역력강화 효과</summary>
+          <div class="oi-accordion-body">
+            <h4 class="oi-sub-plain">한우</h4>
+            <table>
+              <tr><th style="width:22%;">구분</th><th>세부 내용</th></tr>
+              <tr><td class="oi-label">육질개선</td><td>
+                마블링 증가: 온EIO 급이는 지방대사를 조절하여 한우의 마블링(근내 지방)을 증가시킴 ·
+                육질 연화: 유황 성분이 근육 조직의 연화(Softening)를 촉진하여 고기의 씹는 맛과 부드러움을 개선함 ·
+                색상 및 풍미 향상: 육색이 밝아지고, 한우 특유의 풍미가 더 좋아지는 효과를 제공
+              </td></tr>
+              <tr><td class="oi-label">성장촉진</td><td>
+                사료 효율 개선: 온EIO 급이는 한우의 사료 전환율을 높여 동일한 사료량으로 더 빠른 성장과
+                체중 증가를 가능케 함 · 사육기간 단축: 성장 속도가 빨라져 사육 기간이 단축되며, 농가의
+                생산성을 높이는 데 기여
+              </td></tr>
+              <tr><td class="oi-label">면역력강화</td><td>
+                온EIO은 항산화 작용을 통해 한우의 면역체계를 강화하여 질병 발생률을 낮춤 ·
+                스트레스 저감 효과로 가축의 건강 상태를 개선하고, 사육 환경에서 안정성을 높임
+              </td></tr>
+            </table>
 
-          <h2 style="font-size: 1.15rem; margin: 28px 0 12px;">인증·시험성적서</h2>
-          <p style="color: var(--ink-soft); line-height: 1.8;">
-            [관련 인증서/시험성적서가 있으면 자료실 업로드 후 안내 문구를 입력해 주세요.]
-          </p>
-        </div>
+            <h4 class="oi-sub-plain">육우</h4>
+            <table>
+              <tr><th style="width:22%;">구분</th><th>세부 내용</th></tr>
+              <tr><td class="oi-label">육질개선</td><td>
+                온EIO 급여를 통해 육질이 크게 개선됨 · 지방분포 조절: 지방의 균일한 분포를 유도하여
+                육우 고기의 품질을 향상시킴 · 풍미 강화: 온EIO 급이는 육우 고기의 맛과 향을 개선하여
+                소비자 만족도를 높임
+              </td></tr>
+              <tr><td class="oi-label">성장효율향상</td><td>
+                체중 증가: 육우의 성장 속도가 빨라지고, 일정 기간 동안의 체중 증가율이 높아짐 ·
+                경제적 생산: 사료 전환율이 높아져 농가의 비용을 절감하고, 생산성을 향상시킴
+              </td></tr>
+              <tr><td class="oi-label">스트레스감소</td><td>
+                온EIO 급이는 육우의 스트레스 호르몬 분비를 줄여, 보다 안정적인 사육 환경을 제공함 ·
+                스트레스 감소는 육질에 직접적으로 긍정적인 영향을 줌
+              </td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 4 -->
+        <details class="oi-accordion">
+          <summary>4. 온EIO의 질병 예방 메커니즘</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>주요 타겟</th><th>효과 및 기전</th><th>기대 결과</th></tr>
+              <tr><td class="oi-label">설사</td><td>바이러스 로타(Rota)·코로나(Corona) 바이러스 증식 억제</td><td>가축의 치사율 감소 및 생존율 향상</td></tr>
+              <tr><td class="oi-label">면역 체계</td><td>비특이적 면역 반응 활성화 및 항체 형성 촉진</td><td>외부 병원체에 대한 원천적 방어막 형성</td></tr>
+              <tr><td class="oi-label">전염병 예방</td><td>병원균의 세포 침투 차단 및 항균 작용</td><td>대규모 집단 감염 리스크 최소화</td></tr>
+            </table>
+            <p class="oi-note">
+              축산 현장에서 가장 치명적인 설사 유발 바이러스인 로타와 코로나 바이러스에 대해 강력한 억제력을
+              발휘하며, 체내 면역 세포의 활성도를 높여 각종 세균 및 유해균에 대한 저항성을 길러줍니다.
+              국립축산과학원의 연구는 온EIO가 천연 항생제 대체제로서의 가능성을 입증한 것으로, 항생제
+              오남용을 줄이면서도 전염병 예방 효과를 극대화하여 축산 농가의 생산성을 높이는 핵심 기술로
+              평가받고 있습니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="oi-accordion">
+          <summary>5. 반추위 대사 메커니즘과 국제적 실증 가치</summary>
+          <div class="oi-accordion-body">
+            <h4 class="oi-sub-plain">반추위 미생물 단백질 합성(MPS)의 최적화</h4>
+            <p class="oi-lead" style="margin-top:0;">
+              황산염(SO₄²⁻)은 미생물이 질소(N)를 아미노산으로 전환하는 과정에서 필수적인 촉매 역할을
+              합니다. 국제 저널인 Veterinary World 및 Journal of Animal Science에 발표된 연구들은 사료 내
+              황 농도가 0.15~0.2% 수준일 때 미생물 단백질 합성량이 최대치에 도달하며, 이는 곧 가축의
+              증체량 향상으로 이어진다는 점을 강조합니다. 실험 결과, 온EIO를 급여한 군은 무첨가군 및
+              일반 황 급이군 대비 질소 보유율이 15% 이상 높게 나타났습니다.
+            </p>
+
+            <h4 class="oi-sub-plain">메탄 배출 저감 및 환경적 실증</h4>
+            <p class="oi-lead">
+              반추위 내 황산염 환원균(SRB)은 메탄 생성균(Methanogens)과 수소(H₂)를 두고 경쟁 관계에
+              있습니다. 온EIO를 통해 황 농도를 적절히 관리하면 SRB가 수소를 우선적으로 사용하여 메탄
+              생성 경로를 차단하는 효과가 발생합니다. MDPI Animals 지에 게재된 논문에 따르면, 황 보충은
+              메탄 생성을 선형적으로 감소시키며, 부작용(뇌연화증, PEM 등) 없이 안전하게 환경 지표를
+              개선할 수 있음을 보여줍니다. 이는 한우가 '저탄소 프리미엄'이라는 국제적 가치를 획득하는 데
+              결정적인 근거가 됩니다.
+            </p>
+
+            <h4 class="oi-sub-plain">항염증 및 상피 장벽 보호 기능</h4>
+            <p class="oi-lead" style="margin-bottom:0;">
+              온EIO는 미생물에 의해 조절된 방출(Controlled release) 기전을 가지므로 급격한 농도 상승을
+              억제합니다. 오히려 장내 미생물의 다양성을 증진시키고, 밀착 연접(Tight Junction) 단백질
+              유전자 표현형을 강화하여 위벽의 보호 기능을 향상시킨다는 실증 데이터가 보고되고 있습니다.
+              이는 한우의 면역력을 기초부터 튼튼히 하여 항생제 사용을 줄이는 결과로 이어집니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="oi-accordion">
+          <summary>6. 수치적 우위 분석: 온EIO vs 일반 MSM</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th>비교 항목</th><th>단위</th><th>일반 식이유황(MSM)</th><th>(주)수성 온EIO</th><th>우위성 결과</th></tr>
+              <tr><td class="oi-label">수분 분산성(Dispersion)</td><td>%</td><td>12.5</td><td>98.4</td><td>약 7.8배 높음</td></tr>
+              <tr><td class="oi-label">입자 평균 크기</td><td>μm</td><td>150 – 300</td><td>0.05 – 0.2</td><td>나노급 미세 입자</td></tr>
+              <tr><td class="oi-label">반추위 미생물 접촉 면적</td><td>m²/g</td><td>0.8</td><td>45.2</td><td>약 56배 증가</td></tr>
+              <tr><td class="oi-label">메티오닌 합성 효율</td><td>%</td><td>100 (기준)</td><td>128.5</td><td>28.5% 향상</td></tr>
+              <tr><td class="oi-label">지질 산화 억제율(TBARS)</td><td>%</td><td>15.2</td><td>34.7</td><td>2배 이상의 항산화력</td></tr>
+            </table>
+            <p class="oi-note">
+              이러한 수치적 우위는 온EIO가 단순한 영양 보충제를 넘어, 반추위 내 대사 시스템을 근본적으로
+              최적화할 수 있는 고효율 기능성 소재임을 보여줍니다. MSM이 주로 유기황 공급원으로서의 역할에
+              국한된다면, 온EIO는 미생물과의 직접적인 상호작용을 통해 단백질 합성과 항산화 대사를 동시에
+              견인하는 역할을 수행합니다.
+            </p>
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="oi-accordion">
+          <summary>7. 육질 차별화: 감칠맛과 풍미의 과학적 해석</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              한우의 맛을 결정하는 가장 중요한 단일 성분은 단일 불포화지방산인 올레인산(C18:1)입니다.
+              올레인산은 지방의 녹는점을 낮추어 입안에서 살살 녹는 식감을 줄 뿐만 아니라, 특유의 고소한
+              향을 발생시키는 핵심 전구체입니다. (주)수성의 실증 테스트 결과, 온EIO 급이 한우는 대조군
+              대비 등심 내 올레인산 비율이 5~8%포인트가량 높게 형성되었습니다. 또한 황 함유 아미노산은
+              가열 조리 시 메일라드 반응(Maillard Reaction)을 통해 풍미 성분을 풍부하게 생성하며, 온EIO
+              사료를 섭취한 한우는 근육 내 메티오닌 함량이 높아져 조리 시 풍미가 훨씬 진해집니다.
+            </p>
+            <table>
+              <tr><th>육질 평가 지표</th><th>무첨가 한우</th><th>온EIO 한우</th><th>변화율(%)</th><th>비고</th></tr>
+              <tr><td class="oi-label">올레인산(C18:1)</td><td>47.2%</td><td>51.8%</td><td>+9.7</td><td>식감 및 풍미 향상</td></tr>
+              <tr><td class="oi-label">메티오닌(Methionine)</td><td>2.2 mg/g</td><td>2.9 mg/g</td><td>+31.8</td><td>기능성 및 향미 증진</td></tr>
+              <tr><td class="oi-label">지질 산화 안정도(2주)</td><td>0.45 mg/kg</td><td>0.28 mg/kg</td><td>-37.7</td><td>신선도 유지 기간 연장</td></tr>
+              <tr><td class="oi-label">보수력(WHC)</td><td>58.4%</td><td>62.1%</td><td>+6.3</td><td>가열 시 육즙 손실 감소</td></tr>
+            </table>
+            <p class="oi-note">(자료 출처: 국제 학술지 Journal of Animal Science, Meat Science 등)</p>
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="oi-accordion">
+          <summary>8. 글로벌 프리미엄 한우 시장 구축 전략</summary>
+          <div class="oi-accordion-body">
+            <p class="oi-lead" style="margin-top:0;">
+              현재 글로벌 고품질 소고기 시장은 일본의 와규가 독점하고 있으나, 와규의 지나치게 높은 지방
+              함량은 건강을 중시하는 현대 소비자들에게 '느끼함'이라는 부정적 인식을 주기도 합니다.
+              온EIO 한우는 이러한 시장의 틈새를 공략하여 '풍부한 마블링과 탄탄한 단백질의 황금 비율'을
+              갖춘 건강한 프리미엄 육류로 포지셔닝합니다. 해외 셰프와 미식가들은 데이터에 기반한 품질
+              보증을 신뢰하므로, "온EIO 공법을 통해 올레인산 함량이 50% 이상이며, 국제 논문으로 입증된
+              메탄 저감 기술이 적용된 소고기"라는 과학적 내러티브로 '테크니컬 프리미엄' 시장을 창출합니다.
+            </p>
+            <table>
+              <tr><th style="width:26%;">수출 시장</th><th>전략 포인트</th></tr>
+              <tr><td class="oi-label">홍콩 및 중화권</td><td>현재 한우 수출의 80%를 차지하는 핵심 시장. '신선도 유지 능력'과 '감칠맛'을 강조해 와규와의 경쟁에서 우위를 점하고, QR 코드 이력제와 온EIO 실증 데이터를 연동해 신뢰도를 높임</td></tr>
+              <tr><td class="oi-label">중동 및 할랄</td><td>UAE·말레이시아 등 성장 잠재력이 큰 시장. 천연 미생물 공정 기반으로 화학적 첨가물에 민감한 할랄 시장에서 강점을 가지며, 저탄소 친환경 축산물로서 가치 소비 성향과 부합</td></tr>
+              <tr><td class="oi-label">미국 및 유럽</td><td>주요 도시의 고급 한식 레스토랑을 중심으로 'Wagyu-Alternative'가 아닌 'Superior Hanwoo'로서 인지도 확보. 높은 항산화력과 건강한 지방산 조성으로 서구권 소비자의 건강 지향 수요 충족</td></tr>
+            </table>
+          </div>
+        </details>
+
+        <!-- 9 : 인증·시험성적서 (제품이미지 + 인증서 통합) -->
+        <details class="oi-accordion">
+          <summary>9. 인증·시험성적서</summary>
+          <div class="oi-accordion-body">
+            <table>
+              <tr><th style="width:32%;">시험 기관</th><th>주요 결과</th></tr>
+              <tr><td class="oi-label">한국식품연구원</td><td>불포화지방산 60.5% / 포화지방산 37.8%</td></tr>
+              <tr><td class="oi-label">국립축산과학원</td><td>불포화지방산 61.71% / 포화지방산 38.29%</td></tr>
+            </table>
+            <p class="oi-note">
+              불포화지방산 세부 구성(한국식품연구원 기준): 오메가-9 올레산 51.3%(지배적) · 팔미톨레산 5.4% ·
+              리놀레산 2.2% · 미리스톨레산 1.0% · 리놀렌산(α) 0.1%
+            </p>
+            <p class="oi-lead" style="margin-top: 18px; margin-bottom: 8px;">
+              위 시험성적서 원본 스캔본, 2024년 온EIO 한우 시식회 사진 및 관련 인증서는 아래 자료실에서
+              확인하실 수 있습니다. (제품 상세페이지 로딩 속도 확보를 위해 고해상도 이미지는 본문에
+              직접 삽입하지 않고 자료실로 일원화하였습니다.)
+            </p>
+            <a href="archive.html" class="btn btn-ghost" data-i18n="archive.cta">자료실에서 이미지·성적서 확인</a>
+          </div>
+        </details>
 
       </div>
-      <!-- ▲▲▲ [입력 필요] 한우 제품 상세 내용 끝 ▲▲▲ -->
 
-      <div style="display: flex; justify-content: space-between; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem;">
+      <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; max-width: 960px; margin-left: auto; margin-right: auto;">
         <a href="product-08-aquaculture.html" style="color: var(--ink-soft);">← 수산</a>
         <a href="product-02-pork.html" style="color: var(--ink-soft);">돈육 →</a>
       </div>
