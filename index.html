@@ -29,7 +29,6 @@
         <button data-lang="ja">JA</button>
         <button data-lang="zh">ZH</button>
       </div>
-      
       <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -38,45 +37,114 @@
 <main id="top">
 
   <!-- ============================================================
-       ▼▼▼ [입력 필요] 홈 첫 화면(히어로) 영역 ▼▼▼
-       기존 홈페이지 첫 페이지에 있던 문구(회사 슬로건, 대표 소개 문장 등)를
-       아래 4개 항목에 입력해 주세요.
-       ※ 4개 언어 모두 반영하려면 아래 파일의 동일한 키(key)도 함께 수정 필요:
-         lang/ko.json → hero.eyebrow / hero.title / hero.subtitle
-         lang/en.json, lang/ja.json, lang/zh.json (해당 언어로 번역 후 입력)
+       ▼▼▼ [입력 필요] 홈 첫 화면 영역 ▼▼▼
+       기존 bmpgo.com 메인화면 구성(헤드라인 + 소개문 + 분야별 설명 3단)을
+       그대로 재현했습니다. 아래 텍스트는 기존 홈페이지 내용을 그대로
+       옮긴 것이므로, 문구 수정이 필요하면 이 위치를 직접 편집하시거나
+       lang/ko.json의 동일한 키 값을 수정해 주세요.
        ============================================================ -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-copy">
-        <!-- 상단 라벨(눈에 띄는 짧은 문구, 예: 회사명/캐치프레이즈) -->
-        <span class="hero-eyebrow" data-i18n="hero.eyebrow">농업회사법인 수성(주)</span>
-        <!-- 메인 헤드라인(가장 큰 글씨, 기존 홈페이지 대표 슬로건 입력) -->
-        <h1 class="hero-title" data-i18n="hero.title">자연에서 시작해 생산성으로 완성하는 바이오황</h1>
-        <!-- 서브 카피(헤드라인 보조 설명 1~2문장) -->
-        <p class="hero-subtitle" data-i18n="hero.subtitle">축산·경종·수산 세 갈래의 현장에서, 하나의 원료로 답을 찾습니다.</p>
+  <section class="hero-intro">
+    <div class="container hero-intro-top">
+      <h1 class="hero-headline" data-i18n="hero.headline">농업회사법인 수성(주)</h1>
+      <div class="hero-intro-copy">
+        <p data-i18n="hero.intro">저희는 신물질 등록을 앞둔 온EIO(Bio Sulfur)라는 특별한 소재를 통해 우리 농축수산업의 근본적인 경쟁력을 강화하고, 소비자에게는 더 건강한 먹거리를 제공한다는 사명감으로 설립되었습니다.</p>
         <div class="hero-cta">
+          <a href="greeting.html" class="btn btn-ghost" data-i18n="hero.cta_about">About us</a>
           <a href="#products" class="btn btn-primary" data-i18n="hero.cta_primary">제품 살펴보기</a>
           <a href="archive.html" class="btn btn-ghost" data-i18n="hero.cta_secondary">자료실 바로가기</a>
         </div>
       </div>
-      <!-- ▲▲▲ [입력 필요] 히어로 영역 끝 ▲▲▲ -->
+    </div>
 
-      <div class="sector-band" id="sectors">
-        <div class="sector-item">
-          <span class="name" data-i18n="sector.livestock">축산</span>
-          <span class="desc" data-i18n="sector.livestock_desc">한우 · 돈육 · 육계 · 산란계</span>
-        </div>
-        <div class="sector-item">
-          <span class="name" data-i18n="sector.crop">경종</span>
-          <span class="desc" data-i18n="sector.crop_desc">벼 · 채소 · 과수</span>
-        </div>
-        <div class="sector-item">
-          <span class="name" data-i18n="sector.aqua">수산</span>
-          <span class="desc" data-i18n="sector.aqua_desc">양식 어류 · 패류</span>
-        </div>
+    <div class="container hero-fields">
+      <div class="field-item">
+        <h3 data-i18n="field.agri_title">농업분야</h3>
+        <p data-i18n="field.agri_desc">수성(주) 비료는 토양을 개량하고 작물 본연의 면역력을 강화하여, 병충해를 예방하고 생산량과 품질을 획기적으로 향상시킵니다.</p>
+      </div>
+      <div class="field-item">
+        <h3 data-i18n="field.livestock_title">축산분야</h3>
+        <p data-i18n="field.livestock_desc">수성(주) 사료첨가제는 가축의 면역력을 근본적으로 강화하고 장내 환경을 개선하여, 항생제 사용을 줄이고 생산성 및 축산물의 품질을 높입니다.</p>
+      </div>
+      <div class="field-item">
+        <h3 data-i18n="field.aqua_title">수산분야</h3>
+        <p data-i18n="field.aqua_desc">수성(주) 수산용 사료첨가제는 항생제를 대체하는 친환경 솔루션으로, 양식 어종의 질병 저항성을 극대화하고 사료 효율을 높여 생산성을 획기적으로 증대시킵니다.</p>
       </div>
     </div>
   </section>
+  <!-- ▲▲▲ [입력 필요] 홈 첫 화면 영역 끝 ▲▲▲ -->
+
+  <!-- ============================================================
+       '왜, 그냥 유황이 아닌 온EIO(Bio Sulfur)이어야 하는가' 섹션
+       ============================================================ -->
+  <style>
+    .oneio-info { max-width: 960px; margin: 0 auto 64px; }
+    .oneio-info h2.oi-title { font-size: 1.5rem; margin-bottom: 18px; }
+    .oneio-info h3.oi-sub { font-size: 1.05rem; color: var(--ink); margin: 40px 0 12px; }
+    .oneio-info p.oi-lead { color: var(--ink-soft); line-height: 1.85; margin: 0 0 16px; }
+    .oneio-info table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 0.88rem; }
+    .oneio-info th, .oneio-info td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+    .oneio-info th { background: var(--ink); color: var(--bg); font-weight: 700; }
+    .oneio-info td.oi-label { background: var(--bg); font-weight: 700; width: 22%; white-space: nowrap; }
+    .oneio-info .oi-note { color: var(--ink-soft); font-size: 0.85rem; margin: 6px 0 24px; }
+  </style>
+
+  <div class="container oneio-info" style="padding-top: 56px;">
+    <h2 class="oi-title">[현 농축산업의 위기 극복과 미래를 위한 새로운 패러다임]</h2>
+
+    <h3 class="oi-sub">1. 위기에 처한 대한민국 농축산업의 현실</h3>
+    <p class="oi-lead">
+      현재 대한민국 농축산업은 지속 가능성을 심각하게 위협받는 위기 상황에 직면해 있습니다.
+      관행적으로 사용해 온 화학 비료와 항생제는 토양의 산성화를 촉진하고 생태계를 파괴하는
+      주원인이 되고 있습니다. 이러한 토양 황폐화는 연작 피해와 농업 생산성 저하를 불러오며,
+      가축과 농산물에 잔류하는 유해 성분 문제를 야기합니다. 결과적으로 이는 지하수 오염과
+      생태계 불균형을 초래하고, '화학 물질 남용 → 환경 오염 → 농축산물 안전성 저하 → 국민
+      건강 위협'으로 이어지는 악순환의 고리를 형성하고 있습니다.
+    </p>
+
+    <h3 class="oi-sub">2. 새로운 패러다임으로의 전환: 지속 가능한 농축산업</h3>
+    <p class="oi-lead">
+      이러한 위기를 타개하기 위해 친환경적이고 지속 가능한 생산 방식 도입이 절실한 시점입니다.
+      새로운 패러다임은 단순히 생산량을 늘리는 것을 넘어, 자연과의 조화를 통한 '친환경 농업
+      시스템'을 구축하는 데 초점을 맞춥니다. 이를 통해 안전하고 믿을 수 있는 고품질 농축산물을
+      공급함으로써 국민 건강을 보호하고, 농가의 생산성을 향상시켜 소득 증대를 도모해야 합니다.
+      또한, 혁신적인 농업 기술을 확보하여 글로벌 시장에서도 인정받는 경쟁력을 갖추는 것이 미래
+      농축산업의 핵심 목표입니다.
+    </p>
+
+    <h3 class="oi-sub">3. 미래 농축산업의 핵심 솔루션: '온EIO'</h3>
+    <p class="oi-lead">
+      이러한 혁신을 이끌 차세대 솔루션으로 <strong>'온EIO'</strong>이 주목받고 있습니다.
+      <strong>'온EIO'</strong>은 자연에서 얻은 유황을 독자적인 공법으로 법제화한 물질로, 이미
+      관련 기술 특허와 제반 시험성적서를 통해 그 효과를 과학적으로 입증받았습니다. 이 소재는
+      농업과 축산 현장에서 토지 비옥화와 가축 건강 증진을 동시에 실현하는 혁신적인 변화를
+      이끌고 있습니다.
+    </p>
+
+    <h3 class="oi-sub">4. '온EIO'의 실질적 적용 효과</h3>
+    <ul style="padding-left: 20px; margin: 0 0 28px; color: var(--ink-soft); line-height: 1.85;">
+      <li style="margin-bottom: 14px;">
+        <strong>농업 분야(친환경 비료)</strong>: 토양에 적용할 경우, 화학 비료 사용을 줄이면서도
+        지력을 회복시키는 토양 비옥화 효과가 탁월합니다. 또한 작물의 영양분 흡수를 촉진하고
+        병충해에 대한 저항력을 증대시켜 작물의 품질을 획기적으로 향상시킵니다. 더불어 잔류
+        농약 감소와 수질 개선에도 기여하여 환경 정화의 가치를 실현합니다.
+      </li>
+      <li>
+        <strong>축산 분야(사료 혁신)</strong>: 가축 사료에 적용 시 면역력을 강화하여 질병
+        발생률을 낮추고, 항생제 의존도를 크게 낮출 수 있습니다. 이는 친환경 축산 기반을
+        마련함과 동시에 육질, 난질, 유질 등 축산물 자체를 프리미엄급으로 개선하여 부가가치를
+        높입니다.
+      </li>
+    </ul>
+
+    <h3 class="oi-sub">5. 결론: 실질적인 변화와 미래 비전</h3>
+    <p class="oi-lead" style="margin-bottom: 0;">
+      결론적으로 <strong>'온EIO'</strong> 솔루션은 화학 비료와 항생제 사용을 줄임으로써 생산
+      비용을 절감하고, 토양 환경 개선 및 가축 건강 증진을 통해 생산성을 극대화합니다. 이는
+      농가의 소득 증대로 이어질 뿐만 아니라, 유해 성분 없는 안전한 먹거리를 생산함으로써 국민
+      건강 증진에 이바지하는 근본적인 대안이 될 것입니다.
+    </p>
+  </div>
+  <!-- ▲▲▲ 위기 극복과 미래 패러다임 섹션 끝 ▲▲▲ -->
 
   <!-- Product grid -->
   <section class="section" id="products">
@@ -84,11 +152,11 @@
       <div class="section-head">
         <div>
           <h2 class="section-title" data-i18n="products.title">제품 카테고리</h2>
-          <p class="section-subtitle" data-i18n="products.subtitle">적용 대상에 맞춘 6개 라인업</p>
+          <p class="section-subtitle" data-i18n="products.subtitle">적용 대상에 맞춘 8개 라인업</p>
         </div>
       </div>
 
-      <!-- 제품 카드 6개: 각 카드 클릭 시 개별 상세페이지(product-01-hanwoo.html 등)로 이동 -->
+      <!-- 제품 카드 8개: 각 카드 클릭 시 개별 상세페이지(product-01-hanwoo.html 등)로 이동 -->
       <div class="product-grid">
         <a class="product-card" href="product-01-hanwoo.html">
           <span class="idx">01</span>
@@ -110,13 +178,23 @@
           <span class="title" data-i18n="products.layer">산란계</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="product-05-agriculture.html">
+        <a class="product-card" href="product-05-rice.html">
           <span class="idx">05</span>
-          <span class="title" data-i18n="products.agriculture">농산물(벼·채소·과수)</span>
+          <span class="title" data-i18n="products.rice">쌀</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
-        <a class="product-card" href="product-06-aquaculture.html">
+        <a class="product-card" href="product-06-vegetable.html">
           <span class="idx">06</span>
+          <span class="title" data-i18n="products.vegetable">채소</span>
+          <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
+        </a>
+        <a class="product-card" href="product-07-fruit.html">
+          <span class="idx">07</span>
+          <span class="title" data-i18n="products.fruit">과수</span>
+          <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
+        </a>
+        <a class="product-card" href="product-08-aquaculture.html">
+          <span class="idx">08</span>
           <span class="title" data-i18n="products.aquaculture">수산</span>
           <span class="detail" data-i18n="products.view_detail">자세히 보기</span>
         </a>
