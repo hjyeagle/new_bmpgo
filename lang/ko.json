@@ -55,7 +55,15 @@
 
   "footer.company": "농업회사법인 수성(주)",
   "footer.address": "강원특별자치도 고성군 간성읍 간성로 30번길 7 KT고성빌딩 3층",
-  "footer.tel": "대표전화",033-682-3600
-  "footer.email": "이메일",ceo@bmpgo.com
-  "footer.copyright": "All Rights Reserved."
+  "footer.tel.label": "대표전화",
+  "footer.tel.value": "033-682-3600",
+  "footer.email.label": "이메일",
+  "footer.email.value": "ceo@bmpgo.com",
+  "footer.copyright": "All Rights Reserved.",
+  ...
+  "notice.item3.body": "여기에 공지 상세 내용을 입력하세요.",
+  "contact.title": "오시는 길",
+  "contact.address": "강원특별자치도 고성군 간성읍 간성로 30번길 7 KT고성빌딩 3층",
+  "contact.gmap": "Google 지도에서 크게 보기"
+
 }
