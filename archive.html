@@ -12,68 +12,81 @@
   <div class="container">
     <a href="index.html" class="logo">수성<span>(주)</span></a>
     <nav class="main-nav">
-      <a href="index.html">홈</a>
-      <a href="greeting.html">인사말</a>
-      <a href="index.html#products">제품소개</a>
-      <a href="index.html#notice">공지사항</a>
-      <a href="archive.html" class="active">자료실</a>
-      <a href="index.html#contact">오시는 길</a>
+      <a href="index.html" data-i18n="nav.home">홈</a>
+      <a href="greeting.html" data-i18n="nav.greeting">인사말</a>
+      <a href="index.html#products" data-i18n="nav.products">제품소개</a>
+      <a href="index.html#notice" data-i18n="nav.notice">공지사항</a>
+      <a href="archive.html" class="active" data-i18n="nav.archive">자료실</a>
+      <a href="index.html#contact" data-i18n="nav.contact">오시는 길</a>
     </nav>
     <div class="header-right">
+      <div class="lang-switch">
+        <button data-lang="ko">KO</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ja">JA</button>
+        <button data-lang="zh">ZH</button>
+      </div>
       <button class="nav-toggle" aria-label="메뉴 열기"><span></span></button>
     </div>
   </div>
 </header>
 <main class="container" style="padding: 56px 24px;">
-  <h1 class="section-title" style="margin-bottom: 24px;">자료실</h1>
-  <p style="color: var(--ink-soft); margin-bottom: 32px;">
+  <h1 class="section-title" style="margin-bottom: 24px;" data-i18n="archive.title">자료실</h1>
+  <p style="color: var(--ink-soft); margin-bottom: 32px;" data-i18n="archive.lead">
     제품 인증서, 시험성적서, 카탈로그, 고해상도 이미지는 이 페이지에서 다운로드하실 수 있습니다.
     본문 페이지의 이미지 용량을 줄이기 위해 원본 자료는 이곳에 모아 관리합니다.
   </p>
 
-  <h2 class="section-title" id="hanwoo" style="font-size:1.2rem; margin:40px 0 12px;">한우(01) 인증·시험성적서</h2>
+  <h2 class="section-title" id="hanwoo" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_hanwoo">한우(01) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>한우 육질·성장·면역 시험자료 (PDF)</span><a class="notice-date" href="docs/hanwoo.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_hanwoo">한우 육질·성장·면역 시험자료 (PDF)</span><a class="notice-date" href="docs/hanwoo.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="pork" style="font-size:1.2rem; margin:40px 0 12px;">돈육(02) 인증·시험성적서</h2>
+  <h2 class="section-title" id="pork" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_pork">돈육(02) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>돈육 관능·성분 비교 시험자료 (PDF)</span><a class="notice-date" href="docs/pork_meat.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_pork">돈육 관능·성분 비교 시험자료 (PDF)</span><a class="notice-date" href="docs/pork_meat.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="chicken" style="font-size:1.2rem; margin:40px 0 12px;">육계(03) 인증·시험성적서</h2>
+  <h2 class="section-title" id="chicken" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_broiler">육계(03) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>육계 사육·사료 실험자료 (PDF)</span><a class="notice-date" href="docs/chicken.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_broiler">육계 사육·사료 실험자료 (PDF)</span><a class="notice-date" href="docs/chicken.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="egg" style="font-size:1.2rem; margin:40px 0 12px;">산란계(04) 인증·시험성적서</h2>
+  <h2 class="section-title" id="egg" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_layer">산란계(04) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>유황란 성분·항생제 분석자료 (PDF)</span><a class="notice-date" href="docs/egg.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_layer">유황란 성분·항생제 분석자료 (PDF)</span><a class="notice-date" href="docs/egg.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="agriculture" style="font-size:1.2rem; margin:40px 0 12px;">농산물(05) 인증·시험성적서</h2>
+  <h2 class="section-title" id="agriculture" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_agri">농산물(05) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>농산물(벼·채소·과수) 실증자료 (PDF)</span><a class="notice-date" href="docs/agriculture.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_agri">농산물(벼·채소·과수) 실증자료 (PDF)</span><a class="notice-date" href="docs/agriculture.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="aquaculture" style="font-size:1.2rem; margin:40px 0 12px;">수산(06) 인증·시험성적서</h2>
+  <h2 class="section-title" id="aquaculture" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_aqua">수산(06) 인증·시험성적서</h2>
   <ul class="notice-list">
-    <li><span>수산 양식용 제품 실험자료 (PDF)</span><a class="notice-date" href="docs/aquatic_products.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_aqua">수산 양식용 제품 실험자료 (PDF)</span><a class="notice-date" href="docs/aquatic_products.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 
-  <h2 class="section-title" id="general-docs" style="font-size:1.2rem; margin:40px 0 12px;">기타 인증·특허 자료</h2>
+  <h2 class="section-title" id="general-docs" style="font-size:1.2rem; margin:40px 0 12px;" data-i18n="archive.h_general">기타 인증·특허 자료</h2>
   <ul class="notice-list">
-    <li><span>무독성 시험 및 특허 자료 (PDF)</span><a class="notice-date" href="docs/Non-toxic_heavy_metal_patent.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
-    <li><span>Purina Analytical / Purina Mills 검증자료 (PDF)</span><a class="notice-date" href="docs/Purina_Analytical_Purina_Mills.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
-    <li><span>온EIO 최적화 소재 설명자료 (PDF)</span><a class="notice-date" href="docs/Why_OnEIO_optimized_material.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
-    <li><span>온EIO 상표권 출원 (PDF)</span><a class="notice-date" href="docs/Trademark application.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
-    <li><span>농협대학 프리미엄 레몬재배와 온EIO 활용 기술제안서 및 시험결과보고서(PDF)</span><a class="notice-date" href="docs/On-EIO at Nonghyup University.pdf" target="_blank" rel="noopener">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_nontoxic">무독성 시험 및 특허 자료 (PDF)</span><a class="notice-date" href="docs/Non-toxic_heavy_metal_patent.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_purina">Purina Analytical / Purina Mills 검증자료 (PDF)</span><a class="notice-date" href="docs/Purina_Analytical_Purina_Mills.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_why">온EIO 최적화 소재 설명자료 (PDF)</span><a class="notice-date" href="docs/Why_OnEIO_optimized_material.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_trademark">온EIO 상표권 출원 (PDF)</span><a class="notice-date" href="docs/Trademark application.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
+    <li><span data-i18n="archive.doc_nonghyup">농협대학 프리미엄 레몬재배와 온EIO 활용 기술제안서 및 시험결과보고서(PDF)</span><a class="notice-date" href="docs/On-EIO at Nonghyup University.pdf" target="_blank" rel="noopener" data-i18n="archive.download">미리보기 / 다운로드</a></li>
   </ul>
 </main>
 <footer class="site-footer">
   <div class="container">
-    <p style="color: var(--ink-soft); font-size: 0.85rem;">&copy; 2026 농업회사법인 수성(주). All Rights Reserved.</p>
+    <p style="color: var(--ink-soft); font-size: 0.85rem;">&copy; 2026 <span data-i18n="footer.company">농업회사법인 수성(주)</span>. <span data-i18n="footer.copyright">All Rights Reserved.</span></p>
+    <div class="footer-lang">
+      <button data-lang="ko">KO</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="ja">JA</button>
+      <button data-lang="zh">ZH</button>
+    </div>
   </div>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
