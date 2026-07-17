@@ -113,7 +113,8 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 
-.lang-switch button {
+.lang-switch button,
+.lang-switch a {
   background: transparent;
   border: none;
   padding: 7px 11px;
@@ -123,11 +124,15 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
   cursor: pointer;
   border-right: 1px solid var(--line);
+  text-decoration: none;
+  display: inline-block;
 }
 
-.lang-switch button:last-child { border-right: none; }
+.lang-switch button:last-child,
+.lang-switch a:last-child { border-right: none; }
 
-.lang-switch button.active {
+.lang-switch button.active,
+.lang-switch a.active {
   background: var(--ink);
   color: var(--bg);
 }
@@ -348,7 +353,8 @@ img { max-width: 100%; display: block; }
 .footer-info strong { color: var(--ink); }
 
 .footer-lang { display: flex; gap: 8px; align-self: flex-start; }
-.footer-lang button {
+.footer-lang button,
+.footer-lang a {
   background: none;
   border: 1px solid var(--line);
   padding: 5px 10px;
@@ -356,8 +362,11 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   cursor: pointer;
   color: var(--ink-soft);
+  text-decoration: none;
+  display: inline-block;
 }
-.footer-lang button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.footer-lang button.active,
+.footer-lang a.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
 /* ==========================================================
    Responsive breakpoint (mobile ≤ 768px)
