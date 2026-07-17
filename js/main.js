@@ -24,6 +24,17 @@ function applyTranslations(dict) {
   });
 }
 
+function updateLangLinks(lang) {
+  // 제품 상세페이지 등 "언어별 별도 파일"로 존재하는 링크의 href를
+  // 현재 선택된 언어에 맞게 재작성한다.
+  // 예: data-lang-link="product-01-hanwoo" → ko: product-01-hanwoo.html
+  //                                          en: product-01-hanwoo.en.html
+  document.querySelectorAll('[data-lang-link]').forEach((el) => {
+    const base = el.getAttribute('data-lang-link');
+    el.setAttribute('href', lang === 'ko' ? `${base}.html` : `${base}.${lang}.html`);
+  });
+}
+
 function setActiveLangButtons(lang) {
   document.querySelectorAll('.lang-switch button, .footer-lang button').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
@@ -35,6 +46,7 @@ async function switchLang(lang) {
   try {
     const dict = await loadLang(lang);
     applyTranslations(dict);
+    updateLangLinks(lang);
     document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : lang);
     setActiveLangButtons(lang);
     localStorage.setItem(STORAGE_KEY, lang);
